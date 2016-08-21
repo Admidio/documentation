@@ -1,0 +1,4022 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class WavFile | Admidio API</title>
+
+	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
+	<link rel="stylesheet" href="resources/style.css?70c1d062672daa3f906b72e4f5d03d4bc5c4174d">
+
+</head>
+
+<body>
+	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">Admidio API</a>
+			</div>
+			<div class="collapse navbar-collapse">
+
+                <form id="search" class="navbar-form navbar-left" role="search">
+                    <input type="hidden" name="cx" value="">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <div class="form-group">
+                        <input type="text" name="q" class="search-query form-control" placeholder="Search">
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav">
+					<li>
+<span>Package</span>					</li>
+					<li class="active">
+<span>Class</span>					</li>
+
+					<li class="divider-vertical"></li>
+
+					<li>
+						<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+					</li>
+
+						<li>
+							<a href="annotation-group-deprecated.html" title="List of elements with deprecated annotation">
+								<span>Deprecated</span>
+							</a>
+						</li>
+						<li>
+							<a href="annotation-group-todo.html" title="List of elements with todo annotation">
+								<span>Todo</span>
+							</a>
+						</li>
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="left">
+	<div id="menu">
+
+		<div id="groups">
+				<h3>Packages</h3>
+			<ul>
+					<li>
+						<a href="package-com.html">
+							com<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="package-com.tecnick.html">
+							tecnick<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="package-com.tecnick.tcpdf.html">
+							tcpdf						</a>
+							</li>
+								</ul></li></ul></li>
+					<li>
+						<a href="package-None.html">
+							None						</a>
+							</li>
+					<li>
+						<a href="package-PHPMailer.html">
+							PHPMailer<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="package-phpmailer.easypeasyics.html">
+							easypeasyics						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="package-PHPWavUtils.html">
+							PHPWavUtils						</a>
+							</li>
+					<li>
+						<a href="package-Securimage.html">
+							Securimage<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="package-Securimage.classes.html">
+							classes						</a>
+							</li>
+								</ul></li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-WavFile.html">WavFile</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class WavFile</h1>
+
+
+	<div class="description">
+	<p>Project: PHPWavUtils: Classes for creating, reading, and manipulating WAV files in PHP<br />
+File: WavFile.php<br /></p>
+
+<p>Copyright (c) 2014, Drew Phillips
+All rights reserved.</p>
+
+<p>Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:</p>
+
+<ul>
+<li>Redistributions of source code must retain the above copyright notice,
+this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice,
+this list of conditions and the following disclaimer in the documentation
+and/or other materials provided with the distribution.</li>
+</ul>
+
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.</p>
+
+<p>Any modifications to the library should be indicated clearly in the source code
+to inform users that the changes are not a part of the original software.<br /><br /></p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		
+		<b>Package:</b> <a href="package-PHPWavUtils.html">PHPWavUtils</a><br>
+
+				<b>Copyright:</b>
+				2014 Drew Phillips<br>
+				<b>License:</b>
+				<a href="BSD">License
+
+Changelog:
+  1.1.1 (09/08/2015)
+    - Fix degrade() method to call filter correctly (Rasmus Lerdorf)
+
+  1.1 (02/8/2014)
+    - Add method setIgnoreChunkSizes() to allow reading of wav data with bogus chunk sizes set.
+      This allows streamed wav data to be processed where the chunk sizes were not known when
+      writing the header.  Instead calculates the chunk sizes automatically.
+    - Add simple volume filter to attenuate or amplify the audio signal.
+
+  1.0 (10/2/2012)
+    - Fix insertSilence() creating invalid block size
+
+  1.0 RC1 (4/20/2012)
+    - Initial release candidate
+    - Supports 8, 16, 24, 32 bit PCM, 32-bit IEEE FLOAT, Extensible Format
+    - Support for 18 channels of audio
+    - Ability to read an offset from a file to reduce memory footprint with large files
+    - Single-pass audio filter processing
+    - Highly accurate and efficient mix and normalization filters (http://www.voegler.eu/pub/audio/)
+    - Utility filters for degrading audio, and inserting silence
+
+  0.6 (4/12/2012)
+    - Support 8, 16, 24, 32 bit and PCM float (Paul Voegler)
+    - Add normalize filter, misc improvements and fixes (Paul Voegler)
+    - Normalize parameters to filter() to use filter constants as array indices
+    - Add option to mix filter to loop the target file if the source is longer
+
+  0.5 (4/3/2012)
+    - Fix binary pack routine (Paul Voegler)
+    - Add improved mixing function (Paul Voegler)</a><br>
+				<b>Author:</b>
+				Drew Phillips <a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#58;&#x64;&#x72;&#101;&#119;&#x40;&#x64;&#114;&#101;&#x77;&#x2d;&#112;&#104;&#x69;&#x6c;&#108;&#105;&#x70;&#x73;&#46;&#99;&#x6f;&#x6d;">&#x64;&#x72;&#101;&#119;&#x40;&#x64;&#114;&#101;&#x77;&#x2d;&#112;&#104;&#x69;&#x6c;&#108;&#105;&#x70;&#x73;&#46;&#99;&#x6f;&#x6d;</a><br>
+				<b>Author:</b>
+				Paul Voegler <a href="http://www.voegler.eu/">http://www.voegler.eu/</a><br>
+				<b>Version:</b>
+				1.1.1 (Sep 2015)<br>
+			<b>Located at</b> <a href="source-class-WavFile.html#6-1899" title="Go to source code">WavFile.php</a>
+		<br>
+	</div>
+
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading"><h2>Methods summary</h2></div>
+			<table class="summary table table-bordered table-striped methods" id="methods">
+		<tr data-order="__construct" id="___construct">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-WavFile.html#221-269" title="Go to source code">__construct</a>( <span>string|integer <var>$numChannelsOrFileName</var> = <span class="php-keyword1">null</span></span>, <span>integer|boolean <var>$sampleRateOrReadData</var> = <span class="php-keyword1">null</span></span>, <span>integer <var>$bitsPerSample</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				<p>WavFile Constructor.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>WavFile Constructor.</p>
+
+<pre><span class="php-var">$wav1</span> = <span class="php-keyword1">new</span> WavFile(<span class="php-num">2</span>, <span class="php-num">44100</span>, <span class="php-num">16</span>);         <span class="php-comment">// new wav with 2 channels, at 44100 samples/sec and 16 bits per sample</span>
+<span class="php-var">$wav2</span> = <span class="php-keyword1">new</span> WavFile(<span class="php-quote">'./audio/sound.wav'</span>);  <span class="php-comment">// open and read wav file</span></pre>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$numChannelsOrFileName</var></dt>
+						<dd>(Optional) If string, the filename of the wav file to open. The number of channels otherwise. Defaults to 1.</dd>
+						<dt><var>$sampleRateOrReadData</var></dt>
+						<dd>(Optional) If opening a file and boolean, decides whether to read the data chunk or not. Defaults to true. The sample rate in samples per second otherwise. 8000 = standard telephone, 16000 = wideband telephone, 32000 = FM radio and 44100 = CD quality. Defaults to 8000.</dd>
+						<dt><var>$bitsPerSample</var></dt>
+						<dd>(Optional) The number of bits per sample. Has to be 8, 16 or 24 for PCM audio or 32 for IEEE FLOAT audio. 8 = telephone, 16 = CD and 24 or 32 = studio quality. Defaults to 8.</dd>
+					</dl></div>
+
+
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-WavFormatException.html">WavFormatException</a></code><br>
+						<code><a href="class-WavFileException.html">WavFileException</a></code>
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="__destruct" id="___destruct">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___destruct">#</a>
+			<code><a href="source-class-WavFile.html#271-273" title="Go to source code">__destruct</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="__clone" id="___clone">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___clone">#</a>
+			<code><a href="source-class-WavFile.html#275-277" title="Go to source code">__clone</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="__toString" id="___toString">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___toString">#</a>
+			<code><a href="source-class-WavFile.html#279-288" title="Go to source code">__toString</a>( )</code>
+
+			<div class="description short">
+				<p>Output the wav file headers and data.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Output the wav file headers and data.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string<br>The encoded file.
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="unpackSample" id="_unpackSample">
+
+			<td class="attributes"><code>
+				 public static
+				integer|float|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_unpackSample">#</a>
+			<code><a href="source-class-WavFile.html#294-338" title="Go to source code">unpackSample</a>( <span>string <var>$sampleBinary</var></span>, <span>integer <var>$bitDepth</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				<p>Unpacks a single binary sample to numeric value.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Unpacks a single binary sample to numeric value.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$sampleBinary</var></dt>
+						<dd>(Required) The sample to decode.</dd>
+						<dt><var>$bitDepth</var></dt>
+						<dd>(Optional) The bits per sample to decode. If omitted, derives it from the length of $sampleBinary.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						integer|float|null<br>The numeric sample value. Float for 32-bit samples. Returns null for unsupported bit depths.
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="packSample" id="_packSample">
+
+			<td class="attributes"><code>
+				 public static
+				string|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_packSample">#</a>
+			<code><a href="source-class-WavFile.html#340-375" title="Go to source code">packSample</a>( <span>integer|float <var>$sample</var></span>, <span>integer <var>$bitDepth</var></span> )</code>
+
+			<div class="description short">
+				<p>Packs a single numeric sample to binary.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Packs a single numeric sample to binary.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$sample</var></dt>
+						<dd>(Required) The sample to encode. Has to be within valid range for $bitDepth. Float values only for 32 bits.</dd>
+						<dt><var>$bitDepth</var></dt>
+						<dd>(Required) The bits per sample to encode with.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						string|null<br>The encoded binary sample. Returns null for unsupported bit depths.
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="unpackSampleBlock" id="_unpackSampleBlock">
+
+			<td class="attributes"><code>
+				 public static
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_unpackSampleBlock">#</a>
+			<code><a href="source-class-WavFile.html#377-398" title="Go to source code">unpackSampleBlock</a>( <span>string <var>$sampleBlock</var></span>, <span>integer <var>$bitDepth</var></span>, <span>integer <var>$numChannels</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				<p>Unpacks a binary sample block to numeric values.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Unpacks a binary sample block to numeric values.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$sampleBlock</var></dt>
+						<dd>(Required) The binary sample block (all channels).</dd>
+						<dt><var>$bitDepth</var></dt>
+						<dd>(Required) The bits per sample to decode.</dd>
+						<dt><var>$numChannels</var></dt>
+						<dd>(Optional) The number of channels to decode. If omitted, derives it from the length of $sampleBlock and $bitDepth.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						array<br>The sample values as an array of integers of floats for 32 bits. First channel is array index 1.
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="packSampleBlock" id="_packSampleBlock">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_packSampleBlock">#</a>
+			<code><a href="source-class-WavFile.html#400-414" title="Go to source code">packSampleBlock</a>( <span>array <var>$samples</var></span>, <span>integer <var>$bitDepth</var></span> )</code>
+
+			<div class="description short">
+				<p>Packs an array of numeric channel samples to a binary sample block.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Packs an array of numeric channel samples to a binary sample block.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$samples</var></dt>
+						<dd>(Required) The array of channel sample values. Expects float values for 32 bits and integer otherwise.</dd>
+						<dt><var>$bitDepth</var></dt>
+						<dd>(Required) The bits per sample to encode with.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						string<br>The encoded binary sample block.
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="normalizeSample" id="_normalizeSample">
+
+			<td class="attributes"><code>
+				 public static
+				float
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_normalizeSample">#</a>
+			<code><a href="source-class-WavFile.html#416-462" title="Go to source code">normalizeSample</a>( <span>float <var>$sampleFloat</var></span>, <span>float <var>$threshold</var></span> )</code>
+
+			<div class="description short">
+				<p>Normalizes a float audio sample. Maximum input range assumed for compression is [-2, 2].
+See http://www.voegler.eu/pub/audio/ for more information.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Normalizes a float audio sample. Maximum input range assumed for compression is [-2, 2].
+See http://www.voegler.eu/pub/audio/ for more information.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$sampleFloat</var></dt>
+						<dd>(Required) The float sample to normalize.</dd>
+						<dt><var>$threshold</var></dt>
+						<dd><p>(Required) The threshold or gain factor for normalizing the amplitude.</p>
+
+<ul>
+    <li> >= 1 - Normalize by multiplying by the threshold (boost - positive gain). <br />
+           A value of 1 in effect means no normalization (and results in clipping). </li>
+    <li> <= -1 - Normalize by dividing by the the absolute value of threshold (attenuate - negative gain). <br />
+           A factor of 2 (-2) is about 6dB reduction in volume.</li>
+    <li> [0, 1) - (open inverval - not including 1) - The threshold
+           above which amplitudes are comressed logarithmically. <br />
+           e.g. 0.6 to leave amplitudes up to 60% "as is" and compress above. </li>
+    <li> (-1, 0) - (open inverval - not including -1 and 0) - The threshold
+           above which amplitudes are comressed linearly. <br />
+           e.g. -0.6 to leave amplitudes up to 60% "as is" and compress above. </li></ul></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						float<br>The normalized sample.
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getActualSize" id="_getActualSize">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getActualSize">#</a>
+			<code><a href="source-class-WavFile.html#468-470" title="Go to source code">getActualSize</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setActualSize" id="_setActualSize">
+
+			<td class="attributes"><code>
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setActualSize">#</a>
+			<code><a href="source-class-WavFile.html#472-481" title="Go to source code">setActualSize</a>( <span>integer <var>$actualSize</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$actualSize</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getChunkSize" id="_getChunkSize">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getChunkSize">#</a>
+			<code><a href="source-class-WavFile.html#483-485" title="Go to source code">getChunkSize</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setChunkSize" id="_setChunkSize">
+
+			<td class="attributes"><code>
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setChunkSize">#</a>
+			<code><a href="source-class-WavFile.html#487-502" title="Go to source code">setChunkSize</a>( <span>integer <var>$chunkSize</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$chunkSize</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getFmtChunkSize" id="_getFmtChunkSize">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getFmtChunkSize">#</a>
+			<code><a href="source-class-WavFile.html#504-506" title="Go to source code">getFmtChunkSize</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setFmtChunkSize" id="_setFmtChunkSize">
+
+			<td class="attributes"><code>
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setFmtChunkSize">#</a>
+			<code><a href="source-class-WavFile.html#508-520" title="Go to source code">setFmtChunkSize</a>( <span>integer <var>$fmtChunkSize</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$fmtChunkSize</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getFmtExtendedSize" id="_getFmtExtendedSize">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getFmtExtendedSize">#</a>
+			<code><a href="source-class-WavFile.html#522-524" title="Go to source code">getFmtExtendedSize</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setFmtExtendedSize" id="_setFmtExtendedSize">
+
+			<td class="attributes"><code>
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setFmtExtendedSize">#</a>
+			<code><a href="source-class-WavFile.html#526-543" title="Go to source code">setFmtExtendedSize</a>( <span>integer <var>$fmtExtendedSize</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$fmtExtendedSize</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getFactChunkSize" id="_getFactChunkSize">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getFactChunkSize">#</a>
+			<code><a href="source-class-WavFile.html#545-547" title="Go to source code">getFactChunkSize</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setFactChunkSize" id="_setFactChunkSize">
+
+			<td class="attributes"><code>
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setFactChunkSize">#</a>
+			<code><a href="source-class-WavFile.html#549-565" title="Go to source code">setFactChunkSize</a>( <span>integer <var>$factChunkSize</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$factChunkSize</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getDataSize" id="_getDataSize">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getDataSize">#</a>
+			<code><a href="source-class-WavFile.html#567-569" title="Go to source code">getDataSize</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setDataSize" id="_setDataSize">
+
+			<td class="attributes"><code>
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setDataSize">#</a>
+			<code><a href="source-class-WavFile.html#571-584" title="Go to source code">setDataSize</a>( <span>integer <var>$dataSize</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$dataSize</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getDataOffset" id="_getDataOffset">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getDataOffset">#</a>
+			<code><a href="source-class-WavFile.html#586-588" title="Go to source code">getDataOffset</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setDataOffset" id="_setDataOffset">
+
+			<td class="attributes"><code>
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setDataOffset">#</a>
+			<code><a href="source-class-WavFile.html#590-603" title="Go to source code">setDataOffset</a>( <span>integer <var>$dataOffset</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$dataOffset</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getAudioFormat" id="_getAudioFormat">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getAudioFormat">#</a>
+			<code><a href="source-class-WavFile.html#605-607" title="Go to source code">getAudioFormat</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setAudioFormat" id="_setAudioFormat">
+
+			<td class="attributes"><code>
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setAudioFormat">#</a>
+			<code><a href="source-class-WavFile.html#609-633" title="Go to source code">setAudioFormat</a>( <span>integer <var>$audioFormat</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$audioFormat</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getAudioSubFormat" id="_getAudioSubFormat">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getAudioSubFormat">#</a>
+			<code><a href="source-class-WavFile.html#635-637" title="Go to source code">getAudioSubFormat</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setAudioSubFormat" id="_setAudioSubFormat">
+
+			<td class="attributes"><code>
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setAudioSubFormat">#</a>
+			<code><a href="source-class-WavFile.html#639-652" title="Go to source code">setAudioSubFormat</a>( <span>integer <var>$audioSubFormat</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$audioSubFormat</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getNumChannels" id="_getNumChannels">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getNumChannels">#</a>
+			<code><a href="source-class-WavFile.html#654-656" title="Go to source code">getNumChannels</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setNumChannels" id="_setNumChannels">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setNumChannels">#</a>
+			<code><a href="source-class-WavFile.html#658-673" title="Go to source code">setNumChannels</a>( <span>integer <var>$numChannels</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$numChannels</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getChannelMask" id="_getChannelMask">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getChannelMask">#</a>
+			<code><a href="source-class-WavFile.html#675-677" title="Go to source code">getChannelMask</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setChannelMask" id="_setChannelMask">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setChannelMask">#</a>
+			<code><a href="source-class-WavFile.html#679-698" title="Go to source code">setChannelMask</a>( <span> <var>$channelMask</var> = self::SPEAKER_DEFAULT</span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getSampleRate" id="_getSampleRate">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getSampleRate">#</a>
+			<code><a href="source-class-WavFile.html#700-702" title="Go to source code">getSampleRate</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setSampleRate" id="_setSampleRate">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setSampleRate">#</a>
+			<code><a href="source-class-WavFile.html#704-716" title="Go to source code">setSampleRate</a>( <span> <var>$sampleRate</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getBitsPerSample" id="_getBitsPerSample">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getBitsPerSample">#</a>
+			<code><a href="source-class-WavFile.html#718-720" title="Go to source code">getBitsPerSample</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setBitsPerSample" id="_setBitsPerSample">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setBitsPerSample">#</a>
+			<code><a href="source-class-WavFile.html#722-736" title="Go to source code">setBitsPerSample</a>( <span> <var>$bitsPerSample</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getValidBitsPerSample" id="_getValidBitsPerSample">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getValidBitsPerSample">#</a>
+			<code><a href="source-class-WavFile.html#738-740" title="Go to source code">getValidBitsPerSample</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setValidBitsPerSample" id="_setValidBitsPerSample">
+
+			<td class="attributes"><code>
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setValidBitsPerSample">#</a>
+			<code><a href="source-class-WavFile.html#742-755" title="Go to source code">setValidBitsPerSample</a>( <span> <var>$validBitsPerSample</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getBlockAlign" id="_getBlockAlign">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getBlockAlign">#</a>
+			<code><a href="source-class-WavFile.html#757-759" title="Go to source code">getBlockAlign</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setBlockAlign" id="_setBlockAlign">
+
+			<td class="attributes"><code>
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setBlockAlign">#</a>
+			<code><a href="source-class-WavFile.html#761-772" title="Go to source code">setBlockAlign</a>( <span>integer <var>$blockAlign</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$blockAlign</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getNumBlocks" id="_getNumBlocks">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getNumBlocks">#</a>
+			<code><a href="source-class-WavFile.html#774-777" title="Go to source code">getNumBlocks</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setNumBlocks" id="_setNumBlocks">
+
+			<td class="attributes"><code>
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setNumBlocks">#</a>
+			<code><a href="source-class-WavFile.html#779-788" title="Go to source code">setNumBlocks</a>( <span>integer <var>$numBlocks</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$numBlocks</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getByteRate" id="_getByteRate">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getByteRate">#</a>
+			<code><a href="source-class-WavFile.html#790-792" title="Go to source code">getByteRate</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setByteRate" id="_setByteRate">
+
+			<td class="attributes"><code>
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setByteRate">#</a>
+			<code><a href="source-class-WavFile.html#794-803" title="Go to source code">setByteRate</a>( <span>integer <var>$byteRate</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$byteRate</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getIgnoreChunkSizes" id="_getIgnoreChunkSizes">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getIgnoreChunkSizes">#</a>
+			<code><a href="source-class-WavFile.html#805-808" title="Go to source code">getIgnoreChunkSizes</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setIgnoreChunkSizes" id="_setIgnoreChunkSizes">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setIgnoreChunkSizes">#</a>
+			<code><a href="source-class-WavFile.html#810-814" title="Go to source code">setIgnoreChunkSizes</a>( <span> <var>$ignoreChunkSizes</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getSamples" id="_getSamples">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getSamples">#</a>
+			<code><a href="source-class-WavFile.html#816-818" title="Go to source code">getSamples</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setSamples" id="_setSamples">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setSamples">#</a>
+			<code><a href="source-class-WavFile.html#820-830" title="Go to source code">setSamples</a>( <span> <var>&amp; $samples</var> = <span class="php-quote">''</span></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getMinAmplitude" id="_getMinAmplitude">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getMinAmplitude">#</a>
+			<code><a href="source-class-WavFile.html#836-845" title="Go to source code">getMinAmplitude</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getZeroAmplitude" id="_getZeroAmplitude">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getZeroAmplitude">#</a>
+			<code><a href="source-class-WavFile.html#847-856" title="Go to source code">getZeroAmplitude</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getMaxAmplitude" id="_getMaxAmplitude">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getMaxAmplitude">#</a>
+			<code><a href="source-class-WavFile.html#858-867" title="Go to source code">getMaxAmplitude</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="makeHeader" id="_makeHeader">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_makeHeader">#</a>
+			<code><a href="source-class-WavFile.html#873-916" title="Go to source code">makeHeader</a>( )</code>
+
+			<div class="description short">
+				<p>Construct a wav header from this object. Includes "fact" chunk if necessary.
+http://www-mmsp.ece.mcgill.ca/documents/audioformats/wave/wave.html</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Construct a wav header from this object. Includes "fact" chunk if necessary.
+http://www-mmsp.ece.mcgill.ca/documents/audioformats/wave/wave.html</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string<br>The RIFF header data.
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getDataSubchunk" id="_getDataSubchunk">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getDataSubchunk">#</a>
+			<code><a href="source-class-WavFile.html#918-936" title="Go to source code">getDataSubchunk</a>( )</code>
+
+			<div class="description short">
+				<p>Construct wav DATA chunk.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Construct wav DATA chunk.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string<br>The DATA header and chunk.
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="save" id="_save">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_save">#</a>
+			<code><a href="source-class-WavFile.html#938-956" title="Go to source code">save</a>( <span>string <var>$filename</var></span> )</code>
+
+			<div class="description short">
+				<p>Save the wav data to a file.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Save the wav data to a file.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$filename</var></dt>
+						<dd>(Required) The file path to save the wav to.</dd>
+					</dl></div>
+
+
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-WavFileException.html">WavFileException</a></code>
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="openWav" id="_openWav">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_openWav">#</a>
+			<code><a href="source-class-WavFile.html#958-986" title="Go to source code">openWav</a>( <span>string <var>$filename</var></span>, <span>boolean <var>$readData</var> = <span class="php-keyword1">true</span></span> )</code>
+
+			<div class="description short">
+				<p>Reads a wav header and data from a file.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Reads a wav header and data from a file.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$filename</var></dt>
+						<dd>(Required) The path to the wav file to read.</dd>
+						<dt><var>$readData</var></dt>
+						<dd>(Optional) If true, also read the data chunk.</dd>
+					</dl></div>
+
+
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-WavFormatException.html">WavFormatException</a></code><br>
+						<code><a href="class-WavFileException.html">WavFileException</a></code>
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="closeWav" id="_closeWav">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_closeWav">#</a>
+			<code><a href="source-class-WavFile.html#988-996" title="Go to source code">closeWav</a>( )</code>
+
+			<div class="description short">
+				<p>Close a with openWav() previously opened wav file or free the buffer of setWavData().
+Not necessary if the data has been read (readData = true) already.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Close a with openWav() previously opened wav file or free the buffer of setWavData().
+Not necessary if the data has been read (readData = true) already.</p>
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setWavData" id="_setWavData">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setWavData">#</a>
+			<code><a href="source-class-WavFile.html#998-1027" title="Go to source code">setWavData</a>( <span>string <var>&amp; $data</var></span>, <span>boolean <var>$free</var> = <span class="php-keyword1">true</span></span> )</code>
+
+			<div class="description short">
+				<p>Set the wav file data and properties from a wav file in a string.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Set the wav file data and properties from a wav file in a string.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$data</var></dt>
+						<dd>(Required) The wav file data. Passed by reference.</dd>
+						<dt><var>$free</var></dt>
+						<dd>(Optional) True to free the passed $data after copying.</dd>
+					</dl></div>
+
+
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-WavFormatException.html">WavFormatException</a></code><br>
+						<code><a href="class-WavFileException.html">WavFileException</a></code>
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="readWav" id="_readWav">
+
+			<td class="attributes"><code>
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_readWav">#</a>
+			<code><a href="source-class-WavFile.html#1029-1052" title="Go to source code">readWav</a>( <span>boolean <var>$readData</var> = <span class="php-keyword1">true</span></span> )</code>
+
+			<div class="description short">
+				<p>Read wav file from a stream.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Read wav file from a stream.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$readData</var></dt>
+						<dd>(Optional) If true, also read the data chunk.</dd>
+					</dl></div>
+
+
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-WavFormatException.html">WavFormatException</a></code><br>
+						<code><a href="class-WavFileException.html">WavFileException</a></code>
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="readWavHeader" id="_readWavHeader">
+
+			<td class="attributes"><code>
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_readWavHeader">#</a>
+			<code><a href="source-class-WavFile.html#1054-1303" title="Go to source code">readWavHeader</a>( )</code>
+
+			<div class="description short">
+				<p>Parse a wav header.
+http://www-mmsp.ece.mcgill.ca/documents/audioformats/wave/wave.html</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parse a wav header.
+http://www-mmsp.ece.mcgill.ca/documents/audioformats/wave/wave.html</p>
+
+
+
+
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-WavFormatException.html">WavFormatException</a></code><br>
+						<code><a href="class-WavFileException.html">WavFileException</a></code>
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="readWavData" id="_readWavData">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_readWavData">#</a>
+			<code><a href="source-class-WavFile.html#1305-1341" title="Go to source code">readWavData</a>( <span>integer <var>$dataOffset</var> = <span class="php-num">0</span></span>, <span>integer <var>$dataSize</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				<p>Read the wav data from the file into the buffer.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Read the wav data from the file into the buffer.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$dataOffset</var></dt>
+						<dd>(Optional) The byte offset to skip before starting to read. Must be a multiple of BlockAlign.</dd>
+						<dt><var>$dataSize</var></dt>
+						<dd>(Optional) The size of the data to read in bytes. Must be a multiple of BlockAlign. Defaults to all data.</dd>
+					</dl></div>
+
+
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-WavFileException.html">WavFileException</a></code>
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getSampleBlock" id="_getSampleBlock">
+
+			<td class="attributes"><code>
+				 public 
+				string|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getSampleBlock">#</a>
+			<code><a href="source-class-WavFile.html#1347-1368" title="Go to source code">getSampleBlock</a>( <span>integer <var>$blockNum</var></span> )</code>
+
+			<div class="description short">
+				<p>Return a single sample block from the file.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Return a single sample block from the file.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$blockNum</var></dt>
+						<dd>(Required) The sample block number. Zero based.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						string|null<br>The binary sample block (all channels). Returns null if the sample block number was out of range.
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setSampleBlock" id="_setSampleBlock">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setSampleBlock">#</a>
+			<code><a href="source-class-WavFile.html#1370-1413" title="Go to source code">setSampleBlock</a>( <span>string <var>$sampleBlock</var></span>, <span>integer <var>$blockNum</var></span> )</code>
+
+			<div class="description short">
+				<p>Set a single sample block. <br />
+Allows to append a sample block.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Set a single sample block. <br />
+Allows to append a sample block.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$sampleBlock</var></dt>
+						<dd>(Required) The binary sample block (all channels).</dd>
+						<dt><var>$blockNum</var></dt>
+						<dd>(Required) The sample block number. Zero based.</dd>
+					</dl></div>
+
+
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-WavFileException.html">WavFileException</a></code>
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getSampleValue" id="_getSampleValue">
+
+			<td class="attributes"><code>
+				 public 
+				float|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getSampleValue">#</a>
+			<code><a href="source-class-WavFile.html#1415-1475" title="Go to source code">getSampleValue</a>( <span>integer <var>$blockNum</var></span>, <span>integer <var>$channelNum</var></span> )</code>
+
+			<div class="description short">
+				<p>Get a float sample value for a specific sample block and channel number.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Get a float sample value for a specific sample block and channel number.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$blockNum</var></dt>
+						<dd>(Required) The sample block number to fetch. Zero based.</dd>
+						<dt><var>$channelNum</var></dt>
+						<dd>(Required) The channel number within the sample block to fetch. First channel is 1.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						float|null<br>The float sample value. Returns null if the sample block number was out of range.
+					</div>
+
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-WavFileException.html">WavFileException</a></code>
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setSampleValue" id="_setSampleValue">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setSampleValue">#</a>
+			<code><a href="source-class-WavFile.html#1477-1574" title="Go to source code">setSampleValue</a>( <span>float <var>$sampleFloat</var></span>, <span>integer <var>$blockNum</var></span>, <span>integer <var>$channelNum</var></span> )</code>
+
+			<div class="description short">
+				<p>Sets a float sample value for a specific sample block number and channel. <br />
+Converts float values to appropriate integer values and clips properly. <br />
+Allows to append samples (in order).</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Sets a float sample value for a specific sample block number and channel. <br />
+Converts float values to appropriate integer values and clips properly. <br />
+Allows to append samples (in order).</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$sampleFloat</var></dt>
+						<dd>(Required) The float sample value to set. Converts float values and clips if necessary.</dd>
+						<dt><var>$blockNum</var></dt>
+						<dd>(Required) The sample block number to set or append. Zero based.</dd>
+						<dt><var>$channelNum</var></dt>
+						<dd>(Required) The channel number within the sample block to set or append. First channel is 1.</dd>
+					</dl></div>
+
+
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-WavFileException.html">WavFileException</a></code>
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="filter" id="_filter">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_filter">#</a>
+			<code><a href="source-class-WavFile.html#1580-1718" title="Go to source code">filter</a>( <span>array <var>$filters</var></span>, <span>integer <var>$blockOffset</var> = <span class="php-num">0</span></span>, <span>integer <var>$numBlocks</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				<p>Run samples through audio processing filters.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Run samples through audio processing filters.</p>
+
+<pre><span class="php-var">$wav</span>-&gt;filter(
+     <span class="php-keyword1">array</span>(
+         WavFile::FILTER_MIX =&gt; <span class="php-keyword1">array</span>(          <span class="php-comment">// Filter for mixing 2 WavFile instances.</span>
+             <span class="php-quote">'wav'</span> =&gt; <span class="php-var">$wav2</span>,                    <span class="php-comment">// (Required) The WavFile to mix into this WhavFile. If no optional arguments are given, can be passed without the array.</span>
+             <span class="php-quote">'loop'</span> =&gt; <span class="php-keyword1">true</span>,                    <span class="php-comment">// (Optional) Loop the selected portion (with warping to the beginning at the end).</span>
+             <span class="php-quote">'blockOffset'</span> =&gt; <span class="php-num">0</span>,                <span class="php-comment">// (Optional) Block number to start mixing from.</span>
+             <span class="php-quote">'numBlocks'</span> =&gt; <span class="php-keyword1">null</span>                <span class="php-comment">// (Optional) Number of blocks to mix in or to select for looping. Defaults to the end or all data for looping.</span>
+         ),
+         WavFile::FILTER_NORMALIZE =&gt; <span class="php-num">0.6</span>,      <span class="php-comment">// (Required) Normalization of (mixed) audio samples - see threshold parameter for normalizeSample().</span>
+         WavFile::FILTER_DEGRADE =&gt; <span class="php-num">0.9</span>         <span class="php-comment">// (Required) Introduce random noise. The quality relative to the amplitude. 1 = no noise, 0 = max. noise.</span>
+         WavFile::FILTER_VOLUME =&gt; <span class="php-num">1.0</span>          <span class="php-comment">// (Required) Amplify or attenuate the audio signal.  Beware of clipping when amplifying.  Values range from &gt;= 0 - &lt;= 2.  1 = no change in volume; 0.5 = 50% reduction of volume; 1.5 = 150% increase in volume.</span>
+     ),
+     <span class="php-num">0</span>,                                         <span class="php-comment">// (Optional) The block number of this WavFile to start with.</span>
+     <span class="php-keyword1">null</span>                                       <span class="php-comment">// (Optional) The number of blocks to process.</span>
+ );</pre>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$filters</var></dt>
+						<dd>(Required) An array of 1 or more audio processing filters.</dd>
+						<dt><var>$blockOffset</var></dt>
+						<dd>(Optional) The block number to start precessing from.</dd>
+						<dt><var>$numBlocks</var></dt>
+						<dd>(Optional) The maximum  number of blocks to process.</dd>
+					</dl></div>
+
+
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-WavFileException.html">WavFileException</a></code>
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="appendWav" id="_appendWav">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_appendWav">#</a>
+			<code><a href="source-class-WavFile.html#1720-1741" title="Go to source code">appendWav</a>( <span><code><a href="class-WavFile.html">WavFile</a></code> <var>$wav</var></span> )</code>
+
+			<div class="description short">
+				<p>Append a wav file to the current wav. <br />
+The wav files must have the same sample rate, number of bits per sample, and number of channels.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Append a wav file to the current wav. <br />
+The wav files must have the same sample rate, number of bits per sample, and number of channels.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$wav</var></dt>
+						<dd>(Required) The wav file to append.</dd>
+					</dl></div>
+
+
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-WavFileException.html">WavFileException</a></code>
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="mergeWav" id="_mergeWav">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_mergeWav">#</a>
+			<code><a href="source-class-WavFile.html#1743-1756" title="Go to source code">mergeWav</a>( <span><code><a href="class-WavFile.html">WavFile</a></code> <var>$wav</var></span>, <span>float <var>$normalizeThreshold</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				<p>Mix 2 wav files together. <br />
+Both wavs must have the same sample rate and same number of channels.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Mix 2 wav files together. <br />
+Both wavs must have the same sample rate and same number of channels.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$wav</var></dt>
+						<dd>(Required) The WavFile to mix.</dd>
+						<dt><var>$normalizeThreshold</var></dt>
+						<dd>(Optional) See normalizeSample for an explanation.</dd>
+					</dl></div>
+
+
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-WavFileException.html">WavFileException</a></code>
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="insertSilence" id="_insertSilence">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_insertSilence">#</a>
+			<code><a href="source-class-WavFile.html#1758-1778" title="Go to source code">insertSilence</a>( <span>float <var>$duration</var> = <span class="php-num">1.0</span></span> )</code>
+
+			<div class="description short">
+				<p>Add silence to the wav file.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Add silence to the wav file.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$duration</var></dt>
+						<dd>(Optional) How many seconds of silence. If negative, add to the beginning of the file. Defaults to 1s.</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="degrade" id="_degrade">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_degrade">#</a>
+			<code><a href="source-class-WavFile.html#1780-1790" title="Go to source code">degrade</a>( <span>float <var>$quality</var> = <span class="php-num">1.0</span></span> )</code>
+
+			<div class="description short">
+				<p>Degrade the quality of the wav file by introducing random noise.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Degrade the quality of the wav file by introducing random noise.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$quality</var></dt>
+						<dd>(Optional) The quality relative to the amplitude. 1 = no noise, 0 = max. noise.</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="generateNoise" id="_generateNoise">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_generateNoise">#</a>
+			<code><a href="source-class-WavFile.html#1792-1820" title="Go to source code">generateNoise</a>( <span>float <var>$duration</var> = <span class="php-num">1.0</span></span>, <span>float <var>$percent</var> = <span class="php-num">100</span></span> )</code>
+
+			<div class="description short">
+				<p>Generate noise at the end of the wav for the specified duration and volume.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Generate noise at the end of the wav for the specified duration and volume.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$duration</var></dt>
+						<dd>(Optional) Number of seconds of noise to generate.</dd>
+						<dt><var>$percent</var></dt>
+						<dd>(Optional) The percentage of the maximum amplitude to use. 100 = full amplitude.</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="convertBitsPerSample" id="_convertBitsPerSample">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_convertBitsPerSample">#</a>
+			<code><a href="source-class-WavFile.html#1822-1846" title="Go to source code">convertBitsPerSample</a>( <span>integer <var>$bitsPerSample</var></span> )</code>
+
+			<div class="description short">
+				<p>Convert sample data to different bits per sample.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Convert sample data to different bits per sample.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$bitsPerSample</var></dt>
+						<dd>(Required) The new number of bits per sample;</dd>
+					</dl></div>
+
+
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-WavFileException.html">WavFileException</a></code>
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="displayInfo" id="_displayInfo">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_displayInfo">#</a>
+			<code><a href="source-class-WavFile.html#1852-1898" title="Go to source code">displayInfo</a>( )</code>
+
+			<div class="description short">
+				<p>Output information about the wav object.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Output information about the wav object.</p>
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+			</table>
+		</div>
+
+
+
+
+
+
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h2>Constants summary</h2></div>
+			<table class="summary table table-bordered table-striped constants" id="constants">
+			<tr data-order="FILTER_MIX" id="FILTER_MIX">
+
+				<td class="attributes"><code>integer</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-WavFile.html#82-83" title="Go to source code"><b>FILTER_MIX</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#FILTER_MIX" class="anchor">#</a>
+						<code><span class="php-num">0x01</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="FILTER_NORMALIZE" id="FILTER_NORMALIZE">
+
+				<td class="attributes"><code>integer</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-WavFile.html#85-86" title="Go to source code"><b>FILTER_NORMALIZE</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#FILTER_NORMALIZE" class="anchor">#</a>
+						<code><span class="php-num">0x02</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="FILTER_DEGRADE" id="FILTER_DEGRADE">
+
+				<td class="attributes"><code>integer</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-WavFile.html#88-89" title="Go to source code"><b>FILTER_DEGRADE</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#FILTER_DEGRADE" class="anchor">#</a>
+						<code><span class="php-num">0x04</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="FILTER_VOLUME" id="FILTER_VOLUME">
+
+				<td class="attributes"><code>integer</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-WavFile.html#91-92" title="Go to source code"><b>FILTER_VOLUME</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#FILTER_VOLUME" class="anchor">#</a>
+						<code><span class="php-num">0x08</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="MAX_CHANNEL" id="MAX_CHANNEL">
+
+				<td class="attributes"><code>integer</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-WavFile.html#94-95" title="Go to source code"><b>MAX_CHANNEL</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#MAX_CHANNEL" class="anchor">#</a>
+						<code><span class="php-num">18</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="MAX_SAMPLERATE" id="MAX_SAMPLERATE">
+
+				<td class="attributes"><code>integer</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-WavFile.html#97-98" title="Go to source code"><b>MAX_SAMPLERATE</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#MAX_SAMPLERATE" class="anchor">#</a>
+						<code><span class="php-num">192000</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="SPEAKER_DEFAULT" id="SPEAKER_DEFAULT">
+
+				<td class="attributes"><code>integer</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-WavFile.html#100-101" title="Go to source code"><b>SPEAKER_DEFAULT</b></a>
+					</code>
+
+					<div class="description short">
+						<p>Channel Locations for ChannelMask</p>
+					</div>
+
+					<div class="description detailed hidden">
+						<p>Channel Locations for ChannelMask</p>
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#SPEAKER_DEFAULT" class="anchor">#</a>
+						<code><span class="php-num">0x000000</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="SPEAKER_FRONT_LEFT" id="SPEAKER_FRONT_LEFT">
+
+				<td class="attributes"><code>integer</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-WavFile.html#102" title="Go to source code"><b>SPEAKER_FRONT_LEFT</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#SPEAKER_FRONT_LEFT" class="anchor">#</a>
+						<code><span class="php-num">0x000001</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="SPEAKER_FRONT_RIGHT" id="SPEAKER_FRONT_RIGHT">
+
+				<td class="attributes"><code>integer</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-WavFile.html#103" title="Go to source code"><b>SPEAKER_FRONT_RIGHT</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#SPEAKER_FRONT_RIGHT" class="anchor">#</a>
+						<code><span class="php-num">0x000002</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="SPEAKER_FRONT_CENTER" id="SPEAKER_FRONT_CENTER">
+
+				<td class="attributes"><code>integer</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-WavFile.html#104" title="Go to source code"><b>SPEAKER_FRONT_CENTER</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#SPEAKER_FRONT_CENTER" class="anchor">#</a>
+						<code><span class="php-num">0x000004</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="SPEAKER_LOW_FREQUENCY" id="SPEAKER_LOW_FREQUENCY">
+
+				<td class="attributes"><code>integer</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-WavFile.html#105" title="Go to source code"><b>SPEAKER_LOW_FREQUENCY</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#SPEAKER_LOW_FREQUENCY" class="anchor">#</a>
+						<code><span class="php-num">0x000008</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="SPEAKER_BACK_LEFT" id="SPEAKER_BACK_LEFT">
+
+				<td class="attributes"><code>integer</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-WavFile.html#106" title="Go to source code"><b>SPEAKER_BACK_LEFT</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#SPEAKER_BACK_LEFT" class="anchor">#</a>
+						<code><span class="php-num">0x000010</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="SPEAKER_BACK_RIGHT" id="SPEAKER_BACK_RIGHT">
+
+				<td class="attributes"><code>integer</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-WavFile.html#107" title="Go to source code"><b>SPEAKER_BACK_RIGHT</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#SPEAKER_BACK_RIGHT" class="anchor">#</a>
+						<code><span class="php-num">0x000020</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="SPEAKER_FRONT_LEFT_OF_CENTER" id="SPEAKER_FRONT_LEFT_OF_CENTER">
+
+				<td class="attributes"><code>integer</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-WavFile.html#108" title="Go to source code"><b>SPEAKER_FRONT_LEFT_OF_CENTER</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#SPEAKER_FRONT_LEFT_OF_CENTER" class="anchor">#</a>
+						<code><span class="php-num">0x000040</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="SPEAKER_FRONT_RIGHT_OF_CENTER" id="SPEAKER_FRONT_RIGHT_OF_CENTER">
+
+				<td class="attributes"><code>integer</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-WavFile.html#109" title="Go to source code"><b>SPEAKER_FRONT_RIGHT_OF_CENTER</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#SPEAKER_FRONT_RIGHT_OF_CENTER" class="anchor">#</a>
+						<code><span class="php-num">0x000080</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="SPEAKER_BACK_CENTER" id="SPEAKER_BACK_CENTER">
+
+				<td class="attributes"><code>integer</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-WavFile.html#110" title="Go to source code"><b>SPEAKER_BACK_CENTER</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#SPEAKER_BACK_CENTER" class="anchor">#</a>
+						<code><span class="php-num">0x000100</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="SPEAKER_SIDE_LEFT" id="SPEAKER_SIDE_LEFT">
+
+				<td class="attributes"><code>integer</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-WavFile.html#111" title="Go to source code"><b>SPEAKER_SIDE_LEFT</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#SPEAKER_SIDE_LEFT" class="anchor">#</a>
+						<code><span class="php-num">0x000200</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="SPEAKER_SIDE_RIGHT" id="SPEAKER_SIDE_RIGHT">
+
+				<td class="attributes"><code>integer</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-WavFile.html#112" title="Go to source code"><b>SPEAKER_SIDE_RIGHT</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#SPEAKER_SIDE_RIGHT" class="anchor">#</a>
+						<code><span class="php-num">0x000400</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="SPEAKER_TOP_CENTER" id="SPEAKER_TOP_CENTER">
+
+				<td class="attributes"><code>integer</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-WavFile.html#113" title="Go to source code"><b>SPEAKER_TOP_CENTER</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#SPEAKER_TOP_CENTER" class="anchor">#</a>
+						<code><span class="php-num">0x000800</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="SPEAKER_TOP_FRONT_LEFT" id="SPEAKER_TOP_FRONT_LEFT">
+
+				<td class="attributes"><code>integer</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-WavFile.html#114" title="Go to source code"><b>SPEAKER_TOP_FRONT_LEFT</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#SPEAKER_TOP_FRONT_LEFT" class="anchor">#</a>
+						<code><span class="php-num">0x001000</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="SPEAKER_TOP_FRONT_CENTER" id="SPEAKER_TOP_FRONT_CENTER">
+
+				<td class="attributes"><code>integer</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-WavFile.html#115" title="Go to source code"><b>SPEAKER_TOP_FRONT_CENTER</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#SPEAKER_TOP_FRONT_CENTER" class="anchor">#</a>
+						<code><span class="php-num">0x002000</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="SPEAKER_TOP_FRONT_RIGHT" id="SPEAKER_TOP_FRONT_RIGHT">
+
+				<td class="attributes"><code>integer</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-WavFile.html#116" title="Go to source code"><b>SPEAKER_TOP_FRONT_RIGHT</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#SPEAKER_TOP_FRONT_RIGHT" class="anchor">#</a>
+						<code><span class="php-num">0x004000</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="SPEAKER_TOP_BACK_LEFT" id="SPEAKER_TOP_BACK_LEFT">
+
+				<td class="attributes"><code>integer</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-WavFile.html#117" title="Go to source code"><b>SPEAKER_TOP_BACK_LEFT</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#SPEAKER_TOP_BACK_LEFT" class="anchor">#</a>
+						<code><span class="php-num">0x008000</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="SPEAKER_TOP_BACK_CENTER" id="SPEAKER_TOP_BACK_CENTER">
+
+				<td class="attributes"><code>integer</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-WavFile.html#118" title="Go to source code"><b>SPEAKER_TOP_BACK_CENTER</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#SPEAKER_TOP_BACK_CENTER" class="anchor">#</a>
+						<code><span class="php-num">0x010000</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="SPEAKER_TOP_BACK_RIGHT" id="SPEAKER_TOP_BACK_RIGHT">
+
+				<td class="attributes"><code>integer</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-WavFile.html#119" title="Go to source code"><b>SPEAKER_TOP_BACK_RIGHT</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#SPEAKER_TOP_BACK_RIGHT" class="anchor">#</a>
+						<code><span class="php-num">0x020000</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="SPEAKER_ALL" id="SPEAKER_ALL">
+
+				<td class="attributes"><code>integer</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-WavFile.html#120" title="Go to source code"><b>SPEAKER_ALL</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#SPEAKER_ALL" class="anchor">#</a>
+						<code><span class="php-num">0x03FFFF</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="WAVE_FORMAT_PCM" id="WAVE_FORMAT_PCM">
+
+				<td class="attributes"><code>integer</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-WavFile.html#122-123" title="Go to source code"><b>WAVE_FORMAT_PCM</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#WAVE_FORMAT_PCM" class="anchor">#</a>
+						<code><span class="php-num">0x0001</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="WAVE_FORMAT_IEEE_FLOAT" id="WAVE_FORMAT_IEEE_FLOAT">
+
+				<td class="attributes"><code>integer</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-WavFile.html#125-126" title="Go to source code"><b>WAVE_FORMAT_IEEE_FLOAT</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#WAVE_FORMAT_IEEE_FLOAT" class="anchor">#</a>
+						<code><span class="php-num">0x0003</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="WAVE_FORMAT_EXTENSIBLE" id="WAVE_FORMAT_EXTENSIBLE">
+
+				<td class="attributes"><code>integer</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-WavFile.html#128-129" title="Go to source code"><b>WAVE_FORMAT_EXTENSIBLE</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#WAVE_FORMAT_EXTENSIBLE" class="anchor">#</a>
+						<code><span class="php-num">0xFFFE</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="WAVE_SUBFORMAT_PCM" id="WAVE_SUBFORMAT_PCM">
+
+				<td class="attributes"><code>string</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-WavFile.html#131-132" title="Go to source code"><b>WAVE_SUBFORMAT_PCM</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#WAVE_SUBFORMAT_PCM" class="anchor">#</a>
+						<code><span class="php-quote">&quot;0100000000001000800000aa00389b71&quot;</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="WAVE_SUBFORMAT_IEEE_FLOAT" id="WAVE_SUBFORMAT_IEEE_FLOAT">
+
+				<td class="attributes"><code>string</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-WavFile.html#134-135" title="Go to source code"><b>WAVE_SUBFORMAT_IEEE_FLOAT</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#WAVE_SUBFORMAT_IEEE_FLOAT" class="anchor">#</a>
+						<code><span class="php-quote">&quot;0300000000001000800000aa00389b71&quot;</span></code>
+					</div>
+				</td>
+			</tr>
+			</table>
+		</div>
+
+
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h2>Properties summary</h2></div>
+			<table class="summary table table-bordered table-striped properties" id="properties">
+		<tr data-order="LOOKUP_LOGBASE" id="$LOOKUP_LOGBASE">
+			<td class="attributes"><code>
+				protected static 
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-WavFile.html#141-149" title="Go to source code"><var>$LOOKUP_LOGBASE</var></a>
+
+				<div class="description short">
+					<p>Log base modifier lookup table for a given threshold (in 0.05 steps) used by normalizeSample.
+Adjusts the slope (1st derivative) of the log function at the threshold to 1 for a smooth transition
+from linear to logarithmic amplitude output.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Log base modifier lookup table for a given threshold (in 0.05 steps) used by normalizeSample.
+Adjusts the slope (1st derivative) of the log function at the threshold to 1 for a smooth transition
+from linear to logarithmic amplitude output.</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$LOOKUP_LOGBASE" class="anchor">#</a>
+					<code><span class="php-keyword1">array</span>(
+    <span class="php-num">2.513</span>, <span class="php-num">2.667</span>, <span class="php-num">2.841</span>, <span class="php-num">3.038</span>, <span class="php-num">3.262</span>,
+    <span class="php-num">3.520</span>, <span class="php-num">3.819</span>, <span class="php-num">4.171</span>, <span class="php-num">4.589</span>, <span class="php-num">5.093</span>,
+    <span class="php-num">5.711</span>, <span class="php-num">6.487</span>, <span class="php-num">7.483</span>, <span class="php-num">8.806</span>, <span class="php-num">10.634</span>,
+    <span class="php-num">13.302</span>, <span class="php-num">17.510</span>, <span class="php-num">24.970</span>, <span class="php-num">41.155</span>, <span class="php-num">96.088</span>
+)</code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="_actualSize" id="$_actualSize">
+			<td class="attributes"><code>
+				protected  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-WavFile.html#151-152" title="Go to source code"><var>$_actualSize</var></a>
+
+				<div class="description short">
+					<p>The actual physical file size</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>The actual physical file size</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$_actualSize" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="_chunkSize" id="$_chunkSize">
+			<td class="attributes"><code>
+				protected  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-WavFile.html#154-155" title="Go to source code"><var>$_chunkSize</var></a>
+
+				<div class="description short">
+					<p>The size of the file in RIFF header</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>The size of the file in RIFF header</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$_chunkSize" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="_fmtChunkSize" id="$_fmtChunkSize">
+			<td class="attributes"><code>
+				protected  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-WavFile.html#157-158" title="Go to source code"><var>$_fmtChunkSize</var></a>
+
+				<div class="description short">
+					<p>The size of the "fmt " chunk</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>The size of the "fmt " chunk</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$_fmtChunkSize" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="_fmtExtendedSize" id="$_fmtExtendedSize">
+			<td class="attributes"><code>
+				protected  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-WavFile.html#160-161" title="Go to source code"><var>$_fmtExtendedSize</var></a>
+
+				<div class="description short">
+					<p>The size of the extended "fmt " data</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>The size of the extended "fmt " data</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$_fmtExtendedSize" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="_factChunkSize" id="$_factChunkSize">
+			<td class="attributes"><code>
+				protected  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-WavFile.html#163-164" title="Go to source code"><var>$_factChunkSize</var></a>
+
+				<div class="description short">
+					<p>The size of the "fact" chunk</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>The size of the "fact" chunk</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$_factChunkSize" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="_dataSize" id="$_dataSize">
+			<td class="attributes"><code>
+				protected  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-WavFile.html#166-167" title="Go to source code"><var>$_dataSize</var></a>
+
+				<div class="description short">
+					<p>Size of the data chunk</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Size of the data chunk</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$_dataSize" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="_dataSize_fp" id="$_dataSize_fp">
+			<td class="attributes"><code>
+				protected  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-WavFile.html#169-170" title="Go to source code"><var>$_dataSize_fp</var></a>
+
+				<div class="description short">
+					<p>Size of the data chunk in the opened wav file</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Size of the data chunk in the opened wav file</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$_dataSize_fp" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="_dataSize_valid" id="$_dataSize_valid">
+			<td class="attributes"><code>
+				protected  
+				boolean
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-WavFile.html#172-173" title="Go to source code"><var>$_dataSize_valid</var></a>
+
+				<div class="description short">
+					<p>Does _dataSize really reflect strlen($_samples)? Case when a wav file is read with readData = false</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Does _dataSize really reflect strlen($_samples)? Case when a wav file is read with readData = false</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$_dataSize_valid" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="_dataOffset" id="$_dataOffset">
+			<td class="attributes"><code>
+				protected  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-WavFile.html#175-176" title="Go to source code"><var>$_dataOffset</var></a>
+
+				<div class="description short">
+					<p>Starting offset of data chunk</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Starting offset of data chunk</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$_dataOffset" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="_audioFormat" id="$_audioFormat">
+			<td class="attributes"><code>
+				protected  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-WavFile.html#178-179" title="Go to source code"><var>$_audioFormat</var></a>
+
+				<div class="description short">
+					<p>The audio format - WavFile::WAVE_FORMAT_*</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>The audio format - WavFile::WAVE_FORMAT_*</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$_audioFormat" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="_audioSubFormat" id="$_audioSubFormat">
+			<td class="attributes"><code>
+				protected  
+				integer|string|null
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-WavFile.html#181-182" title="Go to source code"><var>$_audioSubFormat</var></a>
+
+				<div class="description short">
+					<p>The audio subformat - WavFile::WAVE_SUBFORMAT_*</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>The audio subformat - WavFile::WAVE_SUBFORMAT_*</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$_audioSubFormat" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="_numChannels" id="$_numChannels">
+			<td class="attributes"><code>
+				protected  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-WavFile.html#184-185" title="Go to source code"><var>$_numChannels</var></a>
+
+				<div class="description short">
+					<p>Number of channels in the audio file</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Number of channels in the audio file</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$_numChannels" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="_channelMask" id="$_channelMask">
+			<td class="attributes"><code>
+				protected  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-WavFile.html#187-188" title="Go to source code"><var>$_channelMask</var></a>
+
+				<div class="description short">
+					<p>The channel mask</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>The channel mask</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$_channelMask" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="_sampleRate" id="$_sampleRate">
+			<td class="attributes"><code>
+				protected  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-WavFile.html#190-191" title="Go to source code"><var>$_sampleRate</var></a>
+
+				<div class="description short">
+					<p>Samples per second</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Samples per second</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$_sampleRate" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="_bitsPerSample" id="$_bitsPerSample">
+			<td class="attributes"><code>
+				protected  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-WavFile.html#193-194" title="Go to source code"><var>$_bitsPerSample</var></a>
+
+				<div class="description short">
+					<p>Number of bits per sample</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Number of bits per sample</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$_bitsPerSample" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="_validBitsPerSample" id="$_validBitsPerSample">
+			<td class="attributes"><code>
+				protected  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-WavFile.html#196-197" title="Go to source code"><var>$_validBitsPerSample</var></a>
+
+				<div class="description short">
+					<p>Number of valid bits per sample</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Number of valid bits per sample</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$_validBitsPerSample" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="_blockAlign" id="$_blockAlign">
+			<td class="attributes"><code>
+				protected  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-WavFile.html#199-200" title="Go to source code"><var>$_blockAlign</var></a>
+
+				<div class="description short">
+					<p>NumChannels * BitsPerSample/8</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>NumChannels * BitsPerSample/8</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$_blockAlign" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="_numBlocks" id="$_numBlocks">
+			<td class="attributes"><code>
+				protected  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-WavFile.html#202-203" title="Go to source code"><var>$_numBlocks</var></a>
+
+				<div class="description short">
+					<p>Number of sample blocks</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Number of sample blocks</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$_numBlocks" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="_byteRate" id="$_byteRate">
+			<td class="attributes"><code>
+				protected  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-WavFile.html#205-206" title="Go to source code"><var>$_byteRate</var></a>
+
+				<div class="description short">
+					<p>Bytes per second</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Bytes per second</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$_byteRate" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="_ignoreChunkSizes" id="$_ignoreChunkSizes">
+			<td class="attributes"><code>
+				protected  
+				boolean
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-WavFile.html#208-209" title="Go to source code"><var>$_ignoreChunkSizes</var></a>
+
+				<div class="description short">
+					<p>Ignore chunk sizes when reading wav data (useful when reading data from a stream where chunk sizes contain dummy values)</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Ignore chunk sizes when reading wav data (useful when reading data from a stream where chunk sizes contain dummy values)</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$_ignoreChunkSizes" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="_samples" id="$_samples">
+			<td class="attributes"><code>
+				protected  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-WavFile.html#211-212" title="Go to source code"><var>$_samples</var></a>
+
+				<div class="description short">
+					<p>Binary string of samples</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Binary string of samples</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$_samples" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="_fp" id="$_fp">
+			<td class="attributes"><code>
+				protected  
+				resource|null
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-WavFile.html#214-215" title="Go to source code"><var>$_fp</var></a>
+
+				<div class="description short">
+					<p>The file pointer used for reading wavs from file or memory</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>The file pointer used for reading wavs from file or memory</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$_fp" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+			</table>
+		</div>
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		Admidio API API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

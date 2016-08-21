@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class TCPDF_IMPORT | Admidio API</title>
+
+	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
+	<link rel="stylesheet" href="resources/style.css?70c1d062672daa3f906b72e4f5d03d4bc5c4174d">
+
+</head>
+
+<body>
+	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">Admidio API</a>
+			</div>
+			<div class="collapse navbar-collapse">
+
+                <form id="search" class="navbar-form navbar-left" role="search">
+                    <input type="hidden" name="cx" value="">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <div class="form-group">
+                        <input type="text" name="q" class="search-query form-control" placeholder="Search">
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav">
+					<li>
+<span>Package</span>					</li>
+					<li class="active">
+<span>Class</span>					</li>
+
+					<li class="divider-vertical"></li>
+
+					<li>
+						<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+					</li>
+
+						<li>
+							<a href="annotation-group-deprecated.html" title="List of elements with deprecated annotation">
+								<span>Deprecated</span>
+							</a>
+						</li>
+						<li>
+							<a href="annotation-group-todo.html" title="List of elements with todo annotation">
+								<span>Todo</span>
+							</a>
+						</li>
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="left">
+	<div id="menu">
+
+		<div id="groups">
+				<h3>Packages</h3>
+			<ul>
+					<li>
+						<a href="package-com.html">
+							com<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="package-com.tecnick.html">
+							tecnick<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="package-com.tecnick.tcpdf.html">
+							tcpdf						</a>
+							</li>
+								</ul></li></ul></li>
+					<li>
+						<a href="package-None.html">
+							None						</a>
+							</li>
+					<li>
+						<a href="package-PHPMailer.html">
+							PHPMailer<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="package-phpmailer.easypeasyics.html">
+							easypeasyics						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="package-PHPWavUtils.html">
+							PHPWavUtils						</a>
+							</li>
+					<li>
+						<a href="package-Securimage.html">
+							Securimage<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="package-Securimage.classes.html">
+							classes						</a>
+							</li>
+								</ul></li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Datamatrix.html">Datamatrix</a></li>
+				<li><a href="class-PDF417.html">PDF417</a></li>
+				<li><a href="class-QRcode.html">QRcode</a></li>
+				<li><a href="class-TCPDF.html">TCPDF</a></li>
+				<li><a href="class-TCPDF2DBarcode.html">TCPDF2DBarcode</a></li>
+				<li><a href="class-TCPDF_COLORS.html">TCPDF_COLORS</a></li>
+				<li><a href="class-TCPDF_FILTERS.html">TCPDF_FILTERS</a></li>
+				<li><a href="class-TCPDF_FONT_DATA.html">TCPDF_FONT_DATA</a></li>
+				<li><a href="class-TCPDF_FONTS.html">TCPDF_FONTS</a></li>
+				<li><a href="class-TCPDF_IMAGES.html">TCPDF_IMAGES</a></li>
+				<li class="active"><a href="class-TCPDF_IMPORT.html">TCPDF_IMPORT</a></li>
+				<li><a href="class-TCPDF_PARSER.html">TCPDF_PARSER</a></li>
+				<li><a href="class-TCPDF_STATIC.html">TCPDF_STATIC</a></li>
+				<li><a href="class-TCPDFBarcode.html">TCPDFBarcode</a></li>
+			</ul>
+
+
+
+
+
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-str_split.html">str_split</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class TCPDF_IMPORT</h1>
+
+
+
+	<dl class="tree well">
+		<dd style="padding-left:0px">
+			<a href="class-TCPDF.html"><span>TCPDF</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>TCPDF_IMPORT</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		
+		<b>Package:</b> <a href="package-com.html">com</a>\<a href="package-com.tecnick.html">tecnick</a>\<a href="package-com.tecnick.tcpdf.html">tcpdf</a><br>
+
+				<b>Author:</b>
+				Nicola Asuni - info@tecnick.com<br>
+				<b>Version:</b>
+				1.0.001<br>
+				<b>Brief:</b>
+				PHP class extension of the TCPDF library to import existing PDF documents.<br>
+				<b>Class:</b>
+				<p>TCPDF_IMPORT
+!!! THIS CLASS IS UNDER DEVELOPMENT !!!
+PHP class extension of the TCPDF (http://www.tcpdf.org) library to import existing PDF documents.<br></p><br>
+			<b>Located at</b> <a href="source-class-TCPDF_IMPORT.html#50-100" title="Go to source code">tcpdf_import.php</a>
+		<br>
+	</div>
+
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading"><h2>Methods summary</h2></div>
+			<table class="summary table table-bordered table-striped methods" id="methods">
+		<tr data-order="importPDF" id="_importPDF">
+
+			<td class="attributes"><code>
+				 public 
+				true
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_importPDF">#</a>
+			<code><a href="source-class-TCPDF_IMPORT.html#61-98" title="Go to source code">importPDF</a>( <span> <var>$filename</var></span> )</code>
+
+			<div class="description short">
+				<p>Import an existing PDF document</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Import an existing PDF document</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$filename</var></dt>
+						<dd>Filename of the PDF document to import.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						true<br>in case of success, false otherwise
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							1.0.000 (2011-05-24)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+			</table>
+		</div>
+
+		<div class="panel panel-default">
+	        <div class="panel-heading"><h3>Methods inherited from <a href="class-TCPDF.html#methods">TCPDF</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-TCPDF.html#_AcceptPageBreak">AcceptPageBreak()</a></code>, 
+				<code><a href="class-TCPDF.html#_AddFont">AddFont()</a></code>, 
+				<code><a href="class-TCPDF.html#_AddLink">AddLink()</a></code>, 
+				<code><a href="class-TCPDF.html#_AddPage">AddPage()</a></code>, 
+				<code><a href="class-TCPDF.html#_AddSpotColor">AddSpotColor()</a></code>, 
+				<code><a href="class-TCPDF.html#_Annotation">Annotation()</a></code>, 
+				<code><a href="class-TCPDF.html#_Arrow">Arrow()</a></code>, 
+				<code><a href="class-TCPDF.html#_Bookmark">Bookmark()</a></code>, 
+				<code><a href="class-TCPDF.html#_Button">Button()</a></code>, 
+				<code><a href="class-TCPDF.html#_Cell">Cell()</a></code>, 
+				<code><a href="class-TCPDF.html#_CheckBox">CheckBox()</a></code>, 
+				<code><a href="class-TCPDF.html#_Circle">Circle()</a></code>, 
+				<code><a href="class-TCPDF.html#_Clip">Clip()</a></code>, 
+				<code><a href="class-TCPDF.html#_Close">Close()</a></code>, 
+				<code><a href="class-TCPDF.html#_ComboBox">ComboBox()</a></code>, 
+				<code><a href="class-TCPDF.html#_CoonsPatchMesh">CoonsPatchMesh()</a></code>, 
+				<code><a href="class-TCPDF.html#_Curve">Curve()</a></code>, 
+				<code><a href="class-TCPDF.html#_Ellipse">Ellipse()</a></code>, 
+				<code><a href="class-TCPDF.html#_Error">Error()</a></code>, 
+				<code><a href="class-TCPDF.html#_Footer">Footer()</a></code>, 
+				<code><a href="class-TCPDF.html#_GetAbsX">GetAbsX()</a></code>, 
+				<code><a href="class-TCPDF.html#_GetArrStringWidth">GetArrStringWidth()</a></code>, 
+				<code><a href="class-TCPDF.html#_GetCharWidth">GetCharWidth()</a></code>, 
+				<code><a href="class-TCPDF.html#_GetLineWidth">GetLineWidth()</a></code>, 
+				<code><a href="class-TCPDF.html#_GetNumChars">GetNumChars()</a></code>, 
+				<code><a href="class-TCPDF.html#_GetStringWidth">GetStringWidth()</a></code>, 
+				<code><a href="class-TCPDF.html#_GetX">GetX()</a></code>, 
+				<code><a href="class-TCPDF.html#_GetY">GetY()</a></code>, 
+				<code><a href="class-TCPDF.html#_Gradient">Gradient()</a></code>, 
+				<code><a href="class-TCPDF.html#_Header">Header()</a></code>, 
+				<code><a href="class-TCPDF.html#_Image">Image()</a></code>, 
+				<code><a href="class-TCPDF.html#_ImageEps">ImageEps()</a></code>, 
+				<code><a href="class-TCPDF.html#_ImagePngAlpha">ImagePngAlpha()</a></code>, 
+				<code><a href="class-TCPDF.html#_ImageSVG">ImageSVG()</a></code>, 
+				<code><a href="class-TCPDF.html#_IncludeJS">IncludeJS()</a></code>, 
+				<code><a href="class-TCPDF.html#_Line">Line()</a></code>, 
+				<code><a href="class-TCPDF.html#_LinearGradient">LinearGradient()</a></code>, 
+				<code><a href="class-TCPDF.html#_Link">Link()</a></code>, 
+				<code><a href="class-TCPDF.html#_ListBox">ListBox()</a></code>, 
+				<code><a href="class-TCPDF.html#_Ln">Ln()</a></code>, 
+				<code><a href="class-TCPDF.html#_MirrorH">MirrorH()</a></code>, 
+				<code><a href="class-TCPDF.html#_MirrorL">MirrorL()</a></code>, 
+				<code><a href="class-TCPDF.html#_MirrorP">MirrorP()</a></code>, 
+				<code><a href="class-TCPDF.html#_MirrorV">MirrorV()</a></code>, 
+				<code><a href="class-TCPDF.html#_MultiCell">MultiCell()</a></code>, 
+				<code><a href="class-TCPDF.html#_Open">Open()</a></code>, 
+				<code><a href="class-TCPDF.html#_Output">Output()</a></code>, 
+				<code><a href="class-TCPDF.html#_PageNo">PageNo()</a></code>, 
+				<code><a href="class-TCPDF.html#_PageNoFormatted">PageNoFormatted()</a></code>, 
+				<code><a href="class-TCPDF.html#_PieSector">PieSector()</a></code>, 
+				<code><a href="class-TCPDF.html#_PieSectorXY">PieSectorXY()</a></code>, 
+				<code><a href="class-TCPDF.html#_PolyLine">PolyLine()</a></code>, 
+				<code><a href="class-TCPDF.html#_Polycurve">Polycurve()</a></code>, 
+				<code><a href="class-TCPDF.html#_Polygon">Polygon()</a></code>, 
+				<code><a href="class-TCPDF.html#_RadialGradient">RadialGradient()</a></code>, 
+				<code><a href="class-TCPDF.html#_RadioButton">RadioButton()</a></code>, 
+				<code><a href="class-TCPDF.html#_Rect">Rect()</a></code>, 
+				<code><a href="class-TCPDF.html#_RegularPolygon">RegularPolygon()</a></code>, 
+				<code><a href="class-TCPDF.html#_Rotate">Rotate()</a></code>, 
+				<code><a href="class-TCPDF.html#_RoundedRect">RoundedRect()</a></code>, 
+				<code><a href="class-TCPDF.html#_RoundedRectXY">RoundedRectXY()</a></code>, 
+				<code><a href="class-TCPDF.html#_SVGPath">SVGPath()</a></code>, 
+				<code><a href="class-TCPDF.html#_SVGTransform">SVGTransform()</a></code>, 
+				<code><a href="class-TCPDF.html#_Scale">Scale()</a></code>, 
+				<code><a href="class-TCPDF.html#_ScaleX">ScaleX()</a></code>, 
+				<code><a href="class-TCPDF.html#_ScaleXY">ScaleXY()</a></code>, 
+				<code><a href="class-TCPDF.html#_ScaleY">ScaleY()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetAbsX">SetAbsX()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetAbsXY">SetAbsXY()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetAbsY">SetAbsY()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetAuthor">SetAuthor()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetAutoPageBreak">SetAutoPageBreak()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetBooklet">SetBooklet()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetCellPadding">SetCellPadding()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetCompression">SetCompression()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetCreator">SetCreator()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetDefaultMonospacedFont">SetDefaultMonospacedFont()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetDisplayMode">SetDisplayMode()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetDocInfoUnicode">SetDocInfoUnicode()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetDrawColor">SetDrawColor()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetDrawColorArray">SetDrawColorArray()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetDrawSpotColor">SetDrawSpotColor()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetFillColor">SetFillColor()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetFillColorArray">SetFillColorArray()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetFillSpotColor">SetFillSpotColor()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetFont">SetFont()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetFontSize">SetFontSize()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetKeywords">SetKeywords()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetLeftMargin">SetLeftMargin()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetLineStyle">SetLineStyle()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetLineWidth">SetLineWidth()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetLink">SetLink()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetMargins">SetMargins()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetProtection">SetProtection()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetRightMargin">SetRightMargin()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetSubject">SetSubject()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetTextColor">SetTextColor()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetTextColorArray">SetTextColorArray()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetTextSpotColor">SetTextSpotColor()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetTitle">SetTitle()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetTopMargin">SetTopMargin()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetX">SetX()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetXY">SetXY()</a></code>, 
+				<code><a href="class-TCPDF.html#_SetY">SetY()</a></code>, 
+				<code><a href="class-TCPDF.html#_Skew">Skew()</a></code>, 
+				<code><a href="class-TCPDF.html#_SkewX">SkewX()</a></code>, 
+				<code><a href="class-TCPDF.html#_SkewY">SkewY()</a></code>, 
+				<code><a href="class-TCPDF.html#_StarPolygon">StarPolygon()</a></code>, 
+				<code><a href="class-TCPDF.html#_StartTransform">StartTransform()</a></code>, 
+				<code><a href="class-TCPDF.html#_StopTransform">StopTransform()</a></code>, 
+				<code><a href="class-TCPDF.html#_Text">Text()</a></code>, 
+				<code><a href="class-TCPDF.html#_TextField">TextField()</a></code>, 
+				<code><a href="class-TCPDF.html#_Transform">Transform()</a></code>, 
+				<code><a href="class-TCPDF.html#_Translate">Translate()</a></code>, 
+				<code><a href="class-TCPDF.html#_TranslateX">TranslateX()</a></code>, 
+				<code><a href="class-TCPDF.html#_TranslateY">TranslateY()</a></code>, 
+				<code><a href="class-TCPDF.html#_Write">Write()</a></code>, 
+				<code><a href="class-TCPDF.html#__OEvalue">_OEvalue()</a></code>, 
+				<code><a href="class-TCPDF.html#__Ovalue">_Ovalue()</a></code>, 
+				<code><a href="class-TCPDF.html#__UEvalue">_UEvalue()</a></code>, 
+				<code><a href="class-TCPDF.html#__Uvalue">_Uvalue()</a></code>, 
+				<code><a href="class-TCPDF.html#___construct">__construct()</a></code>, 
+				<code><a href="class-TCPDF.html#___destruct">__destruct()</a></code>, 
+				<code><a href="class-TCPDF.html#__addfield">_addfield()</a></code>, 
+				<code><a href="class-TCPDF.html#__beginpage">_beginpage()</a></code>, 
+				<code><a href="class-TCPDF.html#__datastring">_datastring()</a></code>, 
+				<code><a href="class-TCPDF.html#__datestring">_datestring()</a></code>, 
+				<code><a href="class-TCPDF.html#__destroy">_destroy()</a></code>, 
+				<code><a href="class-TCPDF.html#__dochecks">_dochecks()</a></code>, 
+				<code><a href="class-TCPDF.html#__dolinethrough">_dolinethrough()</a></code>, 
+				<code><a href="class-TCPDF.html#__dolinethroughw">_dolinethroughw()</a></code>, 
+				<code><a href="class-TCPDF.html#__dooverline">_dooverline()</a></code>, 
+				<code><a href="class-TCPDF.html#__dooverlinew">_dooverlinew()</a></code>, 
+				<code><a href="class-TCPDF.html#__dounderline">_dounderline()</a></code>, 
+				<code><a href="class-TCPDF.html#__dounderlinew">_dounderlinew()</a></code>, 
+				<code><a href="class-TCPDF.html#__encrypt_data">_encrypt_data()</a></code>, 
+				<code><a href="class-TCPDF.html#__enddoc">_enddoc()</a></code>, 
+				<code><a href="class-TCPDF.html#__endpage">_endpage()</a></code>, 
+				<code><a href="class-TCPDF.html#__fixAES256Password">_fixAES256Password()</a></code>, 
+				<code><a href="class-TCPDF.html#__generateencryptionkey">_generateencryptionkey()</a></code>, 
+				<code><a href="class-TCPDF.html#__getannotsrefs">_getannotsrefs()</a></code>, 
+				<code><a href="class-TCPDF.html#__getobj">_getobj()</a></code>, 
+				<code><a href="class-TCPDF.html#__getrawstream">_getrawstream()</a></code>, 
+				<code><a href="class-TCPDF.html#__getxobjectdict">_getxobjectdict()</a></code>, 
+				<code><a href="class-TCPDF.html#__newobj">_newobj()</a></code>, 
+				<code><a href="class-TCPDF.html#__objectkey">_objectkey()</a></code>, 
+				<code><a href="class-TCPDF.html#__out">_out()</a></code>, 
+				<code><a href="class-TCPDF.html#__outCurve">_outCurve()</a></code>, 
+				<code><a href="class-TCPDF.html#__outCurveV">_outCurveV()</a></code>, 
+				<code><a href="class-TCPDF.html#__outCurveY">_outCurveY()</a></code>, 
+				<code><a href="class-TCPDF.html#__outLine">_outLine()</a></code>, 
+				<code><a href="class-TCPDF.html#__outPoint">_outPoint()</a></code>, 
+				<code><a href="class-TCPDF.html#__outRect">_outRect()</a></code>, 
+				<code><a href="class-TCPDF.html#__outRestoreGraphicsState">_outRestoreGraphicsState()</a></code>, 
+				<code><a href="class-TCPDF.html#__outSaveGraphicsState">_outSaveGraphicsState()</a></code>, 
+				<code><a href="class-TCPDF.html#__outellipticalarc">_outellipticalarc()</a></code>, 
+				<code><a href="class-TCPDF.html#__putAPXObject">_putAPXObject()</a></code>, 
+				<code><a href="class-TCPDF.html#__putEmbeddedFiles">_putEmbeddedFiles()</a></code>, 
+				<code><a href="class-TCPDF.html#__putXMP">_putXMP()</a></code>, 
+				<code><a href="class-TCPDF.html#__putannotsobjs">_putannotsobjs()</a></code>, 
+				<code><a href="class-TCPDF.html#__putbookmarks">_putbookmarks()</a></code>, 
+				<code><a href="class-TCPDF.html#__putcatalog">_putcatalog()</a></code>, 
+				<code><a href="class-TCPDF.html#__putcidfont0">_putcidfont0()</a></code>, 
+				<code><a href="class-TCPDF.html#__putdests">_putdests()</a></code>, 
+				<code><a href="class-TCPDF.html#__putencryption">_putencryption()</a></code>, 
+				<code><a href="class-TCPDF.html#__putextgstates">_putextgstates()</a></code>, 
+				<code><a href="class-TCPDF.html#__putfonts">_putfonts()</a></code>, 
+				<code><a href="class-TCPDF.html#__putheader">_putheader()</a></code>, 
+				<code><a href="class-TCPDF.html#__putimages">_putimages()</a></code>, 
+				<code><a href="class-TCPDF.html#__putinfo">_putinfo()</a></code>, 
+				<code><a href="class-TCPDF.html#__putjavascript">_putjavascript()</a></code>, 
+				<code><a href="class-TCPDF.html#__putocg">_putocg()</a></code>, 
+				<code><a href="class-TCPDF.html#__putpages">_putpages()</a></code>, 
+				<code><a href="class-TCPDF.html#__putresourcedict">_putresourcedict()</a></code>, 
+				<code><a href="class-TCPDF.html#__putresources">_putresources()</a></code>, 
+				<code><a href="class-TCPDF.html#__putshaders">_putshaders()</a></code>, 
+				<code><a href="class-TCPDF.html#__putsignature">_putsignature()</a></code>, 
+				<code><a href="class-TCPDF.html#__putspotcolors">_putspotcolors()</a></code>, 
+				<code><a href="class-TCPDF.html#__puttruetypeunicode">_puttruetypeunicode()</a></code>, 
+				<code><a href="class-TCPDF.html#__putviewerpreferences">_putviewerpreferences()</a></code>, 
+				<code><a href="class-TCPDF.html#__putxobjects">_putxobjects()</a></code>, 
+				<code><a href="class-TCPDF.html#__textstring">_textstring()</a></code>, 
+				<code><a href="class-TCPDF.html#_addEmptySignatureAppearance">addEmptySignatureAppearance()</a></code>, 
+				<code><a href="class-TCPDF.html#_addExtGState">addExtGState()</a></code>, 
+				<code><a href="class-TCPDF.html#_addHTMLTOC">addHTMLTOC()</a></code>, 
+				<code><a href="class-TCPDF.html#_addHTMLVertSpace">addHTMLVertSpace()</a></code>, 
+				<code><a href="class-TCPDF.html#_addHtmlLink">addHtmlLink()</a></code>, 
+				<code><a href="class-TCPDF.html#_addJavascriptObject">addJavascriptObject()</a></code>, 
+				<code><a href="class-TCPDF.html#_addPageRegion">addPageRegion()</a></code>, 
+				<code><a href="class-TCPDF.html#_addTOC">addTOC()</a></code>, 
+				<code><a href="class-TCPDF.html#_addTOCPage">addTOCPage()</a></code>, 
+				<code><a href="class-TCPDF.html#_adjustCellPadding">adjustCellPadding()</a></code>, 
+				<code><a href="class-TCPDF.html#_applyTSA">applyTSA()</a></code>, 
+				<code><a href="class-TCPDF.html#_checkPageBreak">checkPageBreak()</a></code>, 
+				<code><a href="class-TCPDF.html#_checkPageRegions">checkPageRegions()</a></code>, 
+				<code><a href="class-TCPDF.html#_closeHTMLTagHandler">closeHTMLTagHandler()</a></code>, 
+				<code><a href="class-TCPDF.html#_colorRegistrationBar">colorRegistrationBar()</a></code>, 
+				<code><a href="class-TCPDF.html#_commitTransaction">commitTransaction()</a></code>, 
+				<code><a href="class-TCPDF.html#_convertSVGtMatrix">convertSVGtMatrix()</a></code>, 
+				<code><a href="class-TCPDF.html#_copyPage">copyPage()</a></code>, 
+				<code><a href="class-TCPDF.html#_cropMark">cropMark()</a></code>, 
+				<code><a href="class-TCPDF.html#_deletePage">deletePage()</a></code>, 
+				<code><a href="class-TCPDF.html#_drawHTMLTagBorder">drawHTMLTagBorder()</a></code>, 
+				<code><a href="class-TCPDF.html#_endLayer">endLayer()</a></code>, 
+				<code><a href="class-TCPDF.html#_endPage">endPage()</a></code>, 
+				<code><a href="class-TCPDF.html#_endSVGElementHandler">endSVGElementHandler()</a></code>, 
+				<code><a href="class-TCPDF.html#_endTOCPage">endTOCPage()</a></code>, 
+				<code><a href="class-TCPDF.html#_endTemplate">endTemplate()</a></code>, 
+				<code><a href="class-TCPDF.html#_fitBlock">fitBlock()</a></code>, 
+				<code><a href="class-TCPDF.html#_fixHTMLCode">fixHTMLCode()</a></code>, 
+				<code><a href="class-TCPDF.html#_getAbsFontMeasure">getAbsFontMeasure()</a></code>, 
+				<code><a href="class-TCPDF.html#_getAliasNbPages">getAliasNbPages()</a></code>, 
+				<code><a href="class-TCPDF.html#_getAliasNumPage">getAliasNumPage()</a></code>, 
+				<code><a href="class-TCPDF.html#_getAliasRightShift">getAliasRightShift()</a></code>, 
+				<code><a href="class-TCPDF.html#_getAllInternalPageNumberAliases">getAllInternalPageNumberAliases()</a></code>, 
+				<code><a href="class-TCPDF.html#_getAllSpotColors">getAllSpotColors()</a></code>, 
+				<code><a href="class-TCPDF.html#_getAlpha">getAlpha()</a></code>, 
+				<code><a href="class-TCPDF.html#_getAutoPageBreak">getAutoPageBreak()</a></code>, 
+				<code><a href="class-TCPDF.html#_getBarcode">getBarcode()</a></code>, 
+				<code><a href="class-TCPDF.html#_getBorderStartPosition">getBorderStartPosition()</a></code>, 
+				<code><a href="class-TCPDF.html#_getBreakMargin">getBreakMargin()</a></code>, 
+				<code><a href="class-TCPDF.html#_getBuffer">getBuffer()</a></code>, 
+				<code><a href="class-TCPDF.html#_getCSSBorderDashStyle">getCSSBorderDashStyle()</a></code>, 
+				<code><a href="class-TCPDF.html#_getCSSBorderMargin">getCSSBorderMargin()</a></code>, 
+				<code><a href="class-TCPDF.html#_getCSSBorderStyle">getCSSBorderStyle()</a></code>, 
+				<code><a href="class-TCPDF.html#_getCSSBorderWidth">getCSSBorderWidth()</a></code>, 
+				<code><a href="class-TCPDF.html#_getCSSFontSpacing">getCSSFontSpacing()</a></code>, 
+				<code><a href="class-TCPDF.html#_getCSSFontStretching">getCSSFontStretching()</a></code>, 
+				<code><a href="class-TCPDF.html#_getCSSMargin">getCSSMargin()</a></code>, 
+				<code><a href="class-TCPDF.html#_getCSSPadding">getCSSPadding()</a></code>, 
+				<code><a href="class-TCPDF.html#_getCellBorder">getCellBorder()</a></code>, 
+				<code><a href="class-TCPDF.html#_getCellCode">getCellCode()</a></code>, 
+				<code><a href="class-TCPDF.html#_getCellHeight">getCellHeight()</a></code>, 
+				<code><a href="class-TCPDF.html#_getCellHeightRatio">getCellHeightRatio()</a></code>, 
+				<code><a href="class-TCPDF.html#_getCellMargins">getCellMargins()</a></code>, 
+				<code><a href="class-TCPDF.html#_getCellPaddings">getCellPaddings()</a></code>, 
+				<code><a href="class-TCPDF.html#_getCharBBox">getCharBBox()</a></code>, 
+				<code><a href="class-TCPDF.html#_getColumn">getColumn()</a></code>, 
+				<code><a href="class-TCPDF.html#_getDestination">getDestination()</a></code>, 
+				<code><a href="class-TCPDF.html#_getDocCreationTimestamp">getDocCreationTimestamp()</a></code>, 
+				<code><a href="class-TCPDF.html#_getDocModificationTimestamp">getDocModificationTimestamp()</a></code>, 
+				<code><a href="class-TCPDF.html#_getFontAscent">getFontAscent()</a></code>, 
+				<code><a href="class-TCPDF.html#_getFontBBox">getFontBBox()</a></code>, 
+				<code><a href="class-TCPDF.html#_getFontBuffer">getFontBuffer()</a></code>, 
+				<code><a href="class-TCPDF.html#_getFontDescent">getFontDescent()</a></code>, 
+				<code><a href="class-TCPDF.html#_getFontFamily">getFontFamily()</a></code>, 
+				<code><a href="class-TCPDF.html#_getFontFamilyName">getFontFamilyName()</a></code>, 
+				<code><a href="class-TCPDF.html#_getFontSize">getFontSize()</a></code>, 
+				<code><a href="class-TCPDF.html#_getFontSizePt">getFontSizePt()</a></code>, 
+				<code><a href="class-TCPDF.html#_getFontSpacing">getFontSpacing()</a></code>, 
+				<code><a href="class-TCPDF.html#_getFontStretching">getFontStretching()</a></code>, 
+				<code><a href="class-TCPDF.html#_getFontStyle">getFontStyle()</a></code>, 
+				<code><a href="class-TCPDF.html#_getFontSubsetting">getFontSubsetting()</a></code>, 
+				<code><a href="class-TCPDF.html#_getFontsList">getFontsList()</a></code>, 
+				<code><a href="class-TCPDF.html#_getFooterFont">getFooterFont()</a></code>, 
+				<code><a href="class-TCPDF.html#_getFooterMargin">getFooterMargin()</a></code>, 
+				<code><a href="class-TCPDF.html#_getFormDefaultProp">getFormDefaultProp()</a></code>, 
+				<code><a href="class-TCPDF.html#_getGDgamma">getGDgamma()</a></code>, 
+				<code><a href="class-TCPDF.html#_getGraphicVars">getGraphicVars()</a></code>, 
+				<code><a href="class-TCPDF.html#_getGroupPageNo">getGroupPageNo()</a></code>, 
+				<code><a href="class-TCPDF.html#_getGroupPageNoFormatted">getGroupPageNoFormatted()</a></code>, 
+				<code><a href="class-TCPDF.html#_getHTMLFontUnits">getHTMLFontUnits()</a></code>, 
+				<code><a href="class-TCPDF.html#_getHTMLUnitToUnits">getHTMLUnitToUnits()</a></code>, 
+				<code><a href="class-TCPDF.html#_getHashForTCPDFtagParams">getHashForTCPDFtagParams()</a></code>, 
+				<code><a href="class-TCPDF.html#_getHeaderData">getHeaderData()</a></code>, 
+				<code><a href="class-TCPDF.html#_getHeaderFont">getHeaderFont()</a></code>, 
+				<code><a href="class-TCPDF.html#_getHeaderMargin">getHeaderMargin()</a></code>, 
+				<code><a href="class-TCPDF.html#_getHtmlDomArray">getHtmlDomArray()</a></code>, 
+				<code><a href="class-TCPDF.html#_getImageBuffer">getImageBuffer()</a></code>, 
+				<code><a href="class-TCPDF.html#_getImageRBX">getImageRBX()</a></code>, 
+				<code><a href="class-TCPDF.html#_getImageRBY">getImageRBY()</a></code>, 
+				<code><a href="class-TCPDF.html#_getImageScale">getImageScale()</a></code>, 
+				<code><a href="class-TCPDF.html#_getInternalPageNumberAliases">getInternalPageNumberAliases()</a></code>, 
+				<code><a href="class-TCPDF.html#_getLastH">getLastH()</a></code>, 
+				<code><a href="class-TCPDF.html#_getMargins">getMargins()</a></code>, 
+				<code><a href="class-TCPDF.html#_getNumLines">getNumLines()</a></code>, 
+				<code><a href="class-TCPDF.html#_getNumPages">getNumPages()</a></code>, 
+				<code><a href="class-TCPDF.html#_getNumberOfColumns">getNumberOfColumns()</a></code>, 
+				<code><a href="class-TCPDF.html#_getOriginalMargins">getOriginalMargins()</a></code>, 
+				<code><a href="class-TCPDF.html#_getOverprint">getOverprint()</a></code>, 
+				<code><a href="class-TCPDF.html#_getPDFData">getPDFData()</a></code>, 
+				<code><a href="class-TCPDF.html#_getPage">getPage()</a></code>, 
+				<code><a href="class-TCPDF.html#_getPageBuffer">getPageBuffer()</a></code>, 
+				<code><a href="class-TCPDF.html#_getPageDimensions">getPageDimensions()</a></code>, 
+				<code><a href="class-TCPDF.html#_getPageGroupAlias">getPageGroupAlias()</a></code>, 
+				<code><a href="class-TCPDF.html#_getPageHeight">getPageHeight()</a></code>, 
+				<code><a href="class-TCPDF.html#_getPageNumGroupAlias">getPageNumGroupAlias()</a></code>, 
+				<code><a href="class-TCPDF.html#_getPageRegions">getPageRegions()</a></code>, 
+				<code><a href="class-TCPDF.html#_getPageWidth">getPageWidth()</a></code>, 
+				<code><a href="class-TCPDF.html#_getRTL">getRTL()</a></code>, 
+				<code><a href="class-TCPDF.html#_getRawCharWidth">getRawCharWidth()</a></code>, 
+				<code><a href="class-TCPDF.html#_getRemainingWidth">getRemainingWidth()</a></code>, 
+				<code><a href="class-TCPDF.html#_getScaleFactor">getScaleFactor()</a></code>, 
+				<code><a href="class-TCPDF.html#_getSignatureAppearanceArray">getSignatureAppearanceArray()</a></code>, 
+				<code><a href="class-TCPDF.html#_getSpaceString">getSpaceString()</a></code>, 
+				<code><a href="class-TCPDF.html#_getStringHeight">getStringHeight()</a></code>, 
+				<code><a href="class-TCPDF.html#_getTextShadow">getTextShadow()</a></code>, 
+				<code><a href="class-TCPDF.html#_hyphenateText">hyphenateText()</a></code>, 
+				<code><a href="class-TCPDF.html#_hyphenateWord">hyphenateWord()</a></code>, 
+				<code><a href="class-TCPDF.html#_inPageBody">inPageBody()</a></code>, 
+				<code><a href="class-TCPDF.html#_isCharDefined">isCharDefined()</a></code>, 
+				<code><a href="class-TCPDF.html#_isRTLTextDir">isRTLTextDir()</a></code>, 
+				<code><a href="class-TCPDF.html#_isUnicodeFont">isUnicodeFont()</a></code>, 
+				<code><a href="class-TCPDF.html#_lastPage">lastPage()</a></code>, 
+				<code><a href="class-TCPDF.html#_movePage">movePage()</a></code>, 
+				<code><a href="class-TCPDF.html#_openHTMLTagHandler">openHTMLTagHandler()</a></code>, 
+				<code><a href="class-TCPDF.html#_pixelsToUnits">pixelsToUnits()</a></code>, 
+				<code><a href="class-TCPDF.html#_printTemplate">printTemplate()</a></code>, 
+				<code><a href="class-TCPDF.html#_putHtmlListBullet">putHtmlListBullet()</a></code>, 
+				<code><a href="class-TCPDF.html#_registrationMark">registrationMark()</a></code>, 
+				<code><a href="class-TCPDF.html#_registrationMarkCMYK">registrationMarkCMYK()</a></code>, 
+				<code><a href="class-TCPDF.html#_removePageRegion">removePageRegion()</a></code>, 
+				<code><a href="class-TCPDF.html#_removeTagNamespace">removeTagNamespace()</a></code>, 
+				<code><a href="class-TCPDF.html#_replaceBuffer">replaceBuffer()</a></code>, 
+				<code><a href="class-TCPDF.html#_replaceChar">replaceChar()</a></code>, 
+				<code><a href="class-TCPDF.html#_replaceMissingChars">replaceMissingChars()</a></code>, 
+				<code><a href="class-TCPDF.html#_replaceRightShiftPageNumAliases">replaceRightShiftPageNumAliases()</a></code>, 
+				<code><a href="class-TCPDF.html#_resetColumns">resetColumns()</a></code>, 
+				<code><a href="class-TCPDF.html#_resetHeaderTemplate">resetHeaderTemplate()</a></code>, 
+				<code><a href="class-TCPDF.html#_resetLastH">resetLastH()</a></code>, 
+				<code><a href="class-TCPDF.html#_rollbackTransaction">rollbackTransaction()</a></code>, 
+				<code><a href="class-TCPDF.html#_segSVGContentHandler">segSVGContentHandler()</a></code>, 
+				<code><a href="class-TCPDF.html#_selectColumn">selectColumn()</a></code>, 
+				<code><a href="class-TCPDF.html#_serializeTCPDFtagParameters">serializeTCPDFtagParameters()</a></code>, 
+				<code><a href="class-TCPDF.html#_setAlpha">setAlpha()</a></code>, 
+				<code><a href="class-TCPDF.html#_setBarcode">setBarcode()</a></code>, 
+				<code><a href="class-TCPDF.html#_setBookmark">setBookmark()</a></code>, 
+				<code><a href="class-TCPDF.html#_setBuffer">setBuffer()</a></code>, 
+				<code><a href="class-TCPDF.html#_setCellHeightRatio">setCellHeightRatio()</a></code>, 
+				<code><a href="class-TCPDF.html#_setCellMargins">setCellMargins()</a></code>, 
+				<code><a href="class-TCPDF.html#_setCellPaddings">setCellPaddings()</a></code>, 
+				<code><a href="class-TCPDF.html#_setColor">setColor()</a></code>, 
+				<code><a href="class-TCPDF.html#_setColorArray">setColorArray()</a></code>, 
+				<code><a href="class-TCPDF.html#_setColumnsArray">setColumnsArray()</a></code>, 
+				<code><a href="class-TCPDF.html#_setContentMark">setContentMark()</a></code>, 
+				<code><a href="class-TCPDF.html#_setDefaultTableColumns">setDefaultTableColumns()</a></code>, 
+				<code><a href="class-TCPDF.html#_setDestination">setDestination()</a></code>, 
+				<code><a href="class-TCPDF.html#_setDocCreationTimestamp">setDocCreationTimestamp()</a></code>, 
+				<code><a href="class-TCPDF.html#_setDocModificationTimestamp">setDocModificationTimestamp()</a></code>, 
+				<code><a href="class-TCPDF.html#_setEqualColumns">setEqualColumns()</a></code>, 
+				<code><a href="class-TCPDF.html#_setExtGState">setExtGState()</a></code>, 
+				<code><a href="class-TCPDF.html#_setExtraXMP">setExtraXMP()</a></code>, 
+				<code><a href="class-TCPDF.html#_setFontBuffer">setFontBuffer()</a></code>, 
+				<code><a href="class-TCPDF.html#_setFontSpacing">setFontSpacing()</a></code>, 
+				<code><a href="class-TCPDF.html#_setFontStretching">setFontStretching()</a></code>, 
+				<code><a href="class-TCPDF.html#_setFontSubBuffer">setFontSubBuffer()</a></code>, 
+				<code><a href="class-TCPDF.html#_setFontSubsetting">setFontSubsetting()</a></code>, 
+				<code><a href="class-TCPDF.html#_setFooter">setFooter()</a></code>, 
+				<code><a href="class-TCPDF.html#_setFooterData">setFooterData()</a></code>, 
+				<code><a href="class-TCPDF.html#_setFooterFont">setFooterFont()</a></code>, 
+				<code><a href="class-TCPDF.html#_setFooterMargin">setFooterMargin()</a></code>, 
+				<code><a href="class-TCPDF.html#_setFormDefaultProp">setFormDefaultProp()</a></code>, 
+				<code><a href="class-TCPDF.html#_setGraphicVars">setGraphicVars()</a></code>, 
+				<code><a href="class-TCPDF.html#_setHeader">setHeader()</a></code>, 
+				<code><a href="class-TCPDF.html#_setHeaderData">setHeaderData()</a></code>, 
+				<code><a href="class-TCPDF.html#_setHeaderFont">setHeaderFont()</a></code>, 
+				<code><a href="class-TCPDF.html#_setHeaderMargin">setHeaderMargin()</a></code>, 
+				<code><a href="class-TCPDF.html#_setHeaderTemplateAutoreset">setHeaderTemplateAutoreset()</a></code>, 
+				<code><a href="class-TCPDF.html#_setHtmlLinksStyle">setHtmlLinksStyle()</a></code>, 
+				<code><a href="class-TCPDF.html#_setHtmlVSpace">setHtmlVSpace()</a></code>, 
+				<code><a href="class-TCPDF.html#_setImageBuffer">setImageBuffer()</a></code>, 
+				<code><a href="class-TCPDF.html#_setImageScale">setImageScale()</a></code>, 
+				<code><a href="class-TCPDF.html#_setImageSubBuffer">setImageSubBuffer()</a></code>, 
+				<code><a href="class-TCPDF.html#_setJPEGQuality">setJPEGQuality()</a></code>, 
+				<code><a href="class-TCPDF.html#_setLIsymbol">setLIsymbol()</a></code>, 
+				<code><a href="class-TCPDF.html#_setLanguageArray">setLanguageArray()</a></code>, 
+				<code><a href="class-TCPDF.html#_setLastH">setLastH()</a></code>, 
+				<code><a href="class-TCPDF.html#_setListIndentWidth">setListIndentWidth()</a></code>, 
+				<code><a href="class-TCPDF.html#_setOpenCell">setOpenCell()</a></code>, 
+				<code><a href="class-TCPDF.html#_setOverprint">setOverprint()</a></code>, 
+				<code><a href="class-TCPDF.html#_setPDFVersion">setPDFVersion()</a></code>, 
+				<code><a href="class-TCPDF.html#_setPage">setPage()</a></code>, 
+				<code><a href="class-TCPDF.html#_setPageBoxTypes">setPageBoxTypes()</a></code>, 
+				<code><a href="class-TCPDF.html#_setPageBuffer">setPageBuffer()</a></code>, 
+				<code><a href="class-TCPDF.html#_setPageFormat">setPageFormat()</a></code>, 
+				<code><a href="class-TCPDF.html#_setPageMark">setPageMark()</a></code>, 
+				<code><a href="class-TCPDF.html#_setPageOrientation">setPageOrientation()</a></code>, 
+				<code><a href="class-TCPDF.html#_setPageRegions">setPageRegions()</a></code>, 
+				<code><a href="class-TCPDF.html#_setPageUnit">setPageUnit()</a></code>, 
+				<code><a href="class-TCPDF.html#_setPrintFooter">setPrintFooter()</a></code>, 
+				<code><a href="class-TCPDF.html#_setPrintHeader">setPrintHeader()</a></code>, 
+				<code><a href="class-TCPDF.html#_setRTL">setRTL()</a></code>, 
+				<code><a href="class-TCPDF.html#_setRasterizeVectorImages">setRasterizeVectorImages()</a></code>, 
+				<code><a href="class-TCPDF.html#_setSRGBmode">setSRGBmode()</a></code>, 
+				<code><a href="class-TCPDF.html#_setSVGStyles">setSVGStyles()</a></code>, 
+				<code><a href="class-TCPDF.html#_setSignature">setSignature()</a></code>, 
+				<code><a href="class-TCPDF.html#_setSignatureAppearance">setSignatureAppearance()</a></code>, 
+				<code><a href="class-TCPDF.html#_setSpacesRE">setSpacesRE()</a></code>, 
+				<code><a href="class-TCPDF.html#_setSpotColor">setSpotColor()</a></code>, 
+				<code><a href="class-TCPDF.html#_setStartingPageNumber">setStartingPageNumber()</a></code>, 
+				<code><a href="class-TCPDF.html#_setTableHeader">setTableHeader()</a></code>, 
+				<code><a href="class-TCPDF.html#_setTempRTL">setTempRTL()</a></code>, 
+				<code><a href="class-TCPDF.html#_setTextRenderingMode">setTextRenderingMode()</a></code>, 
+				<code><a href="class-TCPDF.html#_setTextShadow">setTextShadow()</a></code>, 
+				<code><a href="class-TCPDF.html#_setTimeStamp">setTimeStamp()</a></code>, 
+				<code><a href="class-TCPDF.html#_setUserRights">setUserRights()</a></code>, 
+				<code><a href="class-TCPDF.html#_setViewerPreferences">setViewerPreferences()</a></code>, 
+				<code><a href="class-TCPDF.html#_setVisibility">setVisibility()</a></code>, 
+				<code><a href="class-TCPDF.html#_sortBookmarks">sortBookmarks()</a></code>, 
+				<code><a href="class-TCPDF.html#_startLayer">startLayer()</a></code>, 
+				<code><a href="class-TCPDF.html#_startPage">startPage()</a></code>, 
+				<code><a href="class-TCPDF.html#_startPageGroup">startPageGroup()</a></code>, 
+				<code><a href="class-TCPDF.html#_startSVGElementHandler">startSVGElementHandler()</a></code>, 
+				<code><a href="class-TCPDF.html#_startTemplate">startTemplate()</a></code>, 
+				<code><a href="class-TCPDF.html#_startTransaction">startTransaction()</a></code>, 
+				<code><a href="class-TCPDF.html#_stringLeftTrim">stringLeftTrim()</a></code>, 
+				<code><a href="class-TCPDF.html#_stringRightTrim">stringRightTrim()</a></code>, 
+				<code><a href="class-TCPDF.html#_stringTrim">stringTrim()</a></code>, 
+				<code><a href="class-TCPDF.html#_swapMargins">swapMargins()</a></code>, 
+				<code><a href="class-TCPDF.html#_unhtmlentities">unhtmlentities()</a></code>, 
+				<code><a href="class-TCPDF.html#_unserializeTCPDFtagParameters">unserializeTCPDFtagParameters()</a></code>, 
+				<code><a href="class-TCPDF.html#_write1DBarcode">write1DBarcode()</a></code>, 
+				<code><a href="class-TCPDF.html#_write2DBarcode">write2DBarcode()</a></code>, 
+				<code><a href="class-TCPDF.html#_writeHTML">writeHTML()</a></code>, 
+				<code><a href="class-TCPDF.html#_writeHTMLCell">writeHTMLCell()</a></code>
+			</p>
+		</div>
+
+
+
+
+
+
+
+
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h2>Properties summary</h2></div>
+		</div>
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h3>Properties inherited from <a href="class-TCPDF.html#properties">TCPDF</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-TCPDF.html#$AutoPageBreak"><var>$AutoPageBreak</var></a></code>, 
+				<code><a href="class-TCPDF.html#$ColorFlag"><var>$ColorFlag</var></a></code>, 
+				<code><a href="class-TCPDF.html#$CoreFonts"><var>$CoreFonts</var></a></code>, 
+				<code><a href="class-TCPDF.html#$CurOrientation"><var>$CurOrientation</var></a></code>, 
+				<code><a href="class-TCPDF.html#$CurrentFont"><var>$CurrentFont</var></a></code>, 
+				<code><a href="class-TCPDF.html#$DrawColor"><var>$DrawColor</var></a></code>, 
+				<code><a href="class-TCPDF.html#$FillColor"><var>$FillColor</var></a></code>, 
+				<code><a href="class-TCPDF.html#$FontAscent"><var>$FontAscent</var></a></code>, 
+				<code><a href="class-TCPDF.html#$FontDescent"><var>$FontDescent</var></a></code>, 
+				<code><a href="class-TCPDF.html#$FontFamily"><var>$FontFamily</var></a></code>, 
+				<code><a href="class-TCPDF.html#$FontFiles"><var>$FontFiles</var></a></code>, 
+				<code><a href="class-TCPDF.html#$FontSize"><var>$FontSize</var></a></code>, 
+				<code><a href="class-TCPDF.html#$FontSizePt"><var>$FontSizePt</var></a></code>, 
+				<code><a href="class-TCPDF.html#$FontStyle"><var>$FontStyle</var></a></code>, 
+				<code><a href="class-TCPDF.html#$HREF"><var>$HREF</var></a></code>, 
+				<code><a href="class-TCPDF.html#$InFooter"><var>$InFooter</var></a></code>, 
+				<code><a href="class-TCPDF.html#$InHeader"><var>$InHeader</var></a></code>, 
+				<code><a href="class-TCPDF.html#$LayoutMode"><var>$LayoutMode</var></a></code>, 
+				<code><a href="class-TCPDF.html#$LineWidth"><var>$LineWidth</var></a></code>, 
+				<code><a href="class-TCPDF.html#$OutlineRoot"><var>$OutlineRoot</var></a></code>, 
+				<code><a href="class-TCPDF.html#$PDFVersion"><var>$PDFVersion</var></a></code>, 
+				<code><a href="class-TCPDF.html#$PageAnnots"><var>$PageAnnots</var></a></code>, 
+				<code><a href="class-TCPDF.html#$PageBreakTrigger"><var>$PageBreakTrigger</var></a></code>, 
+				<code><a href="class-TCPDF.html#$PageMode"><var>$PageMode</var></a></code>, 
+				<code><a href="class-TCPDF.html#$TextColor"><var>$TextColor</var></a></code>, 
+				<code><a href="class-TCPDF.html#$ZoomMode"><var>$ZoomMode</var></a></code>, 
+				<code><a href="class-TCPDF.html#$alpha"><var>$alpha</var></a></code>, 
+				<code><a href="class-TCPDF.html#$annotation_fonts"><var>$annotation_fonts</var></a></code>, 
+				<code><a href="class-TCPDF.html#$author"><var>$author</var></a></code>, 
+				<code><a href="class-TCPDF.html#$bMargin"><var>$bMargin</var></a></code>, 
+				<code><a href="class-TCPDF.html#$barcode"><var>$barcode</var></a></code>, 
+				<code><a href="class-TCPDF.html#$bgcolor"><var>$bgcolor</var></a></code>, 
+				<code><a href="class-TCPDF.html#$booklet"><var>$booklet</var></a></code>, 
+				<code><a href="class-TCPDF.html#$bordermrk"><var>$bordermrk</var></a></code>, 
+				<code><a href="class-TCPDF.html#$buffer"><var>$buffer</var></a></code>, 
+				<code><a href="class-TCPDF.html#$bufferlen"><var>$bufferlen</var></a></code>, 
+				<code><a href="class-TCPDF.html#$cache_file_length"><var>$cache_file_length</var></a></code>, 
+				<code><a href="class-TCPDF.html#$cell_height_ratio"><var>$cell_height_ratio</var></a></code>, 
+				<code><a href="class-TCPDF.html#$cell_margin"><var>$cell_margin</var></a></code>, 
+				<code><a href="class-TCPDF.html#$cell_padding"><var>$cell_padding</var></a></code>, 
+				<code><a href="class-TCPDF.html#$check_page_regions"><var>$check_page_regions</var></a></code>, 
+				<code><a href="class-TCPDF.html#$clMargin"><var>$clMargin</var></a></code>, 
+				<code><a href="class-TCPDF.html#$cntmrk"><var>$cntmrk</var></a></code>, 
+				<code><a href="class-TCPDF.html#$column_start_page"><var>$column_start_page</var></a></code>, 
+				<code><a href="class-TCPDF.html#$columns"><var>$columns</var></a></code>, 
+				<code><a href="class-TCPDF.html#$colxshift"><var>$colxshift</var></a></code>, 
+				<code><a href="class-TCPDF.html#$compress"><var>$compress</var></a></code>, 
+				<code><a href="class-TCPDF.html#$crMargin"><var>$crMargin</var></a></code>, 
+				<code><a href="class-TCPDF.html#$creator"><var>$creator</var></a></code>, 
+				<code><a href="class-TCPDF.html#$current_column"><var>$current_column</var></a></code>, 
+				<code><a href="class-TCPDF.html#$currpagegroup"><var>$currpagegroup</var></a></code>, 
+				<code><a href="class-TCPDF.html#$custom_xmp"><var>$custom_xmp</var></a></code>, 
+				<code><a href="class-TCPDF.html#$customlistindent"><var>$customlistindent</var></a></code>, 
+				<code><a href="class-TCPDF.html#$default_form_prop"><var>$default_form_prop</var></a></code>, 
+				<code><a href="class-TCPDF.html#$default_graphic_vars"><var>$default_graphic_vars</var></a></code>, 
+				<code><a href="class-TCPDF.html#$default_monospaced_font"><var>$default_monospaced_font</var></a></code>, 
+				<code><a href="class-TCPDF.html#$default_table_columns"><var>$default_table_columns</var></a></code>, 
+				<code><a href="class-TCPDF.html#$dests"><var>$dests</var></a></code>, 
+				<code><a href="class-TCPDF.html#$diffs"><var>$diffs</var></a></code>, 
+				<code><a href="class-TCPDF.html#$doc_creation_timestamp"><var>$doc_creation_timestamp</var></a></code>, 
+				<code><a href="class-TCPDF.html#$doc_modification_timestamp"><var>$doc_modification_timestamp</var></a></code>, 
+				<code><a href="class-TCPDF.html#$docinfounicode"><var>$docinfounicode</var></a></code>, 
+				<code><a href="class-TCPDF.html#$dpi"><var>$dpi</var></a></code>, 
+				<code><a href="class-TCPDF.html#$efnames"><var>$efnames</var></a></code>, 
+				<code><a href="class-TCPDF.html#$embeddedfiles"><var>$embeddedfiles</var></a></code>, 
+				<code><a href="class-TCPDF.html#$empty_signature_appearance"><var>$empty_signature_appearance</var></a></code>, 
+				<code><a href="class-TCPDF.html#$emptypagemrk"><var>$emptypagemrk</var></a></code>, 
+				<code><a href="class-TCPDF.html#$encoding"><var>$encoding</var></a></code>, 
+				<code><a href="class-TCPDF.html#$encryptdata"><var>$encryptdata</var></a></code>, 
+				<code><a href="class-TCPDF.html#$encrypted"><var>$encrypted</var></a></code>, 
+				<code><a href="class-TCPDF.html#$endlinex"><var>$endlinex</var></a></code>, 
+				<code><a href="class-TCPDF.html#$epsmarker"><var>$epsmarker</var></a></code>, 
+				<code><a href="class-TCPDF.html#$extgstates"><var>$extgstates</var></a></code>, 
+				<code><a href="class-TCPDF.html#$feps"><var>$feps</var></a></code>, 
+				<code><a href="class-TCPDF.html#$fgcolor"><var>$fgcolor</var></a></code>, 
+				<code><a href="class-TCPDF.html#$fhPt"><var>$fhPt</var></a></code>, 
+				<code><a href="class-TCPDF.html#$file_id"><var>$file_id</var></a></code>, 
+				<code><a href="class-TCPDF.html#$font_obj_ids"><var>$font_obj_ids</var></a></code>, 
+				<code><a href="class-TCPDF.html#$font_spacing"><var>$font_spacing</var></a></code>, 
+				<code><a href="class-TCPDF.html#$font_stretching"><var>$font_stretching</var></a></code>, 
+				<code><a href="class-TCPDF.html#$font_subsetting"><var>$font_subsetting</var></a></code>, 
+				<code><a href="class-TCPDF.html#$fontkeys"><var>$fontkeys</var></a></code>, 
+				<code><a href="class-TCPDF.html#$fontlist"><var>$fontlist</var></a></code>, 
+				<code><a href="class-TCPDF.html#$fonts"><var>$fonts</var></a></code>, 
+				<code><a href="class-TCPDF.html#$footer_font"><var>$footer_font</var></a></code>, 
+				<code><a href="class-TCPDF.html#$footer_line_color"><var>$footer_line_color</var></a></code>, 
+				<code><a href="class-TCPDF.html#$footer_margin"><var>$footer_margin</var></a></code>, 
+				<code><a href="class-TCPDF.html#$footer_text_color"><var>$footer_text_color</var></a></code>, 
+				<code><a href="class-TCPDF.html#$footerlen"><var>$footerlen</var></a></code>, 
+				<code><a href="class-TCPDF.html#$footerpos"><var>$footerpos</var></a></code>, 
+				<code><a href="class-TCPDF.html#$force_srgb"><var>$force_srgb</var></a></code>, 
+				<code><a href="class-TCPDF.html#$form_action"><var>$form_action</var></a></code>, 
+				<code><a href="class-TCPDF.html#$form_enctype"><var>$form_enctype</var></a></code>, 
+				<code><a href="class-TCPDF.html#$form_mode"><var>$form_mode</var></a></code>, 
+				<code><a href="class-TCPDF.html#$form_obj_id"><var>$form_obj_id</var></a></code>, 
+				<code><a href="class-TCPDF.html#$fwPt"><var>$fwPt</var></a></code>, 
+				<code><a href="class-TCPDF.html#$gdgammacache"><var>$gdgammacache</var></a></code>, 
+				<code><a href="class-TCPDF.html#$gradients"><var>$gradients</var></a></code>, 
+				<code><a href="class-TCPDF.html#$h"><var>$h</var></a></code>, 
+				<code><a href="class-TCPDF.html#$hPt"><var>$hPt</var></a></code>, 
+				<code><a href="class-TCPDF.html#$header_font"><var>$header_font</var></a></code>, 
+				<code><a href="class-TCPDF.html#$header_line_color"><var>$header_line_color</var></a></code>, 
+				<code><a href="class-TCPDF.html#$header_logo"><var>$header_logo</var></a></code>, 
+				<code><a href="class-TCPDF.html#$header_logo_width"><var>$header_logo_width</var></a></code>, 
+				<code><a href="class-TCPDF.html#$header_margin"><var>$header_margin</var></a></code>, 
+				<code><a href="class-TCPDF.html#$header_string"><var>$header_string</var></a></code>, 
+				<code><a href="class-TCPDF.html#$header_text_color"><var>$header_text_color</var></a></code>, 
+				<code><a href="class-TCPDF.html#$header_title"><var>$header_title</var></a></code>, 
+				<code><a href="class-TCPDF.html#$header_xobj_autoreset"><var>$header_xobj_autoreset</var></a></code>, 
+				<code><a href="class-TCPDF.html#$header_xobjid"><var>$header_xobjid</var></a></code>, 
+				<code><a href="class-TCPDF.html#$htmlLinkColorArray"><var>$htmlLinkColorArray</var></a></code>, 
+				<code><a href="class-TCPDF.html#$htmlLinkFontStyle"><var>$htmlLinkFontStyle</var></a></code>, 
+				<code><a href="class-TCPDF.html#$htmlvspace"><var>$htmlvspace</var></a></code>, 
+				<code><a href="class-TCPDF.html#$imagekeys"><var>$imagekeys</var></a></code>, 
+				<code><a href="class-TCPDF.html#$images"><var>$images</var></a></code>, 
+				<code><a href="class-TCPDF.html#$img_rb_x"><var>$img_rb_x</var></a></code>, 
+				<code><a href="class-TCPDF.html#$img_rb_y"><var>$img_rb_y</var></a></code>, 
+				<code><a href="class-TCPDF.html#$imgscale"><var>$imgscale</var></a></code>, 
+				<code><a href="class-TCPDF.html#$internal_encoding"><var>$internal_encoding</var></a></code>, 
+				<code><a href="class-TCPDF.html#$inthead"><var>$inthead</var></a></code>, 
+				<code><a href="class-TCPDF.html#$intmrk"><var>$intmrk</var></a></code>, 
+				<code><a href="class-TCPDF.html#$inxobj"><var>$inxobj</var></a></code>, 
+				<code><a href="class-TCPDF.html#$isunicode"><var>$isunicode</var></a></code>, 
+				<code><a href="class-TCPDF.html#$javascript"><var>$javascript</var></a></code>, 
+				<code><a href="class-TCPDF.html#$jpeg_quality"><var>$jpeg_quality</var></a></code>, 
+				<code><a href="class-TCPDF.html#$js_objects"><var>$js_objects</var></a></code>, 
+				<code><a href="class-TCPDF.html#$k"><var>$k</var></a></code>, 
+				<code><a href="class-TCPDF.html#$keywords"><var>$keywords</var></a></code>, 
+				<code><a href="class-TCPDF.html#$l"><var>$l</var></a></code>, 
+				<code><a href="class-TCPDF.html#$lMargin"><var>$lMargin</var></a></code>, 
+				<code><a href="class-TCPDF.html#$last_enc_key"><var>$last_enc_key</var></a></code>, 
+				<code><a href="class-TCPDF.html#$last_enc_key_c"><var>$last_enc_key_c</var></a></code>, 
+				<code><a href="class-TCPDF.html#$lasth"><var>$lasth</var></a></code>, 
+				<code><a href="class-TCPDF.html#$linestyleCap"><var>$linestyleCap</var></a></code>, 
+				<code><a href="class-TCPDF.html#$linestyleDash"><var>$linestyleDash</var></a></code>, 
+				<code><a href="class-TCPDF.html#$linestyleJoin"><var>$linestyleJoin</var></a></code>, 
+				<code><a href="class-TCPDF.html#$linestyleWidth"><var>$linestyleWidth</var></a></code>, 
+				<code><a href="class-TCPDF.html#$linethrough"><var>$linethrough</var></a></code>, 
+				<code><a href="class-TCPDF.html#$links"><var>$links</var></a></code>, 
+				<code><a href="class-TCPDF.html#$lispacer"><var>$lispacer</var></a></code>, 
+				<code><a href="class-TCPDF.html#$listcount"><var>$listcount</var></a></code>, 
+				<code><a href="class-TCPDF.html#$listindent"><var>$listindent</var></a></code>, 
+				<code><a href="class-TCPDF.html#$listindentlevel"><var>$listindentlevel</var></a></code>, 
+				<code><a href="class-TCPDF.html#$listnum"><var>$listnum</var></a></code>, 
+				<code><a href="class-TCPDF.html#$listordered"><var>$listordered</var></a></code>, 
+				<code><a href="class-TCPDF.html#$lisymbol"><var>$lisymbol</var></a></code>, 
+				<code><a href="class-TCPDF.html#$maxselcol"><var>$maxselcol</var></a></code>, 
+				<code><a href="class-TCPDF.html#$n"><var>$n</var></a></code>, 
+				<code><a href="class-TCPDF.html#$n_dests"><var>$n_dests</var></a></code>, 
+				<code><a href="class-TCPDF.html#$n_js"><var>$n_js</var></a></code>, 
+				<code><a href="class-TCPDF.html#$newline"><var>$newline</var></a></code>, 
+				<code><a href="class-TCPDF.html#$newpagegroup"><var>$newpagegroup</var></a></code>, 
+				<code><a href="class-TCPDF.html#$num_columns"><var>$num_columns</var></a></code>, 
+				<code><a href="class-TCPDF.html#$numfonts"><var>$numfonts</var></a></code>, 
+				<code><a href="class-TCPDF.html#$numimages"><var>$numimages</var></a></code>, 
+				<code><a href="class-TCPDF.html#$numpages"><var>$numpages</var></a></code>, 
+				<code><a href="class-TCPDF.html#$objcopy"><var>$objcopy</var></a></code>, 
+				<code><a href="class-TCPDF.html#$offsets"><var>$offsets</var></a></code>, 
+				<code><a href="class-TCPDF.html#$openMarkedContent"><var>$openMarkedContent</var></a></code>, 
+				<code><a href="class-TCPDF.html#$opencell"><var>$opencell</var></a></code>, 
+				<code><a href="class-TCPDF.html#$original_lMargin"><var>$original_lMargin</var></a></code>, 
+				<code><a href="class-TCPDF.html#$original_rMargin"><var>$original_rMargin</var></a></code>, 
+				<code><a href="class-TCPDF.html#$outlines"><var>$outlines</var></a></code>, 
+				<code><a href="class-TCPDF.html#$overline"><var>$overline</var></a></code>, 
+				<code><a href="class-TCPDF.html#$overprint"><var>$overprint</var></a></code>, 
+				<code><a href="class-TCPDF.html#$page"><var>$page</var></a></code>, 
+				<code><a href="class-TCPDF.html#$page_boxes"><var>$page_boxes</var></a></code>, 
+				<code><a href="class-TCPDF.html#$page_obj_id"><var>$page_obj_id</var></a></code>, 
+				<code><a href="class-TCPDF.html#$page_regions"><var>$page_regions</var></a></code>, 
+				<code><a href="class-TCPDF.html#$pagedim"><var>$pagedim</var></a></code>, 
+				<code><a href="class-TCPDF.html#$pagegroups"><var>$pagegroups</var></a></code>, 
+				<code><a href="class-TCPDF.html#$pagelen"><var>$pagelen</var></a></code>, 
+				<code><a href="class-TCPDF.html#$pageobjects"><var>$pageobjects</var></a></code>, 
+				<code><a href="class-TCPDF.html#$pageopen"><var>$pageopen</var></a></code>, 
+				<code><a href="class-TCPDF.html#$pages"><var>$pages</var></a></code>, 
+				<code><a href="class-TCPDF.html#$pdfa_mode"><var>$pdfa_mode</var></a></code>, 
+				<code><a href="class-TCPDF.html#$pdflayers"><var>$pdflayers</var></a></code>, 
+				<code><a href="class-TCPDF.html#$pdfunit"><var>$pdfunit</var></a></code>, 
+				<code><a href="class-TCPDF.html#$premode"><var>$premode</var></a></code>, 
+				<code><a href="class-TCPDF.html#$print_footer"><var>$print_footer</var></a></code>, 
+				<code><a href="class-TCPDF.html#$print_header"><var>$print_header</var></a></code>, 
+				<code><a href="class-TCPDF.html#$rMargin"><var>$rMargin</var></a></code>, 
+				<code><a href="class-TCPDF.html#$radio_groups"><var>$radio_groups</var></a></code>, 
+				<code><a href="class-TCPDF.html#$radiobutton_groups"><var>$radiobutton_groups</var></a></code>, 
+				<code><a href="class-TCPDF.html#$rasterize_vector_images"><var>$rasterize_vector_images</var></a></code>, 
+				<code><a href="class-TCPDF.html#$re_space"><var>$re_space</var></a></code>, 
+				<code><a href="class-TCPDF.html#$re_spaces"><var>$re_spaces</var></a></code>, 
+				<code><a href="class-TCPDF.html#$rtl"><var>$rtl</var></a></code>, 
+				<code><a href="class-TCPDF.html#$sig_obj_id"><var>$sig_obj_id</var></a></code>, 
+				<code><a href="class-TCPDF.html#$sign"><var>$sign</var></a></code>, 
+				<code><a href="class-TCPDF.html#$signature_appearance"><var>$signature_appearance</var></a></code>, 
+				<code><a href="class-TCPDF.html#$signature_data"><var>$signature_data</var></a></code>, 
+				<code><a href="class-TCPDF.html#$signature_max_length"><var>$signature_max_length</var></a></code>, 
+				<code><a href="class-TCPDF.html#$spot_colors"><var>$spot_colors</var></a></code>, 
+				<code><a href="class-TCPDF.html#$start_transaction_page"><var>$start_transaction_page</var></a></code>, 
+				<code><a href="class-TCPDF.html#$start_transaction_y"><var>$start_transaction_y</var></a></code>, 
+				<code><a href="class-TCPDF.html#$starting_page_number"><var>$starting_page_number</var></a></code>, 
+				<code><a href="class-TCPDF.html#$state"><var>$state</var></a></code>, 
+				<code><a href="class-TCPDF.html#$strokecolor"><var>$strokecolor</var></a></code>, 
+				<code><a href="class-TCPDF.html#$subject"><var>$subject</var></a></code>, 
+				<code><a href="class-TCPDF.html#$svg_tag_depth"><var>$svg_tag_depth</var></a></code>, 
+				<code><a href="class-TCPDF.html#$svgclipid"><var>$svgclipid</var></a></code>, 
+				<code><a href="class-TCPDF.html#$svgclipmode"><var>$svgclipmode</var></a></code>, 
+				<code><a href="class-TCPDF.html#$svgclippaths"><var>$svgclippaths</var></a></code>, 
+				<code><a href="class-TCPDF.html#$svgcliptm"><var>$svgcliptm</var></a></code>, 
+				<code><a href="class-TCPDF.html#$svgdefs"><var>$svgdefs</var></a></code>, 
+				<code><a href="class-TCPDF.html#$svgdefsmode"><var>$svgdefsmode</var></a></code>, 
+				<code><a href="class-TCPDF.html#$svgdir"><var>$svgdir</var></a></code>, 
+				<code><a href="class-TCPDF.html#$svggradientid"><var>$svggradientid</var></a></code>, 
+				<code><a href="class-TCPDF.html#$svggradients"><var>$svggradients</var></a></code>, 
+				<code><a href="class-TCPDF.html#$svgstyles"><var>$svgstyles</var></a></code>, 
+				<code><a href="class-TCPDF.html#$svgtext"><var>$svgtext</var></a></code>, 
+				<code><a href="class-TCPDF.html#$svgtextmode"><var>$svgtextmode</var></a></code>, 
+				<code><a href="class-TCPDF.html#$svgunit"><var>$svgunit</var></a></code>, 
+				<code><a href="class-TCPDF.html#$tMargin"><var>$tMargin</var></a></code>, 
+				<code><a href="class-TCPDF.html#$tagvspaces"><var>$tagvspaces</var></a></code>, 
+				<code><a href="class-TCPDF.html#$tcpdflink"><var>$tcpdflink</var></a></code>, 
+				<code><a href="class-TCPDF.html#$tempfontsize"><var>$tempfontsize</var></a></code>, 
+				<code><a href="class-TCPDF.html#$textindent"><var>$textindent</var></a></code>, 
+				<code><a href="class-TCPDF.html#$textrendermode"><var>$textrendermode</var></a></code>, 
+				<code><a href="class-TCPDF.html#$textstrokewidth"><var>$textstrokewidth</var></a></code>, 
+				<code><a href="class-TCPDF.html#$thead"><var>$thead</var></a></code>, 
+				<code><a href="class-TCPDF.html#$theadMargins"><var>$theadMargins</var></a></code>, 
+				<code><a href="class-TCPDF.html#$title"><var>$title</var></a></code>, 
+				<code><a href="class-TCPDF.html#$tmprtl"><var>$tmprtl</var></a></code>, 
+				<code><a href="class-TCPDF.html#$tocpage"><var>$tocpage</var></a></code>, 
+				<code><a href="class-TCPDF.html#$transfmatrix"><var>$transfmatrix</var></a></code>, 
+				<code><a href="class-TCPDF.html#$transfmatrix_key"><var>$transfmatrix_key</var></a></code>, 
+				<code><a href="class-TCPDF.html#$transfmrk"><var>$transfmrk</var></a></code>, 
+				<code><a href="class-TCPDF.html#$tsa_data"><var>$tsa_data</var></a></code>, 
+				<code><a href="class-TCPDF.html#$tsa_timestamp"><var>$tsa_timestamp</var></a></code>, 
+				<code><a href="class-TCPDF.html#$txtshadow"><var>$txtshadow</var></a></code>, 
+				<code><a href="class-TCPDF.html#$underline"><var>$underline</var></a></code>, 
+				<code><a href="class-TCPDF.html#$ur"><var>$ur</var></a></code>, 
+				<code><a href="class-TCPDF.html#$viewer_preferences"><var>$viewer_preferences</var></a></code>, 
+				<code><a href="class-TCPDF.html#$w"><var>$w</var></a></code>, 
+				<code><a href="class-TCPDF.html#$wPt"><var>$wPt</var></a></code>, 
+				<code><a href="class-TCPDF.html#$x"><var>$x</var></a></code>, 
+				<code><a href="class-TCPDF.html#$xobjects"><var>$xobjects</var></a></code>, 
+				<code><a href="class-TCPDF.html#$xobjid"><var>$xobjid</var></a></code>, 
+				<code><a href="class-TCPDF.html#$y"><var>$y</var></a></code>
+			</p>
+		</div>
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		Admidio API API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

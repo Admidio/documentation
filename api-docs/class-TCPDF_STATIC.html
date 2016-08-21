@@ -1,0 +1,3753 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class TCPDF_STATIC | Admidio API</title>
+
+	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
+	<link rel="stylesheet" href="resources/style.css?70c1d062672daa3f906b72e4f5d03d4bc5c4174d">
+
+</head>
+
+<body>
+	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">Admidio API</a>
+			</div>
+			<div class="collapse navbar-collapse">
+
+                <form id="search" class="navbar-form navbar-left" role="search">
+                    <input type="hidden" name="cx" value="">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <div class="form-group">
+                        <input type="text" name="q" class="search-query form-control" placeholder="Search">
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav">
+					<li>
+<span>Package</span>					</li>
+					<li class="active">
+<span>Class</span>					</li>
+
+					<li class="divider-vertical"></li>
+
+					<li>
+						<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+					</li>
+
+						<li>
+							<a href="annotation-group-deprecated.html" title="List of elements with deprecated annotation">
+								<span>Deprecated</span>
+							</a>
+						</li>
+						<li>
+							<a href="annotation-group-todo.html" title="List of elements with todo annotation">
+								<span>Todo</span>
+							</a>
+						</li>
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="left">
+	<div id="menu">
+
+		<div id="groups">
+				<h3>Packages</h3>
+			<ul>
+					<li>
+						<a href="package-com.html">
+							com<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="package-com.tecnick.html">
+							tecnick<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="package-com.tecnick.tcpdf.html">
+							tcpdf						</a>
+							</li>
+								</ul></li></ul></li>
+					<li>
+						<a href="package-None.html">
+							None						</a>
+							</li>
+					<li>
+						<a href="package-PHPMailer.html">
+							PHPMailer<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="package-phpmailer.easypeasyics.html">
+							easypeasyics						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="package-PHPWavUtils.html">
+							PHPWavUtils						</a>
+							</li>
+					<li>
+						<a href="package-Securimage.html">
+							Securimage<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="package-Securimage.classes.html">
+							classes						</a>
+							</li>
+								</ul></li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Datamatrix.html">Datamatrix</a></li>
+				<li><a href="class-PDF417.html">PDF417</a></li>
+				<li><a href="class-QRcode.html">QRcode</a></li>
+				<li><a href="class-TCPDF.html">TCPDF</a></li>
+				<li><a href="class-TCPDF2DBarcode.html">TCPDF2DBarcode</a></li>
+				<li><a href="class-TCPDF_COLORS.html">TCPDF_COLORS</a></li>
+				<li><a href="class-TCPDF_FILTERS.html">TCPDF_FILTERS</a></li>
+				<li><a href="class-TCPDF_FONT_DATA.html">TCPDF_FONT_DATA</a></li>
+				<li><a href="class-TCPDF_FONTS.html">TCPDF_FONTS</a></li>
+				<li><a href="class-TCPDF_IMAGES.html">TCPDF_IMAGES</a></li>
+				<li><a href="class-TCPDF_IMPORT.html">TCPDF_IMPORT</a></li>
+				<li><a href="class-TCPDF_PARSER.html">TCPDF_PARSER</a></li>
+				<li class="active"><a href="class-TCPDF_STATIC.html">TCPDF_STATIC</a></li>
+				<li><a href="class-TCPDFBarcode.html">TCPDFBarcode</a></li>
+			</ul>
+
+
+
+
+
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-str_split.html">str_split</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class TCPDF_STATIC</h1>
+
+
+
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		
+		<b>Package:</b> <a href="package-com.html">com</a>\<a href="package-com.tecnick.html">tecnick</a>\<a href="package-com.tecnick.tcpdf.html">tcpdf</a><br>
+
+				<b>Author:</b>
+				Nicola Asuni - info@tecnick.com<br>
+				<b>Version:</b>
+				1.1.1<br>
+				<b>Brief:</b>
+				PHP class for generating PDF documents without requiring external extensions.<br>
+				<b>Class:</b>
+				<p>TCPDF_STATIC
+Static methods used by the TCPDF class.</p><br>
+			<b>Located at</b> <a href="source-class-TCPDF_STATIC.html#44-2602" title="Go to source code">include/tcpdf_static.php</a>
+		<br>
+	</div>
+
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading"><h2>Methods summary</h2></div>
+			<table class="summary table table-bordered table-striped methods" id="methods">
+		<tr data-order="getTCPDFVersion" id="_getTCPDFVersion">
+
+			<td class="attributes"><code>
+				 public static
+				<code><a href="class-TCPDF.html">TCPDF</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getTCPDFVersion">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#111-119" title="Go to source code">getTCPDFVersion</a>( )</code>
+
+			<div class="description short">
+				<p>Return the current TCPDF version.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Return the current TCPDF version.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-TCPDF.html">TCPDF</a></code><br>version string
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							5.9.012 (2010-11-10)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getTCPDFProducer" id="_getTCPDFProducer">
+
+			<td class="attributes"><code>
+				 public static
+				<code><a href="class-TCPDF.html">TCPDF</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getTCPDFProducer">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#121-129" title="Go to source code">getTCPDFProducer</a>( )</code>
+
+			<div class="description short">
+				<p>Return the current TCPDF producer.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Return the current TCPDF producer.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-TCPDF.html">TCPDF</a></code><br>producer string
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							6.0.000 (2013-03-16)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="set_mqr" id="_set_mqr">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_set_mqr">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#131-145" title="Go to source code">set_mqr</a>( <span> <var>$mqr</var></span> )</code>
+
+			<div class="description short">
+				<p>Sets the current active configuration setting of magic_quotes_runtime (if the set_magic_quotes_runtime function exist)</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Sets the current active configuration setting of magic_quotes_runtime (if the set_magic_quotes_runtime function exist)</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$mqr</var></dt>
+						<dd>FALSE for off, TRUE for on.</dd>
+					</dl></div>
+
+
+
+					<h4>Since</h4>
+					<div class="list">
+							4.6.025 (2009-08-17)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_mqr" id="_get_mqr">
+
+			<td class="attributes"><code>
+				 public static
+				Returns
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_mqr">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#147-162" title="Go to source code">get_mqr</a>( )</code>
+
+			<div class="description short">
+				<p>Gets the current active configuration setting of magic_quotes_runtime (if the get_magic_quotes_runtime function exist)</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Gets the current active configuration setting of magic_quotes_runtime (if the get_magic_quotes_runtime function exist)</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						Returns<br>0 if magic quotes runtime is off or get_magic_quotes_runtime doesn't exist, 1 otherwise.
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							4.6.025 (2009-08-17)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="isValidURL" id="_isValidURL">
+
+			<td class="attributes"><code>
+				 public static
+				Boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_isValidURL">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#164-174" title="Go to source code">isValidURL</a>( <span> <var>$url</var></span> )</code>
+
+			<div class="description short">
+				<p>Check if the URL exist.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Check if the URL exist.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$url</var></dt>
+						<dd>URL to check.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						Boolean<br>true if the URl exist, false otherwise.
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							5.9.204 (2013-01-28)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="removeSHY" id="_removeSHY">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_removeSHY">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#176-199" title="Go to source code">removeSHY</a>( <span> <var>$txt</var> = <span class="php-quote">''</span></span>, <span> <var>$unicode</var> = <span class="php-keyword1">true</span></span> )</code>
+
+			<div class="description short">
+				<p>Removes SHY characters from text.
+Unicode Data:</p>
+
+<ul>
+<li>Name : SOFT HYPHEN, commonly abbreviated as SHY</li>
+<li>HTML Entity (decimal): "&amp;#173;"</li>
+<li>HTML Entity (hex): "&amp;#xad;"</li>
+<li>HTML Entity (named): "&amp;shy;"</li>
+<li>How to type in Microsoft Windows: [Alt +00AD] or [Alt 0173]</li>
+<li>UTF-8 (hex): 0xC2 0xAD (c2ad)</li>
+<li>UTF-8 character: chr(194).chr(173)</li>
+</ul>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Removes SHY characters from text.
+Unicode Data:</p>
+
+<ul>
+<li>Name : SOFT HYPHEN, commonly abbreviated as SHY</li>
+<li>HTML Entity (decimal): "&amp;#173;"</li>
+<li>HTML Entity (hex): "&amp;#xad;"</li>
+<li>HTML Entity (named): "&amp;shy;"</li>
+<li>How to type in Microsoft Windows: [Alt +00AD] or [Alt 0173]</li>
+<li>UTF-8 (hex): 0xC2 0xAD (c2ad)</li>
+<li>UTF-8 character: chr(194).chr(173)</li>
+</ul>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$txt</var></dt>
+						<dd>input string</dd>
+						<dt><var>$unicode</var></dt>
+						<dd>True if we are in unicode mode, false otherwise.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						string<br>without SHY characters.
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							(4.5.019) 2009-02-28<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getBorderMode" id="_getBorderMode">
+
+			<td class="attributes"><code>
+				 public static
+				border
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getBorderMode">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#202-274" title="Go to source code">getBorderMode</a>( <span> <var>$brd</var></span>, <span> <var>$position</var> = <span class="php-quote">'start'</span></span>, <span> <var>$opencell</var> = <span class="php-keyword1">true</span></span> )</code>
+
+			<div class="description short">
+				<p>Get the border mode accounting for multicell position (opens bottom side of multicell crossing pages)</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Get the border mode accounting for multicell position (opens bottom side of multicell crossing pages)</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$brd</var></dt>
+						<dd><p>Indicates if borders must be drawn around the cell block. The value can be a number:</p>
+
+<ul><li>0: no border (default)</li><li>1: frame</li></ul>
+
+<p>or a string containing some or all of the following characters (in any order):</p>
+
+<ul><li>L: left</li><li>T: top</li><li>R: right</li><li>B: bottom</li></ul>
+
+<p>or an array of line styles for each border group: array('LTRB' => array('width' => 2, 'cap' => 'butt', 'join' => 'miter', 'dash' => 0, 'color' => array(0, 0, 0)))</p></dd>
+						<dt><var>$position</var></dt>
+						<dd>multicell position: 'start', 'middle', 'end'</dd>
+						<dt><var>$opencell</var></dt>
+						<dd>True when the cell is left open at the page bottom, false otherwise.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						border<br>mode array
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							4.4.002 (2008-12-09)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="empty_string" id="_empty_string">
+
+			<td class="attributes"><code>
+				 public static
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_empty_string">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#276-285" title="Go to source code">empty_string</a>( <span> <var>$str</var></span> )</code>
+
+			<div class="description short">
+				<p>Determine whether a string is empty.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Determine whether a string is empty.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$str</var></dt>
+						<dd>string to be checked</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean<br>true if string is empty
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							4.5.044 (2009-04-16)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getObjFilename" id="_getObjFilename">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getObjFilename">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#287-297" title="Go to source code">getObjFilename</a>( <span> <var>$type</var> = <span class="php-quote">'tmp'</span></span>, <span> <var>$file_id</var> = <span class="php-quote">''</span></span> )</code>
+
+			<div class="description short">
+				<p>Returns a temporary filename for caching object on filesystem.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns a temporary filename for caching object on filesystem.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$type</var></dt>
+						<dd>Type of file (name of the subdir on the tcpdf cache folder).</dd>
+						<dt><var>$file_id</var></dt>
+						<dd>TCPDF file_id.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						string<br>filename.
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							4.5.000 (2008-12-31)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="_escape" id="__escape">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#__escape">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#299-308" title="Go to source code">_escape</a>( <span> <var>$s</var></span> )</code>
+
+			<div class="description short">
+				<p>Add "\" before "\", "(" and ")"</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Add "\" before "\", "(" and ")"</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$s</var></dt>
+						<dd>string to escape.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						string<br>escaped string.
+					</div>
+
+
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="_escapeXML" id="__escapeXML">
+
+			<td class="attributes"><code>
+				 public static
+				converted
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#__escapeXML">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#310-321" title="Go to source code">_escapeXML</a>( <span> <var>$str</var></span> )</code>
+
+			<div class="description short">
+				<p>Escape some special characters (&lt; &gt; &amp;) for XML output.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Escape some special characters (&lt; &gt; &amp;) for XML output.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$str</var></dt>
+						<dd>Input string to convert.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						converted<br>string
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							5.9.121 (2011-09-28)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="objclone" id="_objclone">
+
+			<td class="attributes"><code>
+				 public static
+				cloned
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_objclone">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#323-336" title="Go to source code">objclone</a>( <span> <var>$object</var></span> )</code>
+
+			<div class="description short">
+				<p>Creates a copy of a class object</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Creates a copy of a class object</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$object</var></dt>
+						<dd>class object to be cloned</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						cloned<br>object
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							4.5.029 (2009-03-19)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="sendOutputData" id="_sendOutputData">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_sendOutputData">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#338-351" title="Go to source code">sendOutputData</a>( <span> <var>$data</var></span>, <span> <var>$length</var></span> )</code>
+
+			<div class="description short">
+				<p>Output input data and compress it if possible.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Output input data and compress it if possible.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$data</var></dt>
+						<dd>Data to output.</dd>
+						<dt><var>$length</var></dt>
+						<dd>Data length in bytes.</dd>
+					</dl></div>
+
+
+
+					<h4>Since</h4>
+					<div class="list">
+							5.9.086<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="replacePageNumAliases" id="_replacePageNumAliases">
+
+			<td class="attributes"><code>
+				 public static
+				replaced
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_replacePageNumAliases">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#353-371" title="Go to source code">replacePageNumAliases</a>( <span> <var>$page</var></span>, <span> <var>$replace</var></span>, <span> <var>$diff</var> = <span class="php-num">0</span></span> )</code>
+
+			<div class="description short">
+				<p>Replace page number aliases with number.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Replace page number aliases with number.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$page</var></dt>
+						<dd>Page content.</dd>
+						<dt><var>$replace</var></dt>
+						<dd>Array of replacements (array keys are replacement strings, values are alias arrays).</dd>
+						<dt><var>$diff</var></dt>
+						<dd>If passed, this will be set to the total char number difference between alias and replacements.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						replaced<br>page content and updated $diff parameter as array.
+					</div>
+
+
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getTimestamp" id="_getTimestamp">
+
+			<td class="attributes"><code>
+				 public static
+				integer
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getTimestamp">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#373-386" title="Go to source code">getTimestamp</a>( <span> <var>$date</var></span> )</code>
+
+			<div class="description short">
+				<p>Returns timestamp in seconds from formatted date-time.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns timestamp in seconds from formatted date-time.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$date</var></dt>
+						<dd>Formatted date-time.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						integer<br>seconds.
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							5.9.152 (2012-03-23)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getFormattedDate" id="_getFormattedDate">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getFormattedDate">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#388-397" title="Go to source code">getFormattedDate</a>( <span> <var>$time</var></span> )</code>
+
+			<div class="description short">
+				<p>Returns a formatted date-time.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns a formatted date-time.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$time</var></dt>
+						<dd>Time in seconds.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						string<br>escaped date string.
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							5.9.152 (2012-03-23)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getRandomSeed" id="_getRandomSeed">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getRandomSeed">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#399-421" title="Go to source code">getRandomSeed</a>( <span> <var>$seed</var> = <span class="php-quote">''</span></span> )</code>
+
+			<div class="description short">
+				<p>Returns a string containing random data to be used as a seed for encryption methods.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns a string containing random data to be used as a seed for encryption methods.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$seed</var></dt>
+						<dd>starting seed value</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						string<br>containing random data
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Nicola Asuni<br>
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							5.9.006 (2010-10-19)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="_md5_16" id="__md5_16">
+
+			<td class="attributes"><code>
+				 public static
+				String
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#__md5_16">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#423-432" title="Go to source code">_md5_16</a>( <span> <var>$str</var></span> )</code>
+
+			<div class="description short">
+				<p>Encrypts a string using MD5 and returns it's value as a binary string.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Encrypts a string using MD5 and returns it's value as a binary string.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$str</var></dt>
+						<dd>input string</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						String<br>MD5 encrypted binary string
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							2.0.000 (2008-01-02)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="_AES" id="__AES">
+
+			<td class="attributes"><code>
+				 public static
+				String
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#__AES">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#434-457" title="Go to source code">_AES</a>( <span> <var>$key</var></span>, <span> <var>$text</var></span> )</code>
+
+			<div class="description short">
+				<p>Returns the input text exrypted using AES algorithm and the specified key.
+This method requires openssl or mcrypt. Text is padded to 16bytes blocks</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns the input text exrypted using AES algorithm and the specified key.
+This method requires openssl or mcrypt. Text is padded to 16bytes blocks</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$key</var></dt>
+						<dd>encryption key</dd>
+						<dt><var>$text</var></dt>
+						<dd>input text to be encrypted</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						String<br>encrypted text
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Nicola Asuni<br>
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							5.0.005 (2010-05-11)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="_AESnopad" id="__AESnopad">
+
+			<td class="attributes"><code>
+				 public static
+				String
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#__AESnopad">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#459-478" title="Go to source code">_AESnopad</a>( <span> <var>$key</var></span>, <span> <var>$text</var></span> )</code>
+
+			<div class="description short">
+				<p>Returns the input text exrypted using AES algorithm and the specified key.
+This method requires openssl or mcrypt. Text is not padded</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns the input text exrypted using AES algorithm and the specified key.
+This method requires openssl or mcrypt. Text is not padded</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$key</var></dt>
+						<dd>encryption key</dd>
+						<dt><var>$text</var></dt>
+						<dd>input text to be encrypted</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						String<br>encrypted text
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Nicola Asuni<br>
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							TODO<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="_RC4" id="__RC4">
+
+			<td class="attributes"><code>
+				 public static
+				String
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#__RC4">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#480-526" title="Go to source code">_RC4</a>( <span> <var>$key</var></span>, <span> <var>$text</var></span>, <span> <var>&amp; $last_enc_key</var></span>, <span> <var>&amp; $last_enc_key_c</var></span> )</code>
+
+			<div class="description short">
+				<p>Returns the input text encrypted using RC4 algorithm and the specified key.
+RC4 is the standard encryption algorithm used in PDF format</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns the input text encrypted using RC4 algorithm and the specified key.
+RC4 is the standard encryption algorithm used in PDF format</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$key</var></dt>
+						<dd>Encryption key.</dd>
+						<dt><var>$text</var></dt>
+						<dd>Input text to be encrypted.</dd>
+						<dt><var>$last_enc_key</var></dt>
+						<dd>Reference to last RC4 key encrypted.</dd>
+						<dt><var>$last_enc_key_c</var></dt>
+						<dd>Reference to last RC4 computed key.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						String<br>encrypted text
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Klemen Vodopivec, Nicola Asuni<br>
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.000 (2008-01-02)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getUserPermissionCode" id="_getUserPermissionCode">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getUserPermissionCode">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#528-563" title="Go to source code">getUserPermissionCode</a>( <span> <var>$permissions</var></span>, <span> <var>$mode</var> = <span class="php-num">0</span></span> )</code>
+
+			<div class="description short">
+				<p>Return the permission code used on encryption (P value).</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Return the permission code used on encryption (P value).</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$permissions</var></dt>
+						<dd>the set of permissions (specify the ones you want to block).</dd>
+						<dt><var>$mode</var></dt>
+						<dd>encryption strength: 0 = RC4 40 bit; 1 = RC4 128 bit; 2 = AES 128 bit; 3 = AES 256 bit.</dd>
+					</dl></div>
+
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Nicola Asuni<br>
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							5.0.005 (2010-05-12)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="convertHexStringToString" id="_convertHexStringToString">
+
+			<td class="attributes"><code>
+				 public static
+				String
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_convertHexStringToString">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#565-585" title="Go to source code">convertHexStringToString</a>( <span> <var>$bs</var></span> )</code>
+
+			<div class="description short">
+				<p>Convert hexadecimal string to string</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Convert hexadecimal string to string</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$bs</var></dt>
+						<dd>byte-string to convert</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						String
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Nicola Asuni<br>
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							5.0.005 (2010-05-12)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="convertStringToHexString" id="_convertStringToHexString">
+
+			<td class="attributes"><code>
+				 public static
+				byte
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_convertStringToHexString">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#587-602" title="Go to source code">convertStringToHexString</a>( <span> <var>$s</var></span> )</code>
+
+			<div class="description short">
+				<p>Convert string to hexadecimal string (byte string)</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Convert string to hexadecimal string (byte string)</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$s</var></dt>
+						<dd>string to convert</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						byte<br>string
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Nicola Asuni<br>
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							5.0.010 (2010-05-17)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getEncPermissionsString" id="_getEncPermissionsString">
+
+			<td class="attributes"><code>
+				 public static
+				String
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getEncPermissionsString">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#604-619" title="Go to source code">getEncPermissionsString</a>( <span> <var>$protection</var></span> )</code>
+
+			<div class="description short">
+				<p>Convert encryption P value to a string of bytes, low-order byte first.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Convert encryption P value to a string of bytes, low-order byte first.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$protection</var></dt>
+						<dd>32bit encryption permission value (P value)</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						String
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Nicola Asuni<br>
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							5.0.005 (2010-05-12)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="encodeNameObject" id="_encodeNameObject">
+
+			<td class="attributes"><code>
+				 public static
+				(string)
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_encodeNameObject">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#621-641" title="Go to source code">encodeNameObject</a>( <span> <var>$name</var></span> )</code>
+
+			<div class="description short">
+				<p>Encode a name object.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Encode a name object.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$name</var></dt>
+						<dd>Name object to encode.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						(string)<br>Encoded name object.
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Nicola Asuni<br>
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							5.9.097 (2011-06-23)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getAnnotOptFromJSProp" id="_getAnnotOptFromJSProp">
+
+			<td class="attributes"><code>
+				 public static
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getAnnotOptFromJSProp">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#643-1010" title="Go to source code">getAnnotOptFromJSProp</a>( <span> <var>$prop</var></span>, <span> <var>&amp; $spot_colors</var></span>, <span> <var>$rtl</var> = <span class="php-keyword1">false</span></span> )</code>
+
+			<div class="description short">
+				<p>Convert JavaScript form fields properties array to Annotation Properties array.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Convert JavaScript form fields properties array to Annotation Properties array.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$prop</var></dt>
+						<dd>javascript field properties. Possible values are described on official Javascript for Acrobat API reference.</dd>
+						<dt><var>$spot_colors</var></dt>
+						<dd>Reference to spot colors array.</dd>
+						<dt><var>$rtl</var></dt>
+						<dd>True if in Right-To-Left text direction mode, false otherwise.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						array<br>of annotation properties
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Nicola Asuni<br>
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							4.8.000 (2009-09-06)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="formatPageNumber" id="_formatPageNumber">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_formatPageNumber">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#1012-1021" title="Go to source code">formatPageNumber</a>( <span> <var>$num</var></span> )</code>
+
+			<div class="description short">
+				<p>Format the page numbers.
+This method can be overriden for custom formats.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Format the page numbers.
+This method can be overriden for custom formats.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$num</var></dt>
+						<dd>page number</dd>
+					</dl></div>
+
+
+
+					<h4>Since</h4>
+					<div class="list">
+							4.2.005 (2008-11-06)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="formatTOCPageNumber" id="_formatTOCPageNumber">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_formatTOCPageNumber">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#1023-1033" title="Go to source code">formatTOCPageNumber</a>( <span> <var>$num</var></span> )</code>
+
+			<div class="description short">
+				<p>Format the page numbers on the Table Of Content.
+This method can be overriden for custom formats.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Format the page numbers on the Table Of Content.
+This method can be overriden for custom formats.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$num</var></dt>
+						<dd>page number</dd>
+					</dl></div>
+
+
+
+					<h4>Since</h4>
+					<div class="list">
+							4.5.001 (2009-01-04)<br>
+					</div>
+					<h4>See</h4>
+					<div class="list">
+							addTOC(), addHTMLTOC()<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="extractCSSproperties" id="_extractCSSproperties">
+
+			<td class="attributes"><code>
+				 public static
+				An
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_extractCSSproperties">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#1035-1124" title="Go to source code">extractCSSproperties</a>( <span> <var>$cssdata</var></span> )</code>
+
+			<div class="description short">
+				<p>Extracts the CSS properties from a CSS string.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Extracts the CSS properties from a CSS string.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$cssdata</var></dt>
+						<dd>string containing CSS definitions.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						An<br>array where the keys are the CSS selectors and the values are the CSS properties.
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Nicola Asuni<br>
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							5.1.000 (2010-05-25)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="fixHTMLCode" id="_fixHTMLCode">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_fixHTMLCode">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#1126-1194" title="Go to source code">fixHTMLCode</a>( <span> <var>$html</var></span>, <span> <var>$default_css</var></span>, <span> <var>$tagvs</var></span>, <span> <var>$tidy_options</var></span>, <span> <var>&amp; $tagvspaces</var></span> )</code>
+
+			<div class="description short">
+				<p>Cleanup HTML code (requires HTML Tidy library).</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Cleanup HTML code (requires HTML Tidy library).</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$html</var></dt>
+						<dd>htmlcode to fix</dd>
+						<dt><var>$default_css</var></dt>
+						<dd>CSS commands to add</dd>
+						<dt><var>$tagvs</var></dt>
+						<dd>parameters for setHtmlVSpace method</dd>
+						<dt><var>$tidy_options</var></dt>
+						<dd>options for tidy_parse_string function</dd>
+						<dt><var>$tagvspaces</var></dt>
+						<dd>Array of vertical spaces for tags.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						string<br>XHTML code cleaned up
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Nicola Asuni<br>
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							5.9.017 (2010-11-16)<br>
+					</div>
+					<h4>See</h4>
+					<div class="list">
+							setHtmlVSpace()<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="isValidCSSSelectorForTag" id="_isValidCSSSelectorForTag">
+
+			<td class="attributes"><code>
+				 public static
+				true
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_isValidCSSSelectorForTag">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#1196-1354" title="Go to source code">isValidCSSSelectorForTag</a>( <span> <var>$dom</var></span>, <span> <var>$key</var></span>, <span> <var>$selector</var></span> )</code>
+
+			<div class="description short">
+				<p>Returns true if the CSS selector is valid for the selected HTML tag</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns true if the CSS selector is valid for the selected HTML tag</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$dom</var></dt>
+						<dd>array of HTML tags and properties</dd>
+						<dt><var>$key</var></dt>
+						<dd>key of the current HTML tag</dd>
+						<dt><var>$selector</var></dt>
+						<dd>CSS selector string</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						true<br>if the selector is valid, false otherwise
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							5.1.000 (2010-05-25)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getCSSdataArray" id="_getCSSdataArray">
+
+			<td class="attributes"><code>
+				 public static
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getCSSdataArray">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#1356-1401" title="Go to source code">getCSSdataArray</a>( <span> <var>$dom</var></span>, <span> <var>$key</var></span>, <span> <var>$css</var></span> )</code>
+
+			<div class="description short">
+				<p>Returns the styles array that apply for the selected HTML tag.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns the styles array that apply for the selected HTML tag.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$dom</var></dt>
+						<dd>array of HTML tags and properties</dd>
+						<dt><var>$key</var></dt>
+						<dd>key of the current HTML tag</dd>
+						<dt><var>$css</var></dt>
+						<dd>array of CSS properties</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						array<br>containing CSS properties
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							5.1.000 (2010-05-25)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getTagStyleFromCSSarray" id="_getTagStyleFromCSSarray">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getTagStyleFromCSSarray">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#1403-1432" title="Go to source code">getTagStyleFromCSSarray</a>( <span> <var>$css</var></span> )</code>
+
+			<div class="description short">
+				<p>Compact CSS data array into single string.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Compact CSS data array into single string.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$css</var></dt>
+						<dd>array of CSS properties</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						string<br>containing merged CSS properties
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							5.9.070 (2011-04-19)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="intToRoman" id="_intToRoman">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_intToRoman">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#1434-1496" title="Go to source code">intToRoman</a>( <span> <var>$number</var></span> )</code>
+
+			<div class="description short">
+				<p>Returns the Roman representation of an integer number</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns the Roman representation of an integer number</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$number</var></dt>
+						<dd>number to convert</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						string<br>roman representation of the specified number
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							4.4.004 (2008-12-10)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="revstrpos" id="_revstrpos">
+
+			<td class="attributes"><code>
+				 public static
+				Returns
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_revstrpos">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#1498-1512" title="Go to source code">revstrpos</a>( <span> <var>$haystack</var></span>, <span> <var>$needle</var></span>, <span> <var>$offset</var> = <span class="php-num">0</span></span> )</code>
+
+			<div class="description short">
+				<p>Find position of last occurrence of a substring in a string</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Find position of last occurrence of a substring in a string</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$haystack</var></dt>
+						<dd>The string to search in.</dd>
+						<dt><var>$needle</var></dt>
+						<dd>substring to search.</dd>
+						<dt><var>$offset</var></dt>
+						<dd>May be specified to begin searching an arbitrary number of characters into the string.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						Returns<br>the position where the needle exists. Returns FALSE if the needle was not found.
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							4.8.038 (2010-03-13)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getHyphenPatternsFromTEX" id="_getHyphenPatternsFromTEX">
+
+			<td class="attributes"><code>
+				 public static
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getHyphenPatternsFromTEX">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#1514-1545" title="Go to source code">getHyphenPatternsFromTEX</a>( <span> <var>$file</var></span> )</code>
+
+			<div class="description short">
+				<p>Returns an array of hyphenation patterns.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns an array of hyphenation patterns.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$file</var></dt>
+						<dd>TEX file containing hypenation patterns. TEX pattrns can be downloaded from http://www.ctan.org/tex-archive/language/hyph-utf8/tex/generic/hyph-utf8/patterns/</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						array<br>of hyphenation patterns
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Nicola Asuni<br>
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							4.9.012 (2010-04-12)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getPathPaintOperator" id="_getPathPaintOperator">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getPathPaintOperator">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#1547-1636" title="Go to source code">getPathPaintOperator</a>( <span> <var>$style</var></span>, <span> <var>$default</var> = <span class="php-quote">'S'</span></span> )</code>
+
+			<div class="description short">
+				<p>Get the Path-Painting Operators.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Get the Path-Painting Operators.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$style</var></dt>
+						<dd><p>Style of rendering. Possible values are:</p>
+
+<ul>
+  <li>S or D: Stroke the path.</li>
+  <li>s or d: Close and stroke the path.</li>
+  <li>f or F: Fill the path, using the nonzero winding number rule to determine the region to fill.</li>
+  <li>f* or F*: Fill the path, using the even-odd rule to determine the region to fill.</li>
+  <li>B or FD or DF: Fill and then stroke the path, using the nonzero winding number rule to determine the region to fill.</li>
+  <li>B* or F*D or DF*: Fill and then stroke the path, using the even-odd rule to determine the region to fill.</li>
+  <li>b or fd or df: Close, fill, and then stroke the path, using the nonzero winding number rule to determine the region to fill.</li>
+  <li>b or f*d or df*: Close, fill, and then stroke the path, using the even-odd rule to determine the region to fill.</li>
+  <li>CNZ: Clipping mode using the even-odd rule to determine which regions lie inside the clipping path.</li>
+  <li>CEO: Clipping mode using the nonzero winding number rule to determine which regions lie inside the clipping path</li>
+  <li>n: End the path object without filling or stroking it.</li>
+</ul></dd>
+						<dt><var>$default</var></dt>
+						<dd>default style</dd>
+					</dl></div>
+
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Nicola Asuni<br>
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							5.0.000 (2010-04-30)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getTransformationMatrixProduct" id="_getTransformationMatrixProduct">
+
+			<td class="attributes"><code>
+				 public static
+				transformation
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getTransformationMatrixProduct">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#1638-1656" title="Go to source code">getTransformationMatrixProduct</a>( <span> <var>$ta</var></span>, <span> <var>$tb</var></span> )</code>
+
+			<div class="description short">
+				<p>Get the product of two SVG tranformation matrices</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Get the product of two SVG tranformation matrices</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$ta</var></dt>
+						<dd>first SVG tranformation matrix</dd>
+						<dt><var>$tb</var></dt>
+						<dd>second SVG tranformation matrix</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						transformation<br>array
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Nicola Asuni<br>
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							5.0.000 (2010-05-02)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getSVGTransformMatrix" id="_getSVGTransformMatrix">
+
+			<td class="attributes"><code>
+				 public static
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getSVGTransformMatrix">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#1658-1751" title="Go to source code">getSVGTransformMatrix</a>( <span> <var>$attribute</var></span> )</code>
+
+			<div class="description short">
+				<p>Get the tranformation matrix from SVG transform attribute</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Get the tranformation matrix from SVG transform attribute</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$attribute</var></dt>
+						<dd>transformation</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						array<br>of transformations
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Nicola Asuni<br>
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							5.0.000 (2010-05-02)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getVectorsAngle" id="_getVectorsAngle">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getVectorsAngle">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#1753-1775" title="Go to source code">getVectorsAngle</a>( <span> <var>$x1</var></span>, <span> <var>$y1</var></span>, <span> <var>$x2</var></span>, <span> <var>$y2</var></span> )</code>
+
+			<div class="description short">
+				<p>Returns the angle in radiants between two vectors</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns the angle in radiants between two vectors</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$x1</var></dt>
+						<dd>X coordinate of first vector point</dd>
+						<dt><var>$y1</var></dt>
+						<dd>Y coordinate of first vector point</dd>
+						<dt><var>$x2</var></dt>
+						<dd>X coordinate of second vector point</dd>
+						<dt><var>$y2</var></dt>
+						<dd>Y coordinate of second vector point</dd>
+					</dl></div>
+
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Nicola Asuni<br>
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							5.0.000 (2010-05-04)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="pregSplit" id="_pregSplit">
+
+			<td class="attributes"><code>
+				 public static
+				Returns
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_pregSplit">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#1810-1839" title="Go to source code">pregSplit</a>( <span> <var>$pattern</var></span>, <span> <var>$modifiers</var></span>, <span> <var>$subject</var></span>, <span> <var>$limit</var> = <span class="php-keyword1">NULL</span></span>, <span> <var>$flags</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+			<div class="description short">
+				<p>Split string by a regular expression.
+This is a wrapper for the preg_split function to avoid the bug: https://bugs.php.net/bug.php?id=45850</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Split string by a regular expression.
+This is a wrapper for the preg_split function to avoid the bug: https://bugs.php.net/bug.php?id=45850</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$pattern</var></dt>
+						<dd>The regular expression pattern to search for without the modifiers, as a string.</dd>
+						<dt><var>$modifiers</var></dt>
+						<dd>The modifiers part of the pattern,</dd>
+						<dt><var>$subject</var></dt>
+						<dd>The input string.</dd>
+						<dt><var>$limit</var></dt>
+						<dd>If specified, then only substrings up to limit are returned with the rest of the string being placed in the last substring. A limit of -1, 0 or NULL means "no limit" and, as is standard across PHP, you can use NULL to skip to the flags parameter.</dd>
+						<dt><var>$flags</var></dt>
+						<dd>The flags as specified on the preg_split PHP function.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						Returns<br>an array containing substrings of subject split along boundaries matched by pattern.modifier
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Nicola Asuni<br>
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							6.0.023<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="fopenLocal" id="_fopenLocal">
+
+			<td class="attributes"><code>
+				 public static
+				Returns
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_fopenLocal">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#1841-1855" title="Go to source code">fopenLocal</a>( <span>filename <var>$filename</var></span>, <span> <var>$mode</var></span> )</code>
+
+			<div class="description short">
+				<p>Wrapper to use fopen only with local files</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Wrapper to use fopen only with local files</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$filename</var></dt>
+						<dd>Name of the file to open</dd>
+						<dt><var>$mode</var></dt>
+						<dd>(string)</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						Returns<br>a file pointer resource on success, or FALSE on error.
+					</div>
+
+
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="fileGetContents" id="_fileGetContents">
+
+			<td class="attributes"><code>
+				 public static
+				The
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_fileGetContents">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#1857-1950" title="Go to source code">fileGetContents</a>( <span> <var>$file</var></span> )</code>
+
+			<div class="description short">
+				<p>Reads entire file into a string.
+The file can be also an URL.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Reads entire file into a string.
+The file can be also an URL.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$file</var></dt>
+						<dd>Name of the file or URL to read.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						The<br>function returns the read data or FALSE on failure.
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Nicola Asuni<br>
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							6.0.025<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="_getULONG" id="__getULONG">
+
+			<td class="attributes"><code>
+				 public static
+				integer
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#__getULONG">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#1954-1966" title="Go to source code">_getULONG</a>( <span> <var>$str</var></span>, <span> <var>$offset</var></span> )</code>
+
+			<div class="description short">
+				<p>Get ULONG from string (Big Endian 32-bit unsigned integer).</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Get ULONG from string (Big Endian 32-bit unsigned integer).</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$str</var></dt>
+						<dd>string from where to extract value</dd>
+						<dt><var>$offset</var></dt>
+						<dd>point from where to read the data</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						integer<br>32 bit value
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Nicola Asuni<br>
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							5.2.000 (2010-06-02)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="_getUSHORT" id="__getUSHORT">
+
+			<td class="attributes"><code>
+				 public static
+				integer
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#__getUSHORT">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#1968-1980" title="Go to source code">_getUSHORT</a>( <span> <var>$str</var></span>, <span> <var>$offset</var></span> )</code>
+
+			<div class="description short">
+				<p>Get USHORT from string (Big Endian 16-bit unsigned integer).</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Get USHORT from string (Big Endian 16-bit unsigned integer).</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$str</var></dt>
+						<dd>string from where to extract value</dd>
+						<dt><var>$offset</var></dt>
+						<dd>point from where to read the data</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						integer<br>16 bit value
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Nicola Asuni<br>
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							5.2.000 (2010-06-02)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="_getSHORT" id="__getSHORT">
+
+			<td class="attributes"><code>
+				 public static
+				integer
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#__getSHORT">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#1982-1994" title="Go to source code">_getSHORT</a>( <span> <var>$str</var></span>, <span> <var>$offset</var></span> )</code>
+
+			<div class="description short">
+				<p>Get SHORT from string (Big Endian 16-bit signed integer).</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Get SHORT from string (Big Endian 16-bit signed integer).</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$str</var></dt>
+						<dd>String from where to extract value.</dd>
+						<dt><var>$offset</var></dt>
+						<dd>Point from where to read the data.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						integer<br>16 bit value
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Nicola Asuni<br>
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							5.2.000 (2010-06-02)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="_getFWORD" id="__getFWORD">
+
+			<td class="attributes"><code>
+				 public static
+				integer
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#__getFWORD">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#1996-2011" title="Go to source code">_getFWORD</a>( <span> <var>$str</var></span>, <span> <var>$offset</var></span> )</code>
+
+			<div class="description short">
+				<p>Get FWORD from string (Big Endian 16-bit signed integer).</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Get FWORD from string (Big Endian 16-bit signed integer).</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$str</var></dt>
+						<dd>String from where to extract value.</dd>
+						<dt><var>$offset</var></dt>
+						<dd>Point from where to read the data.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						integer<br>16 bit value
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Nicola Asuni<br>
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							5.9.123 (2011-09-30)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="_getUFWORD" id="__getUFWORD">
+
+			<td class="attributes"><code>
+				 public static
+				integer
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#__getUFWORD">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#2013-2025" title="Go to source code">_getUFWORD</a>( <span> <var>$str</var></span>, <span> <var>$offset</var></span> )</code>
+
+			<div class="description short">
+				<p>Get UFWORD from string (Big Endian 16-bit unsigned integer).</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Get UFWORD from string (Big Endian 16-bit unsigned integer).</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$str</var></dt>
+						<dd>string from where to extract value</dd>
+						<dt><var>$offset</var></dt>
+						<dd>point from where to read the data</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						integer<br>16 bit value
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Nicola Asuni<br>
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							5.9.123 (2011-09-30)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="_getFIXED" id="__getFIXED">
+
+			<td class="attributes"><code>
+				 public static
+				integer
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#__getFIXED">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#2027-2043" title="Go to source code">_getFIXED</a>( <span> <var>$str</var></span>, <span> <var>$offset</var></span> )</code>
+
+			<div class="description short">
+				<p>Get FIXED from string (32-bit signed fixed-point number (16.16).</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Get FIXED from string (32-bit signed fixed-point number (16.16).</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$str</var></dt>
+						<dd>string from where to extract value</dd>
+						<dt><var>$offset</var></dt>
+						<dd>point from where to read the data</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						integer<br>16 bit value
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Nicola Asuni<br>
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							5.9.123 (2011-09-30)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="_getBYTE" id="__getBYTE">
+
+			<td class="attributes"><code>
+				 public static
+				integer
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#__getBYTE">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#2045-2057" title="Go to source code">_getBYTE</a>( <span> <var>$str</var></span>, <span> <var>$offset</var></span> )</code>
+
+			<div class="description short">
+				<p>Get BYTE from string (8-bit unsigned integer).</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Get BYTE from string (8-bit unsigned integer).</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$str</var></dt>
+						<dd>String from where to extract value.</dd>
+						<dt><var>$offset</var></dt>
+						<dd>Point from where to read the data.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						integer<br>8 bit value
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Nicola Asuni<br>
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							5.2.000 (2010-06-02)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="rfread" id="_rfread">
+
+			<td class="attributes"><code>
+				 public static
+				Returns
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_rfread">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#2058-2078" title="Go to source code">rfread</a>( <span> <var>$handle</var></span>, <span> <var>$length</var></span> )</code>
+
+			<div class="description short">
+				<p>Binary-safe and URL-safe file read.
+Reads up to length bytes from the file pointer referenced by handle. Reading stops as soon as one of the following conditions is met: length bytes have been read; EOF (end of file) is reached.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Binary-safe and URL-safe file read.
+Reads up to length bytes from the file pointer referenced by handle. Reading stops as soon as one of the following conditions is met: length bytes have been read; EOF (end of file) is reached.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$handle</var></dt>
+						<dd>(resource)</dd>
+						<dt><var>$length</var></dt>
+						<dd>(int)</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						Returns<br>the read string or FALSE in case of error.
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Nicola Asuni<br>
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							4.5.027 (2009-03-16)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="_freadint" id="__freadint">
+
+			<td class="attributes"><code>
+				 public static
+				4-byte
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#__freadint">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#2080-2089" title="Go to source code">_freadint</a>( <span> <var>$f</var></span> )</code>
+
+			<div class="description short">
+				<p>Read a 4-byte (32 bit) integer from file.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Read a 4-byte (32 bit) integer from file.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$f</var></dt>
+						<dd>file name.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						4-byte<br>integer
+					</div>
+
+
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getPageSizeFromFormat" id="_getPageSizeFromFormat">
+
+			<td class="attributes"><code>
+				 public static
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getPageSizeFromFormat">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#2449-2461" title="Go to source code">getPageSizeFromFormat</a>( <span> <var>$format</var></span> )</code>
+
+			<div class="description short">
+				<p>Get page dimensions from format name.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Get page dimensions from format name.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$format</var></dt>
+						<dd><p>The format name @see self::$page_format</p>
+
+<p>&lt;</p>
+
+<p>ul></p></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						array<br>containing page width and height in points
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							5.0.010 (2010-05-17)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setPageBoxes" id="_setPageBoxes">
+
+			<td class="attributes"><code>
+				 public static
+				pagedim
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setPageBoxes">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#2463-2494" title="Go to source code">setPageBoxes</a>( <span> <var>$page</var></span>, <span> <var>$type</var></span>, <span> <var>$llx</var></span>, <span> <var>$lly</var></span>, <span> <var>$urx</var></span>, <span> <var>$ury</var></span>, <span> <var>$points</var></span>, <span> <var>$k</var></span>, <span> <var>$pagedim</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+			<div class="description short">
+				<p>Set page boundaries.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Set page boundaries.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$page</var></dt>
+						<dd>page number</dd>
+						<dt><var>$type</var></dt>
+						<dd><p>valid values are:</p>
+
+<ul><li>'MediaBox' : the boundaries of the physical medium on which the page shall be displayed or printed;</li><li>'CropBox' : the visible region of default user space;</li><li>'BleedBox' : the region to which the contents of the page shall be clipped when output in a production environment;</li><li>'TrimBox' : the intended dimensions of the finished page after trimming;</li><li>'ArtBox' : the page's meaningful content (including potential white space).</li></ul></dd>
+						<dt><var>$llx</var></dt>
+						<dd>lower-left x coordinate in user units.</dd>
+						<dt><var>$lly</var></dt>
+						<dd>lower-left y coordinate in user units.</dd>
+						<dt><var>$urx</var></dt>
+						<dd>upper-right x coordinate in user units.</dd>
+						<dt><var>$ury</var></dt>
+						<dd>upper-right y coordinate in user units.</dd>
+						<dt><var>$points</var></dt>
+						<dd>If true uses user units as unit of measure, otherwise uses PDF points.</dd>
+						<dt><var>$k</var></dt>
+						<dd>Scale factor (number of points in user unit).</dd>
+						<dt><var>$pagedim</var></dt>
+						<dd>Array of page dimensions.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						pagedim<br>array of page dimensions.
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							5.0.010 (2010-05-17)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="swapPageBoxCoordinates" id="_swapPageBoxCoordinates">
+
+			<td class="attributes"><code>
+				 public static
+				pagedim
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_swapPageBoxCoordinates">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#2496-2517" title="Go to source code">swapPageBoxCoordinates</a>( <span> <var>$page</var></span>, <span> <var>$pagedim</var></span> )</code>
+
+			<div class="description short">
+				<p>Swap X and Y coordinates of page boxes (change page boxes orientation).</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Swap X and Y coordinates of page boxes (change page boxes orientation).</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$page</var></dt>
+						<dd>page number</dd>
+						<dt><var>$pagedim</var></dt>
+						<dd>Array of page dimensions.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						pagedim<br>array of page dimensions.
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							5.0.010 (2010-05-17)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getPageLayoutMode" id="_getPageLayoutMode">
+
+			<td class="attributes"><code>
+				 public static
+				(string)
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getPageLayoutMode">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#2519-2560" title="Go to source code">getPageLayoutMode</a>( <span> <var>$layout</var> = <span class="php-quote">'SinglePage'</span></span> )</code>
+
+			<div class="description short">
+				<p>Get the canonical page layout mode.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Get the canonical page layout mode.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$layout</var></dt>
+						<dd><p>The page layout. Possible values are:</p>
+
+<ul><li>SinglePage Display one page at a time</li><li>OneColumn Display the pages in one column</li><li>TwoColumnLeft Display the pages in two columns, with odd-numbered pages on the left</li><li>TwoColumnRight Display the pages in two columns, with odd-numbered pages on the right</li><li>TwoPageLeft (PDF 1.5) Display the pages two at a time, with odd-numbered pages on the left</li><li>TwoPageRight (PDF 1.5) Display the pages two at a time, with odd-numbered pages on the right</li></ul></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						(string)<br>Canonical page layout name.
+					</div>
+
+
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getPageMode" id="_getPageMode">
+
+			<td class="attributes"><code>
+				 public static
+				(string)
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getPageMode">#</a>
+			<code><a href="source-class-TCPDF_STATIC.html#2562-2599" title="Go to source code">getPageMode</a>( <span> <var>$mode</var> = <span class="php-quote">'UseNone'</span></span> )</code>
+
+			<div class="description short">
+				<p>Get the canonical page layout mode.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Get the canonical page layout mode.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$mode</var></dt>
+						<dd><p>A name object specifying how the document should be displayed when opened:</p>
+
+<ul><li>UseNone Neither document outline nor thumbnail images visible</li><li>UseOutlines Document outline visible</li><li>UseThumbs Thumbnail images visible</li><li>FullScreen Full-screen mode, with no menu bar, window controls, or any other window visible</li><li>UseOC (PDF 1.5) Optional content group panel visible</li><li>UseAttachments (PDF 1.6) Attachments panel visible</li></ul></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						(string)<br>Canonical page mode name.
+					</div>
+
+
+					<h4>Public</h4>
+					<div class="list">
+							static<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+			</table>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h2>Properties summary</h2></div>
+			<table class="summary table table-bordered table-striped properties" id="properties">
+		<tr data-order="tcpdf_version" id="$tcpdf_version">
+			<td class="attributes"><code>
+				private static 
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TCPDF_STATIC.html#54-58" title="Go to source code"><var>$tcpdf_version</var></a>
+
+				<div class="description short">
+					<p>Current TCPDF version.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Current TCPDF version.</p>
+
+						<h4>Private</h4>
+						<div class="list">
+								static<br>
+						</div>
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$tcpdf_version" class="anchor">#</a>
+					<code><span class="php-quote">'6.2.12'</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="alias_tot_pages" id="$alias_tot_pages">
+			<td class="attributes"><code>
+				public static 
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TCPDF_STATIC.html#60-64" title="Go to source code"><var>$alias_tot_pages</var></a>
+
+				<div class="description short">
+					<p>String alias for total number of pages.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>String alias for total number of pages.</p>
+
+						<h4>Public</h4>
+						<div class="list">
+								static<br>
+						</div>
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$alias_tot_pages" class="anchor">#</a>
+					<code><span class="php-quote">'{:ptp:}'</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="alias_num_page" id="$alias_num_page">
+			<td class="attributes"><code>
+				public static 
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TCPDF_STATIC.html#66-70" title="Go to source code"><var>$alias_num_page</var></a>
+
+				<div class="description short">
+					<p>String alias for page number.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>String alias for page number.</p>
+
+						<h4>Public</h4>
+						<div class="list">
+								static<br>
+						</div>
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$alias_num_page" class="anchor">#</a>
+					<code><span class="php-quote">'{:pnp:}'</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="alias_group_tot_pages" id="$alias_group_tot_pages">
+			<td class="attributes"><code>
+				public static 
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TCPDF_STATIC.html#72-76" title="Go to source code"><var>$alias_group_tot_pages</var></a>
+
+				<div class="description short">
+					<p>String alias for total number of pages in a single group.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>String alias for total number of pages in a single group.</p>
+
+						<h4>Public</h4>
+						<div class="list">
+								static<br>
+						</div>
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$alias_group_tot_pages" class="anchor">#</a>
+					<code><span class="php-quote">'{:ptg:}'</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="alias_group_num_page" id="$alias_group_num_page">
+			<td class="attributes"><code>
+				public static 
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TCPDF_STATIC.html#78-82" title="Go to source code"><var>$alias_group_num_page</var></a>
+
+				<div class="description short">
+					<p>String alias for group page number.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>String alias for group page number.</p>
+
+						<h4>Public</h4>
+						<div class="list">
+								static<br>
+						</div>
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$alias_group_num_page" class="anchor">#</a>
+					<code><span class="php-quote">'{:png:}'</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="alias_right_shift" id="$alias_right_shift">
+			<td class="attributes"><code>
+				public static 
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TCPDF_STATIC.html#84-88" title="Go to source code"><var>$alias_right_shift</var></a>
+
+				<div class="description short">
+					<p>String alias for right shift compensation used to correctly align page numbers on the right.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>String alias for right shift compensation used to correctly align page numbers on the right.</p>
+
+						<h4>Public</h4>
+						<div class="list">
+								static<br>
+						</div>
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$alias_right_shift" class="anchor">#</a>
+					<code><span class="php-quote">'{rsc:'</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="enc_padding" id="$enc_padding">
+			<td class="attributes"><code>
+				public static 
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TCPDF_STATIC.html#90-94" title="Go to source code"><var>$enc_padding</var></a>
+
+				<div class="description short">
+					<p>Encryption padding string.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Encryption padding string.</p>
+
+						<h4>Public</h4>
+						<div class="list">
+								static<br>
+						</div>
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$enc_padding" class="anchor">#</a>
+					<code><span class="php-quote">&quot;\x28\xBF\x4E\x5E\x4E\x75\x8A\x41\x64\x00\x4E\x56\xFF\xFA\x01\x08\x2E\x2E\x00\xB6\xD0\x68\x3E\x80\x2F\x0C\xA9\xFE\x64\x53\x69\x7A&quot;</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="byterange_string" id="$byterange_string">
+			<td class="attributes"><code>
+				public static 
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TCPDF_STATIC.html#96-101" title="Go to source code"><var>$byterange_string</var></a>
+
+				<div class="description short">
+					<p>ByteRange placemark used during digital signature process.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>ByteRange placemark used during digital signature process.</p>
+
+						<h4>Since</h4>
+						<div class="list">
+								4.6.028 (2009-08-25)<br>
+						</div>
+						<h4>Public</h4>
+						<div class="list">
+								static<br>
+						</div>
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$byterange_string" class="anchor">#</a>
+					<code><span class="php-quote">'/ByteRange[0 ********** ********** **********]'</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="pageboxes" id="$pageboxes">
+			<td class="attributes"><code>
+				public static 
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TCPDF_STATIC.html#103-107" title="Go to source code"><var>$pageboxes</var></a>
+
+				<div class="description short">
+					<p>Array page boxes names</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Array page boxes names</p>
+
+						<h4>Public</h4>
+						<div class="list">
+								static<br>
+						</div>
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$pageboxes" class="anchor">#</a>
+					<code><span class="php-keyword1">array</span>(<span class="php-quote">'MediaBox'</span>, <span class="php-quote">'CropBox'</span>, <span class="php-quote">'BleedBox'</span>, <span class="php-quote">'TrimBox'</span>, <span class="php-quote">'ArtBox'</span>)</code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="page_formats" id="$page_formats">
+			<td class="attributes"><code>
+				public static 
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TCPDF_STATIC.html#2092-2446" title="Go to source code"><var>$page_formats</var></a>
+
+				<div class="description short">
+					<p>Array of page formats
+measures are calculated in this way: (inches * 72) or (millimeters * 72 / 25.4)</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Array of page formats
+measures are calculated in this way: (inches * 72) or (millimeters * 72 / 25.4)</p>
+
+						<h4>Public</h4>
+						<div class="list">
+								static<br>
+						</div>
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$page_formats" class="anchor">#</a>
+					<code><span class="php-keyword1">array</span>(
+    <span class="php-comment">// ISO 216 A Series + 2 SIS 014711 extensions</span>
+    <span class="php-quote">'A0'</span>                     =&gt; <span class="php-keyword1">array</span>( <span class="php-num">2383.937</span>,  <span class="php-num">3370.394</span>), <span class="php-comment">// = (  841 x 1189 ) mm  = ( 33.11 x 46.81 ) in</span>
+    <span class="php-quote">'A1'</span>                     =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1683.780</span>,  <span class="php-num">2383.937</span>), <span class="php-comment">// = (  594 x 841  ) mm  = ( 23.39 x 33.11 ) in</span>
+    <span class="php-quote">'A2'</span>                     =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1190.551</span>,  <span class="php-num">1683.780</span>), <span class="php-comment">// = (  420 x 594  ) mm  = ( 16.54 x 23.39 ) in</span>
+    <span class="php-quote">'A3'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">841.890</span>,  <span class="php-num">1190.551</span>), <span class="php-comment">// = (  297 x 420  ) mm  = ( 11.69 x 16.54 ) in</span>
+    <span class="php-quote">'A4'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">595.276</span>,   <span class="php-num">841.890</span>), <span class="php-comment">// = (  210 x 297  ) mm  = (  8.27 x 11.69 ) in</span>
+    <span class="php-quote">'A5'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">419.528</span>,   <span class="php-num">595.276</span>), <span class="php-comment">// = (  148 x 210  ) mm  = (  5.83 x 8.27  ) in</span>
+    <span class="php-quote">'A6'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">297.638</span>,   <span class="php-num">419.528</span>), <span class="php-comment">// = (  105 x 148  ) mm  = (  4.13 x 5.83  ) in</span>
+    <span class="php-quote">'A7'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">209.764</span>,   <span class="php-num">297.638</span>), <span class="php-comment">// = (   74 x 105  ) mm  = (  2.91 x 4.13  ) in</span>
+    <span class="php-quote">'A8'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">147.402</span>,   <span class="php-num">209.764</span>), <span class="php-comment">// = (   52 x 74   ) mm  = (  2.05 x 2.91  ) in</span>
+    <span class="php-quote">'A9'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">104.882</span>,   <span class="php-num">147.402</span>), <span class="php-comment">// = (   37 x 52   ) mm  = (  1.46 x 2.05  ) in</span>
+    <span class="php-quote">'A10'</span>                    =&gt; <span class="php-keyword1">array</span>(   <span class="php-num">73.701</span>,   <span class="php-num">104.882</span>), <span class="php-comment">// = (   26 x 37   ) mm  = (  1.02 x 1.46  ) in</span>
+    <span class="php-quote">'A11'</span>                    =&gt; <span class="php-keyword1">array</span>(   <span class="php-num">51.024</span>,    <span class="php-num">73.701</span>), <span class="php-comment">// = (   18 x 26   ) mm  = (  0.71 x 1.02  ) in</span>
+    <span class="php-quote">'A12'</span>                    =&gt; <span class="php-keyword1">array</span>(   <span class="php-num">36.850</span>,    <span class="php-num">51.024</span>), <span class="php-comment">// = (   13 x 18   ) mm  = (  0.51 x 0.71  ) in</span>
+    <span class="php-comment">// ISO 216 B Series + 2 SIS 014711 extensions</span>
+    <span class="php-quote">'B0'</span>                     =&gt; <span class="php-keyword1">array</span>( <span class="php-num">2834.646</span>,  <span class="php-num">4008.189</span>), <span class="php-comment">// = ( 1000 x 1414 ) mm  = ( 39.37 x 55.67 ) in</span>
+    <span class="php-quote">'B1'</span>                     =&gt; <span class="php-keyword1">array</span>( <span class="php-num">2004.094</span>,  <span class="php-num">2834.646</span>), <span class="php-comment">// = (  707 x 1000 ) mm  = ( 27.83 x 39.37 ) in</span>
+    <span class="php-quote">'B2'</span>                     =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1417.323</span>,  <span class="php-num">2004.094</span>), <span class="php-comment">// = (  500 x 707  ) mm  = ( 19.69 x 27.83 ) in</span>
+    <span class="php-quote">'B3'</span>                     =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1000.630</span>,  <span class="php-num">1417.323</span>), <span class="php-comment">// = (  353 x 500  ) mm  = ( 13.90 x 19.69 ) in</span>
+    <span class="php-quote">'B4'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">708.661</span>,  <span class="php-num">1000.630</span>), <span class="php-comment">// = (  250 x 353  ) mm  = (  9.84 x 13.90 ) in</span>
+    <span class="php-quote">'B5'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">498.898</span>,   <span class="php-num">708.661</span>), <span class="php-comment">// = (  176 x 250  ) mm  = (  6.93 x 9.84  ) in</span>
+    <span class="php-quote">'B6'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">354.331</span>,   <span class="php-num">498.898</span>), <span class="php-comment">// = (  125 x 176  ) mm  = (  4.92 x 6.93  ) in</span>
+    <span class="php-quote">'B7'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">249.449</span>,   <span class="php-num">354.331</span>), <span class="php-comment">// = (   88 x 125  ) mm  = (  3.46 x 4.92  ) in</span>
+    <span class="php-quote">'B8'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">175.748</span>,   <span class="php-num">249.449</span>), <span class="php-comment">// = (   62 x 88   ) mm  = (  2.44 x 3.46  ) in</span>
+    <span class="php-quote">'B9'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">124.724</span>,   <span class="php-num">175.748</span>), <span class="php-comment">// = (   44 x 62   ) mm  = (  1.73 x 2.44  ) in</span>
+    <span class="php-quote">'B10'</span>                    =&gt; <span class="php-keyword1">array</span>(   <span class="php-num">87.874</span>,   <span class="php-num">124.724</span>), <span class="php-comment">// = (   31 x 44   ) mm  = (  1.22 x 1.73  ) in</span>
+    <span class="php-quote">'B11'</span>                    =&gt; <span class="php-keyword1">array</span>(   <span class="php-num">62.362</span>,    <span class="php-num">87.874</span>), <span class="php-comment">// = (   22 x 31   ) mm  = (  0.87 x 1.22  ) in</span>
+    <span class="php-quote">'B12'</span>                    =&gt; <span class="php-keyword1">array</span>(   <span class="php-num">42.520</span>,    <span class="php-num">62.362</span>), <span class="php-comment">// = (   15 x 22   ) mm  = (  0.59 x 0.87  ) in</span>
+    <span class="php-comment">// ISO 216 C Series + 2 SIS 014711 extensions + 5 EXTENSION</span>
+    <span class="php-quote">'C0'</span>                     =&gt; <span class="php-keyword1">array</span>( <span class="php-num">2599.370</span>,  <span class="php-num">3676.535</span>), <span class="php-comment">// = (  917 x 1297 ) mm  = ( 36.10 x 51.06 ) in</span>
+    <span class="php-quote">'C1'</span>                     =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1836.850</span>,  <span class="php-num">2599.370</span>), <span class="php-comment">// = (  648 x 917  ) mm  = ( 25.51 x 36.10 ) in</span>
+    <span class="php-quote">'C2'</span>                     =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1298.268</span>,  <span class="php-num">1836.850</span>), <span class="php-comment">// = (  458 x 648  ) mm  = ( 18.03 x 25.51 ) in</span>
+    <span class="php-quote">'C3'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">918.425</span>,  <span class="php-num">1298.268</span>), <span class="php-comment">// = (  324 x 458  ) mm  = ( 12.76 x 18.03 ) in</span>
+    <span class="php-quote">'C4'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">649.134</span>,   <span class="php-num">918.425</span>), <span class="php-comment">// = (  229 x 324  ) mm  = (  9.02 x 12.76 ) in</span>
+    <span class="php-quote">'C5'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">459.213</span>,   <span class="php-num">649.134</span>), <span class="php-comment">// = (  162 x 229  ) mm  = (  6.38 x 9.02  ) in</span>
+    <span class="php-quote">'C6'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">323.150</span>,   <span class="php-num">459.213</span>), <span class="php-comment">// = (  114 x 162  ) mm  = (  4.49 x 6.38  ) in</span>
+    <span class="php-quote">'C7'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">229.606</span>,   <span class="php-num">323.150</span>), <span class="php-comment">// = (   81 x 114  ) mm  = (  3.19 x 4.49  ) in</span>
+    <span class="php-quote">'C8'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">161.575</span>,   <span class="php-num">229.606</span>), <span class="php-comment">// = (   57 x 81   ) mm  = (  2.24 x 3.19  ) in</span>
+    <span class="php-quote">'C9'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">113.386</span>,   <span class="php-num">161.575</span>), <span class="php-comment">// = (   40 x 57   ) mm  = (  1.57 x 2.24  ) in</span>
+    <span class="php-quote">'C10'</span>                    =&gt; <span class="php-keyword1">array</span>(   <span class="php-num">79.370</span>,   <span class="php-num">113.386</span>), <span class="php-comment">// = (   28 x 40   ) mm  = (  1.10 x 1.57  ) in</span>
+    <span class="php-quote">'C11'</span>                    =&gt; <span class="php-keyword1">array</span>(   <span class="php-num">56.693</span>,    <span class="php-num">79.370</span>), <span class="php-comment">// = (   20 x 28   ) mm  = (  0.79 x 1.10  ) in</span>
+    <span class="php-quote">'C12'</span>                    =&gt; <span class="php-keyword1">array</span>(   <span class="php-num">39.685</span>,    <span class="php-num">56.693</span>), <span class="php-comment">// = (   14 x 20   ) mm  = (  0.55 x 0.79  ) in</span>
+    <span class="php-quote">'C76'</span>                    =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">229.606</span>,   <span class="php-num">459.213</span>), <span class="php-comment">// = (   81 x 162  ) mm  = (  3.19 x 6.38  ) in</span>
+    <span class="php-quote">'DL'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">311.811</span>,   <span class="php-num">623.622</span>), <span class="php-comment">// = (  110 x 220  ) mm  = (  4.33 x 8.66  ) in</span>
+    <span class="php-quote">'DLE'</span>                    =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">323.150</span>,   <span class="php-num">637.795</span>), <span class="php-comment">// = (  114 x 225  ) mm  = (  4.49 x 8.86  ) in</span>
+    <span class="php-quote">'DLX'</span>                    =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">340.158</span>,   <span class="php-num">666.142</span>), <span class="php-comment">// = (  120 x 235  ) mm  = (  4.72 x 9.25  ) in</span>
+    <span class="php-quote">'DLP'</span>                    =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">280.630</span>,   <span class="php-num">595.276</span>), <span class="php-comment">// = (   99 x 210  ) mm  = (  3.90 x 8.27  ) in (1/3 A4)</span>
+    <span class="php-comment">// SIS 014711 E Series</span>
+    <span class="php-quote">'E0'</span>                     =&gt; <span class="php-keyword1">array</span>( <span class="php-num">2491.654</span>,  <span class="php-num">3517.795</span>), <span class="php-comment">// = (  879 x 1241 ) mm  = ( 34.61 x 48.86 ) in</span>
+    <span class="php-quote">'E1'</span>                     =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1757.480</span>,  <span class="php-num">2491.654</span>), <span class="php-comment">// = (  620 x 879  ) mm  = ( 24.41 x 34.61 ) in</span>
+    <span class="php-quote">'E2'</span>                     =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1247.244</span>,  <span class="php-num">1757.480</span>), <span class="php-comment">// = (  440 x 620  ) mm  = ( 17.32 x 24.41 ) in</span>
+    <span class="php-quote">'E3'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">878.740</span>,  <span class="php-num">1247.244</span>), <span class="php-comment">// = (  310 x 440  ) mm  = ( 12.20 x 17.32 ) in</span>
+    <span class="php-quote">'E4'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">623.622</span>,   <span class="php-num">878.740</span>), <span class="php-comment">// = (  220 x 310  ) mm  = (  8.66 x 12.20 ) in</span>
+    <span class="php-quote">'E5'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">439.370</span>,   <span class="php-num">623.622</span>), <span class="php-comment">// = (  155 x 220  ) mm  = (  6.10 x 8.66  ) in</span>
+    <span class="php-quote">'E6'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">311.811</span>,   <span class="php-num">439.370</span>), <span class="php-comment">// = (  110 x 155  ) mm  = (  4.33 x 6.10  ) in</span>
+    <span class="php-quote">'E7'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">221.102</span>,   <span class="php-num">311.811</span>), <span class="php-comment">// = (   78 x 110  ) mm  = (  3.07 x 4.33  ) in</span>
+    <span class="php-quote">'E8'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">155.906</span>,   <span class="php-num">221.102</span>), <span class="php-comment">// = (   55 x 78   ) mm  = (  2.17 x 3.07  ) in</span>
+    <span class="php-quote">'E9'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">110.551</span>,   <span class="php-num">155.906</span>), <span class="php-comment">// = (   39 x 55   ) mm  = (  1.54 x 2.17  ) in</span>
+    <span class="php-quote">'E10'</span>                    =&gt; <span class="php-keyword1">array</span>(   <span class="php-num">76.535</span>,   <span class="php-num">110.551</span>), <span class="php-comment">// = (   27 x 39   ) mm  = (  1.06 x 1.54  ) in</span>
+    <span class="php-quote">'E11'</span>                    =&gt; <span class="php-keyword1">array</span>(   <span class="php-num">53.858</span>,    <span class="php-num">76.535</span>), <span class="php-comment">// = (   19 x 27   ) mm  = (  0.75 x 1.06  ) in</span>
+    <span class="php-quote">'E12'</span>                    =&gt; <span class="php-keyword1">array</span>(   <span class="php-num">36.850</span>,    <span class="php-num">53.858</span>), <span class="php-comment">// = (   13 x 19   ) mm  = (  0.51 x 0.75  ) in</span>
+    <span class="php-comment">// SIS 014711 G Series</span>
+    <span class="php-quote">'G0'</span>                     =&gt; <span class="php-keyword1">array</span>( <span class="php-num">2715.591</span>,  <span class="php-num">3838.110</span>), <span class="php-comment">// = (  958 x 1354 ) mm  = ( 37.72 x 53.31 ) in</span>
+    <span class="php-quote">'G1'</span>                     =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1919.055</span>,  <span class="php-num">2715.591</span>), <span class="php-comment">// = (  677 x 958  ) mm  = ( 26.65 x 37.72 ) in</span>
+    <span class="php-quote">'G2'</span>                     =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1357.795</span>,  <span class="php-num">1919.055</span>), <span class="php-comment">// = (  479 x 677  ) mm  = ( 18.86 x 26.65 ) in</span>
+    <span class="php-quote">'G3'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">958.110</span>,  <span class="php-num">1357.795</span>), <span class="php-comment">// = (  338 x 479  ) mm  = ( 13.31 x 18.86 ) in</span>
+    <span class="php-quote">'G4'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">677.480</span>,   <span class="php-num">958.110</span>), <span class="php-comment">// = (  239 x 338  ) mm  = (  9.41 x 13.31 ) in</span>
+    <span class="php-quote">'G5'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">479.055</span>,   <span class="php-num">677.480</span>), <span class="php-comment">// = (  169 x 239  ) mm  = (  6.65 x 9.41  ) in</span>
+    <span class="php-quote">'G6'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">337.323</span>,   <span class="php-num">479.055</span>), <span class="php-comment">// = (  119 x 169  ) mm  = (  4.69 x 6.65  ) in</span>
+    <span class="php-quote">'G7'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">238.110</span>,   <span class="php-num">337.323</span>), <span class="php-comment">// = (   84 x 119  ) mm  = (  3.31 x 4.69  ) in</span>
+    <span class="php-quote">'G8'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">167.244</span>,   <span class="php-num">238.110</span>), <span class="php-comment">// = (   59 x 84   ) mm  = (  2.32 x 3.31  ) in</span>
+    <span class="php-quote">'G9'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">119.055</span>,   <span class="php-num">167.244</span>), <span class="php-comment">// = (   42 x 59   ) mm  = (  1.65 x 2.32  ) in</span>
+    <span class="php-quote">'G10'</span>                    =&gt; <span class="php-keyword1">array</span>(   <span class="php-num">82.205</span>,   <span class="php-num">119.055</span>), <span class="php-comment">// = (   29 x 42   ) mm  = (  1.14 x 1.65  ) in</span>
+    <span class="php-quote">'G11'</span>                    =&gt; <span class="php-keyword1">array</span>(   <span class="php-num">59.528</span>,    <span class="php-num">82.205</span>), <span class="php-comment">// = (   21 x 29   ) mm  = (  0.83 x 1.14  ) in</span>
+    <span class="php-quote">'G12'</span>                    =&gt; <span class="php-keyword1">array</span>(   <span class="php-num">39.685</span>,    <span class="php-num">59.528</span>), <span class="php-comment">// = (   14 x 21   ) mm  = (  0.55 x 0.83  ) in</span>
+    <span class="php-comment">// ISO Press</span>
+    <span class="php-quote">'RA0'</span>                    =&gt; <span class="php-keyword1">array</span>( <span class="php-num">2437.795</span>,  <span class="php-num">3458.268</span>), <span class="php-comment">// = (  860 x 1220 ) mm  = ( 33.86 x 48.03 ) in</span>
+    <span class="php-quote">'RA1'</span>                    =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1729.134</span>,  <span class="php-num">2437.795</span>), <span class="php-comment">// = (  610 x 860  ) mm  = ( 24.02 x 33.86 ) in</span>
+    <span class="php-quote">'RA2'</span>                    =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1218.898</span>,  <span class="php-num">1729.134</span>), <span class="php-comment">// = (  430 x 610  ) mm  = ( 16.93 x 24.02 ) in</span>
+    <span class="php-quote">'RA3'</span>                    =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">864.567</span>,  <span class="php-num">1218.898</span>), <span class="php-comment">// = (  305 x 430  ) mm  = ( 12.01 x 16.93 ) in</span>
+    <span class="php-quote">'RA4'</span>                    =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">609.449</span>,   <span class="php-num">864.567</span>), <span class="php-comment">// = (  215 x 305  ) mm  = (  8.46 x 12.01 ) in</span>
+    <span class="php-quote">'SRA0'</span>                   =&gt; <span class="php-keyword1">array</span>( <span class="php-num">2551.181</span>,  <span class="php-num">3628.346</span>), <span class="php-comment">// = (  900 x 1280 ) mm  = ( 35.43 x 50.39 ) in</span>
+    <span class="php-quote">'SRA1'</span>                   =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1814.173</span>,  <span class="php-num">2551.181</span>), <span class="php-comment">// = (  640 x 900  ) mm  = ( 25.20 x 35.43 ) in</span>
+    <span class="php-quote">'SRA2'</span>                   =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1275.591</span>,  <span class="php-num">1814.173</span>), <span class="php-comment">// = (  450 x 640  ) mm  = ( 17.72 x 25.20 ) in</span>
+    <span class="php-quote">'SRA3'</span>                   =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">907.087</span>,  <span class="php-num">1275.591</span>), <span class="php-comment">// = (  320 x 450  ) mm  = ( 12.60 x 17.72 ) in</span>
+    <span class="php-quote">'SRA4'</span>                   =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">637.795</span>,   <span class="php-num">907.087</span>), <span class="php-comment">// = (  225 x 320  ) mm  = (  8.86 x 12.60 ) in</span>
+    <span class="php-comment">// German DIN 476</span>
+    <span class="php-quote">'4A0'</span>                    =&gt; <span class="php-keyword1">array</span>( <span class="php-num">4767.874</span>,  <span class="php-num">6740.787</span>), <span class="php-comment">// = ( 1682 x 2378 ) mm  = ( 66.22 x 93.62 ) in</span>
+    <span class="php-quote">'2A0'</span>                    =&gt; <span class="php-keyword1">array</span>( <span class="php-num">3370.394</span>,  <span class="php-num">4767.874</span>), <span class="php-comment">// = ( 1189 x 1682 ) mm  = ( 46.81 x 66.22 ) in</span>
+    <span class="php-comment">// Variations on the ISO Standard</span>
+    <span class="php-quote">'A2_EXTRA'</span>               =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1261.417</span>,  <span class="php-num">1754.646</span>), <span class="php-comment">// = (  445 x 619  ) mm  = ( 17.52 x 24.37 ) in</span>
+    <span class="php-quote">'A3+'</span>                    =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">932.598</span>,  <span class="php-num">1369.134</span>), <span class="php-comment">// = (  329 x 483  ) mm  = ( 12.95 x 19.02 ) in</span>
+    <span class="php-quote">'A3_EXTRA'</span>               =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">912.756</span>,  <span class="php-num">1261.417</span>), <span class="php-comment">// = (  322 x 445  ) mm  = ( 12.68 x 17.52 ) in</span>
+    <span class="php-quote">'A3_SUPER'</span>               =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">864.567</span>,  <span class="php-num">1440.000</span>), <span class="php-comment">// = (  305 x 508  ) mm  = ( 12.01 x 20.00 ) in</span>
+    <span class="php-quote">'SUPER_A3'</span>               =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">864.567</span>,  <span class="php-num">1380.472</span>), <span class="php-comment">// = (  305 x 487  ) mm  = ( 12.01 x 19.17 ) in</span>
+    <span class="php-quote">'A4_EXTRA'</span>               =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">666.142</span>,   <span class="php-num">912.756</span>), <span class="php-comment">// = (  235 x 322  ) mm  = (  9.25 x 12.68 ) in</span>
+    <span class="php-quote">'A4_SUPER'</span>               =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">649.134</span>,   <span class="php-num">912.756</span>), <span class="php-comment">// = (  229 x 322  ) mm  = (  9.02 x 12.68 ) in</span>
+    <span class="php-quote">'SUPER_A4'</span>               =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">643.465</span>,  <span class="php-num">1009.134</span>), <span class="php-comment">// = (  227 x 356  ) mm  = (  8.94 x 14.02 ) in</span>
+    <span class="php-quote">'A4_LONG'</span>                =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">595.276</span>,   <span class="php-num">986.457</span>), <span class="php-comment">// = (  210 x 348  ) mm  = (  8.27 x 13.70 ) in</span>
+    <span class="php-quote">'F4'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">595.276</span>,   <span class="php-num">935.433</span>), <span class="php-comment">// = (  210 x 330  ) mm  = (  8.27 x 12.99 ) in</span>
+    <span class="php-quote">'SO_B5_EXTRA'</span>            =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">572.598</span>,   <span class="php-num">782.362</span>), <span class="php-comment">// = (  202 x 276  ) mm  = (  7.95 x 10.87 ) in</span>
+    <span class="php-quote">'A5_EXTRA'</span>               =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">490.394</span>,   <span class="php-num">666.142</span>), <span class="php-comment">// = (  173 x 235  ) mm  = (  6.81 x 9.25  ) in</span>
+    <span class="php-comment">// ANSI Series</span>
+    <span class="php-quote">'ANSI_E'</span>                 =&gt; <span class="php-keyword1">array</span>( <span class="php-num">2448.000</span>,  <span class="php-num">3168.000</span>), <span class="php-comment">// = (  864 x 1118 ) mm  = ( 34.00 x 44.00 ) in</span>
+    <span class="php-quote">'ANSI_D'</span>                 =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1584.000</span>,  <span class="php-num">2448.000</span>), <span class="php-comment">// = (  559 x 864  ) mm  = ( 22.00 x 34.00 ) in</span>
+    <span class="php-quote">'ANSI_C'</span>                 =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1224.000</span>,  <span class="php-num">1584.000</span>), <span class="php-comment">// = (  432 x 559  ) mm  = ( 17.00 x 22.00 ) in</span>
+    <span class="php-quote">'ANSI_B'</span>                 =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">792.000</span>,  <span class="php-num">1224.000</span>), <span class="php-comment">// = (  279 x 432  ) mm  = ( 11.00 x 17.00 ) in</span>
+    <span class="php-quote">'ANSI_A'</span>                 =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">612.000</span>,   <span class="php-num">792.000</span>), <span class="php-comment">// = (  216 x 279  ) mm  = (  8.50 x 11.00 ) in</span>
+    <span class="php-comment">// Traditional 'Loose' North American Paper Sizes</span>
+    <span class="php-quote">'USLEDGER'</span>               =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1224.000</span>,   <span class="php-num">792.000</span>), <span class="php-comment">// = (  432 x 279  ) mm  = ( 17.00 x 11.00 ) in</span>
+    <span class="php-quote">'LEDGER'</span>                 =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1224.000</span>,   <span class="php-num">792.000</span>), <span class="php-comment">// = (  432 x 279  ) mm  = ( 17.00 x 11.00 ) in</span>
+    <span class="php-quote">'ORGANIZERK'</span>             =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">792.000</span>,  <span class="php-num">1224.000</span>), <span class="php-comment">// = (  279 x 432  ) mm  = ( 11.00 x 17.00 ) in</span>
+    <span class="php-quote">'BIBLE'</span>                  =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">792.000</span>,  <span class="php-num">1224.000</span>), <span class="php-comment">// = (  279 x 432  ) mm  = ( 11.00 x 17.00 ) in</span>
+    <span class="php-quote">'USTABLOID'</span>              =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">792.000</span>,  <span class="php-num">1224.000</span>), <span class="php-comment">// = (  279 x 432  ) mm  = ( 11.00 x 17.00 ) in</span>
+    <span class="php-quote">'TABLOID'</span>                =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">792.000</span>,  <span class="php-num">1224.000</span>), <span class="php-comment">// = (  279 x 432  ) mm  = ( 11.00 x 17.00 ) in</span>
+    <span class="php-quote">'ORGANIZERM'</span>             =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">612.000</span>,   <span class="php-num">792.000</span>), <span class="php-comment">// = (  216 x 279  ) mm  = (  8.50 x 11.00 ) in</span>
+    <span class="php-quote">'USLETTER'</span>               =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">612.000</span>,   <span class="php-num">792.000</span>), <span class="php-comment">// = (  216 x 279  ) mm  = (  8.50 x 11.00 ) in</span>
+    <span class="php-quote">'LETTER'</span>                 =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">612.000</span>,   <span class="php-num">792.000</span>), <span class="php-comment">// = (  216 x 279  ) mm  = (  8.50 x 11.00 ) in</span>
+    <span class="php-quote">'USLEGAL'</span>                =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">612.000</span>,  <span class="php-num">1008.000</span>), <span class="php-comment">// = (  216 x 356  ) mm  = (  8.50 x 14.00 ) in</span>
+    <span class="php-quote">'LEGAL'</span>                  =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">612.000</span>,  <span class="php-num">1008.000</span>), <span class="php-comment">// = (  216 x 356  ) mm  = (  8.50 x 14.00 ) in</span>
+    <span class="php-quote">'GOVERNMENTLETTER'</span>       =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">576.000</span>,   <span class="php-num">756.000</span>), <span class="php-comment">// = (  203 x 267  ) mm  = (  8.00 x 10.50 ) in</span>
+    <span class="php-quote">'GLETTER'</span>                =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">576.000</span>,   <span class="php-num">756.000</span>), <span class="php-comment">// = (  203 x 267  ) mm  = (  8.00 x 10.50 ) in</span>
+    <span class="php-quote">'JUNIORLEGAL'</span>            =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">576.000</span>,   <span class="php-num">360.000</span>), <span class="php-comment">// = (  203 x 127  ) mm  = (  8.00 x 5.00  ) in</span>
+    <span class="php-quote">'JLEGAL'</span>                 =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">576.000</span>,   <span class="php-num">360.000</span>), <span class="php-comment">// = (  203 x 127  ) mm  = (  8.00 x 5.00  ) in</span>
+    <span class="php-comment">// Other North American Paper Sizes</span>
+    <span class="php-quote">'QUADDEMY'</span>               =&gt; <span class="php-keyword1">array</span>( <span class="php-num">2520.000</span>,  <span class="php-num">3240.000</span>), <span class="php-comment">// = (  889 x 1143 ) mm  = ( 35.00 x 45.00 ) in</span>
+    <span class="php-quote">'SUPER_B'</span>                =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">936.000</span>,  <span class="php-num">1368.000</span>), <span class="php-comment">// = (  330 x 483  ) mm  = ( 13.00 x 19.00 ) in</span>
+    <span class="php-quote">'QUARTO'</span>                 =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">648.000</span>,   <span class="php-num">792.000</span>), <span class="php-comment">// = (  229 x 279  ) mm  = (  9.00 x 11.00 ) in</span>
+    <span class="php-quote">'GOVERNMENTLEGAL'</span>        =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">612.000</span>,   <span class="php-num">936.000</span>), <span class="php-comment">// = (  216 x 330  ) mm  = (  8.50 x 13.00 ) in</span>
+    <span class="php-quote">'FOLIO'</span>                  =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">612.000</span>,   <span class="php-num">936.000</span>), <span class="php-comment">// = (  216 x 330  ) mm  = (  8.50 x 13.00 ) in</span>
+    <span class="php-quote">'MONARCH'</span>                =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">522.000</span>,   <span class="php-num">756.000</span>), <span class="php-comment">// = (  184 x 267  ) mm  = (  7.25 x 10.50 ) in</span>
+    <span class="php-quote">'EXECUTIVE'</span>              =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">522.000</span>,   <span class="php-num">756.000</span>), <span class="php-comment">// = (  184 x 267  ) mm  = (  7.25 x 10.50 ) in</span>
+    <span class="php-quote">'ORGANIZERL'</span>             =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">396.000</span>,   <span class="php-num">612.000</span>), <span class="php-comment">// = (  140 x 216  ) mm  = (  5.50 x 8.50  ) in</span>
+    <span class="php-quote">'STATEMENT'</span>              =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">396.000</span>,   <span class="php-num">612.000</span>), <span class="php-comment">// = (  140 x 216  ) mm  = (  5.50 x 8.50  ) in</span>
+    <span class="php-quote">'MEMO'</span>                   =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">396.000</span>,   <span class="php-num">612.000</span>), <span class="php-comment">// = (  140 x 216  ) mm  = (  5.50 x 8.50  ) in</span>
+    <span class="php-quote">'FOOLSCAP'</span>               =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">595.440</span>,   <span class="php-num">936.000</span>), <span class="php-comment">// = (  210 x 330  ) mm  = (  8.27 x 13.00 ) in</span>
+    <span class="php-quote">'COMPACT'</span>                =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">306.000</span>,   <span class="php-num">486.000</span>), <span class="php-comment">// = (  108 x 171  ) mm  = (  4.25 x 6.75  ) in</span>
+    <span class="php-quote">'ORGANIZERJ'</span>             =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">198.000</span>,   <span class="php-num">360.000</span>), <span class="php-comment">// = (   70 x 127  ) mm  = (  2.75 x 5.00  ) in</span>
+    <span class="php-comment">// Canadian standard CAN 2-9.60M</span>
+    <span class="php-quote">'P1'</span>                     =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1587.402</span>,  <span class="php-num">2437.795</span>), <span class="php-comment">// = (  560 x 860  ) mm  = ( 22.05 x 33.86 ) in</span>
+    <span class="php-quote">'P2'</span>                     =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1218.898</span>,  <span class="php-num">1587.402</span>), <span class="php-comment">// = (  430 x 560  ) mm  = ( 16.93 x 22.05 ) in</span>
+    <span class="php-quote">'P3'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">793.701</span>,  <span class="php-num">1218.898</span>), <span class="php-comment">// = (  280 x 430  ) mm  = ( 11.02 x 16.93 ) in</span>
+    <span class="php-quote">'P4'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">609.449</span>,   <span class="php-num">793.701</span>), <span class="php-comment">// = (  215 x 280  ) mm  = (  8.46 x 11.02 ) in</span>
+    <span class="php-quote">'P5'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">396.850</span>,   <span class="php-num">609.449</span>), <span class="php-comment">// = (  140 x 215  ) mm  = (  5.51 x 8.46  ) in</span>
+    <span class="php-quote">'P6'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">303.307</span>,   <span class="php-num">396.850</span>), <span class="php-comment">// = (  107 x 140  ) mm  = (  4.21 x 5.51  ) in</span>
+    <span class="php-comment">// North American Architectural Sizes</span>
+    <span class="php-quote">'ARCH_E'</span>                 =&gt; <span class="php-keyword1">array</span>( <span class="php-num">2592.000</span>,  <span class="php-num">3456.000</span>), <span class="php-comment">// = (  914 x 1219 ) mm  = ( 36.00 x 48.00 ) in</span>
+    <span class="php-quote">'ARCH_E1'</span>                =&gt; <span class="php-keyword1">array</span>( <span class="php-num">2160.000</span>,  <span class="php-num">3024.000</span>), <span class="php-comment">// = (  762 x 1067 ) mm  = ( 30.00 x 42.00 ) in</span>
+    <span class="php-quote">'ARCH_D'</span>                 =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1728.000</span>,  <span class="php-num">2592.000</span>), <span class="php-comment">// = (  610 x 914  ) mm  = ( 24.00 x 36.00 ) in</span>
+    <span class="php-quote">'BROADSHEET'</span>             =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1296.000</span>,  <span class="php-num">1728.000</span>), <span class="php-comment">// = (  457 x 610  ) mm  = ( 18.00 x 24.00 ) in</span>
+    <span class="php-quote">'ARCH_C'</span>                 =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1296.000</span>,  <span class="php-num">1728.000</span>), <span class="php-comment">// = (  457 x 610  ) mm  = ( 18.00 x 24.00 ) in</span>
+    <span class="php-quote">'ARCH_B'</span>                 =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">864.000</span>,  <span class="php-num">1296.000</span>), <span class="php-comment">// = (  305 x 457  ) mm  = ( 12.00 x 18.00 ) in</span>
+    <span class="php-quote">'ARCH_A'</span>                 =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">648.000</span>,   <span class="php-num">864.000</span>), <span class="php-comment">// = (  229 x 305  ) mm  = (  9.00 x 12.00 ) in</span>
+    <span class="php-comment">// -- North American Envelope Sizes</span>
+    <span class="php-comment">// - Announcement Envelopes</span>
+    <span class="php-quote">'ANNENV_A2'</span>              =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">314.640</span>,   <span class="php-num">414.000</span>), <span class="php-comment">// = (  111 x 146  ) mm  = (  4.37 x 5.75  ) in</span>
+    <span class="php-quote">'ANNENV_A6'</span>              =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">342.000</span>,   <span class="php-num">468.000</span>), <span class="php-comment">// = (  121 x 165  ) mm  = (  4.75 x 6.50  ) in</span>
+    <span class="php-quote">'ANNENV_A7'</span>              =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">378.000</span>,   <span class="php-num">522.000</span>), <span class="php-comment">// = (  133 x 184  ) mm  = (  5.25 x 7.25  ) in</span>
+    <span class="php-quote">'ANNENV_A8'</span>              =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">396.000</span>,   <span class="php-num">584.640</span>), <span class="php-comment">// = (  140 x 206  ) mm  = (  5.50 x 8.12  ) in</span>
+    <span class="php-quote">'ANNENV_A10'</span>             =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">450.000</span>,   <span class="php-num">692.640</span>), <span class="php-comment">// = (  159 x 244  ) mm  = (  6.25 x 9.62  ) in</span>
+    <span class="php-quote">'ANNENV_SLIM'</span>            =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">278.640</span>,   <span class="php-num">638.640</span>), <span class="php-comment">// = (   98 x 225  ) mm  = (  3.87 x 8.87  ) in</span>
+    <span class="php-comment">// - Commercial Envelopes</span>
+    <span class="php-quote">'COMMENV_N6_1/4'</span>         =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">252.000</span>,   <span class="php-num">432.000</span>), <span class="php-comment">// = (   89 x 152  ) mm  = (  3.50 x 6.00  ) in</span>
+    <span class="php-quote">'COMMENV_N6_3/4'</span>         =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">260.640</span>,   <span class="php-num">468.000</span>), <span class="php-comment">// = (   92 x 165  ) mm  = (  3.62 x 6.50  ) in</span>
+    <span class="php-quote">'COMMENV_N8'</span>             =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">278.640</span>,   <span class="php-num">540.000</span>), <span class="php-comment">// = (   98 x 191  ) mm  = (  3.87 x 7.50  ) in</span>
+    <span class="php-quote">'COMMENV_N9'</span>             =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">278.640</span>,   <span class="php-num">638.640</span>), <span class="php-comment">// = (   98 x 225  ) mm  = (  3.87 x 8.87  ) in</span>
+    <span class="php-quote">'COMMENV_N10'</span>            =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">296.640</span>,   <span class="php-num">684.000</span>), <span class="php-comment">// = (  105 x 241  ) mm  = (  4.12 x 9.50  ) in</span>
+    <span class="php-quote">'COMMENV_N11'</span>            =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">324.000</span>,   <span class="php-num">746.640</span>), <span class="php-comment">// = (  114 x 263  ) mm  = (  4.50 x 10.37 ) in</span>
+    <span class="php-quote">'COMMENV_N12'</span>            =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">342.000</span>,   <span class="php-num">792.000</span>), <span class="php-comment">// = (  121 x 279  ) mm  = (  4.75 x 11.00 ) in</span>
+    <span class="php-quote">'COMMENV_N14'</span>            =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">360.000</span>,   <span class="php-num">828.000</span>), <span class="php-comment">// = (  127 x 292  ) mm  = (  5.00 x 11.50 ) in</span>
+    <span class="php-comment">// - Catalogue Envelopes</span>
+    <span class="php-quote">'CATENV_N1'</span>              =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">432.000</span>,   <span class="php-num">648.000</span>), <span class="php-comment">// = (  152 x 229  ) mm  = (  6.00 x 9.00  ) in</span>
+    <span class="php-quote">'CATENV_N1_3/4'</span>          =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">468.000</span>,   <span class="php-num">684.000</span>), <span class="php-comment">// = (  165 x 241  ) mm  = (  6.50 x 9.50  ) in</span>
+    <span class="php-quote">'CATENV_N2'</span>              =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">468.000</span>,   <span class="php-num">720.000</span>), <span class="php-comment">// = (  165 x 254  ) mm  = (  6.50 x 10.00 ) in</span>
+    <span class="php-quote">'CATENV_N3'</span>              =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">504.000</span>,   <span class="php-num">720.000</span>), <span class="php-comment">// = (  178 x 254  ) mm  = (  7.00 x 10.00 ) in</span>
+    <span class="php-quote">'CATENV_N6'</span>              =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">540.000</span>,   <span class="php-num">756.000</span>), <span class="php-comment">// = (  191 x 267  ) mm  = (  7.50 x 10.50 ) in</span>
+    <span class="php-quote">'CATENV_N7'</span>              =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">576.000</span>,   <span class="php-num">792.000</span>), <span class="php-comment">// = (  203 x 279  ) mm  = (  8.00 x 11.00 ) in</span>
+    <span class="php-quote">'CATENV_N8'</span>              =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">594.000</span>,   <span class="php-num">810.000</span>), <span class="php-comment">// = (  210 x 286  ) mm  = (  8.25 x 11.25 ) in</span>
+    <span class="php-quote">'CATENV_N9_1/2'</span>          =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">612.000</span>,   <span class="php-num">756.000</span>), <span class="php-comment">// = (  216 x 267  ) mm  = (  8.50 x 10.50 ) in</span>
+    <span class="php-quote">'CATENV_N9_3/4'</span>          =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">630.000</span>,   <span class="php-num">810.000</span>), <span class="php-comment">// = (  222 x 286  ) mm  = (  8.75 x 11.25 ) in</span>
+    <span class="php-quote">'CATENV_N10_1/2'</span>         =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">648.000</span>,   <span class="php-num">864.000</span>), <span class="php-comment">// = (  229 x 305  ) mm  = (  9.00 x 12.00 ) in</span>
+    <span class="php-quote">'CATENV_N12_1/2'</span>         =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">684.000</span>,   <span class="php-num">900.000</span>), <span class="php-comment">// = (  241 x 318  ) mm  = (  9.50 x 12.50 ) in</span>
+    <span class="php-quote">'CATENV_N13_1/2'</span>         =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">720.000</span>,   <span class="php-num">936.000</span>), <span class="php-comment">// = (  254 x 330  ) mm  = ( 10.00 x 13.00 ) in</span>
+    <span class="php-quote">'CATENV_N14_1/4'</span>         =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">810.000</span>,   <span class="php-num">882.000</span>), <span class="php-comment">// = (  286 x 311  ) mm  = ( 11.25 x 12.25 ) in</span>
+    <span class="php-quote">'CATENV_N14_1/2'</span>         =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">828.000</span>,  <span class="php-num">1044.000</span>), <span class="php-comment">// = (  292 x 368  ) mm  = ( 11.50 x 14.50 ) in</span>
+    <span class="php-comment">// Japanese (JIS P 0138-61) Standard B-Series</span>
+    <span class="php-quote">'JIS_B0'</span>                 =&gt; <span class="php-keyword1">array</span>( <span class="php-num">2919.685</span>,  <span class="php-num">4127.244</span>), <span class="php-comment">// = ( 1030 x 1456 ) mm  = ( 40.55 x 57.32 ) in</span>
+    <span class="php-quote">'JIS_B1'</span>                 =&gt; <span class="php-keyword1">array</span>( <span class="php-num">2063.622</span>,  <span class="php-num">2919.685</span>), <span class="php-comment">// = (  728 x 1030 ) mm  = ( 28.66 x 40.55 ) in</span>
+    <span class="php-quote">'JIS_B2'</span>                 =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1459.843</span>,  <span class="php-num">2063.622</span>), <span class="php-comment">// = (  515 x 728  ) mm  = ( 20.28 x 28.66 ) in</span>
+    <span class="php-quote">'JIS_B3'</span>                 =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1031.811</span>,  <span class="php-num">1459.843</span>), <span class="php-comment">// = (  364 x 515  ) mm  = ( 14.33 x 20.28 ) in</span>
+    <span class="php-quote">'JIS_B4'</span>                 =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">728.504</span>,  <span class="php-num">1031.811</span>), <span class="php-comment">// = (  257 x 364  ) mm  = ( 10.12 x 14.33 ) in</span>
+    <span class="php-quote">'JIS_B5'</span>                 =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">515.906</span>,   <span class="php-num">728.504</span>), <span class="php-comment">// = (  182 x 257  ) mm  = (  7.17 x 10.12 ) in</span>
+    <span class="php-quote">'JIS_B6'</span>                 =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">362.835</span>,   <span class="php-num">515.906</span>), <span class="php-comment">// = (  128 x 182  ) mm  = (  5.04 x 7.17  ) in</span>
+    <span class="php-quote">'JIS_B7'</span>                 =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">257.953</span>,   <span class="php-num">362.835</span>), <span class="php-comment">// = (   91 x 128  ) mm  = (  3.58 x 5.04  ) in</span>
+    <span class="php-quote">'JIS_B8'</span>                 =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">181.417</span>,   <span class="php-num">257.953</span>), <span class="php-comment">// = (   64 x 91   ) mm  = (  2.52 x 3.58  ) in</span>
+    <span class="php-quote">'JIS_B9'</span>                 =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">127.559</span>,   <span class="php-num">181.417</span>), <span class="php-comment">// = (   45 x 64   ) mm  = (  1.77 x 2.52  ) in</span>
+    <span class="php-quote">'JIS_B10'</span>                =&gt; <span class="php-keyword1">array</span>(   <span class="php-num">90.709</span>,   <span class="php-num">127.559</span>), <span class="php-comment">// = (   32 x 45   ) mm  = (  1.26 x 1.77  ) in</span>
+    <span class="php-quote">'JIS_B11'</span>                =&gt; <span class="php-keyword1">array</span>(   <span class="php-num">62.362</span>,    <span class="php-num">90.709</span>), <span class="php-comment">// = (   22 x 32   ) mm  = (  0.87 x 1.26  ) in</span>
+    <span class="php-quote">'JIS_B12'</span>                =&gt; <span class="php-keyword1">array</span>(   <span class="php-num">45.354</span>,    <span class="php-num">62.362</span>), <span class="php-comment">// = (   16 x 22   ) mm  = (  0.63 x 0.87  ) in</span>
+    <span class="php-comment">// PA Series</span>
+    <span class="php-quote">'PA0'</span>                    =&gt; <span class="php-keyword1">array</span>( <span class="php-num">2381.102</span>,  <span class="php-num">3174.803</span>), <span class="php-comment">// = (  840 x 1120 ) mm  = ( 33.07 x 44.09 ) in</span>
+    <span class="php-quote">'PA1'</span>                    =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1587.402</span>,  <span class="php-num">2381.102</span>), <span class="php-comment">// = (  560 x 840  ) mm  = ( 22.05 x 33.07 ) in</span>
+    <span class="php-quote">'PA2'</span>                    =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1190.551</span>,  <span class="php-num">1587.402</span>), <span class="php-comment">// = (  420 x 560  ) mm  = ( 16.54 x 22.05 ) in</span>
+    <span class="php-quote">'PA3'</span>                    =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">793.701</span>,  <span class="php-num">1190.551</span>), <span class="php-comment">// = (  280 x 420  ) mm  = ( 11.02 x 16.54 ) in</span>
+    <span class="php-quote">'PA4'</span>                    =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">595.276</span>,   <span class="php-num">793.701</span>), <span class="php-comment">// = (  210 x 280  ) mm  = (  8.27 x 11.02 ) in</span>
+    <span class="php-quote">'PA5'</span>                    =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">396.850</span>,   <span class="php-num">595.276</span>), <span class="php-comment">// = (  140 x 210  ) mm  = (  5.51 x 8.27  ) in</span>
+    <span class="php-quote">'PA6'</span>                    =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">297.638</span>,   <span class="php-num">396.850</span>), <span class="php-comment">// = (  105 x 140  ) mm  = (  4.13 x 5.51  ) in</span>
+    <span class="php-quote">'PA7'</span>                    =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">198.425</span>,   <span class="php-num">297.638</span>), <span class="php-comment">// = (   70 x 105  ) mm  = (  2.76 x 4.13  ) in</span>
+    <span class="php-quote">'PA8'</span>                    =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">147.402</span>,   <span class="php-num">198.425</span>), <span class="php-comment">// = (   52 x 70   ) mm  = (  2.05 x 2.76  ) in</span>
+    <span class="php-quote">'PA9'</span>                    =&gt; <span class="php-keyword1">array</span>(   <span class="php-num">99.213</span>,   <span class="php-num">147.402</span>), <span class="php-comment">// = (   35 x 52   ) mm  = (  1.38 x 2.05  ) in</span>
+    <span class="php-quote">'PA10'</span>                   =&gt; <span class="php-keyword1">array</span>(   <span class="php-num">73.701</span>,    <span class="php-num">99.213</span>), <span class="php-comment">// = (   26 x 35   ) mm  = (  1.02 x 1.38  ) in</span>
+    <span class="php-comment">// Standard Photographic Print Sizes</span>
+    <span class="php-quote">'PASSPORT_PHOTO'</span>         =&gt; <span class="php-keyword1">array</span>(   <span class="php-num">99.213</span>,   <span class="php-num">127.559</span>), <span class="php-comment">// = (   35 x 45   ) mm  = (  1.38 x 1.77  ) in</span>
+    <span class="php-quote">'E'</span>                      =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">233.858</span>,   <span class="php-num">340.157</span>), <span class="php-comment">// = (   82 x 120  ) mm  = (  3.25 x 4.72  ) in</span>
+    <span class="php-quote">'L'</span>                      =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">252.283</span>,   <span class="php-num">360.000</span>), <span class="php-comment">// = (   89 x 127  ) mm  = (  3.50 x 5.00  ) in</span>
+    <span class="php-quote">'3R'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">252.283</span>,   <span class="php-num">360.000</span>), <span class="php-comment">// = (   89 x 127  ) mm  = (  3.50 x 5.00  ) in</span>
+    <span class="php-quote">'KG'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">289.134</span>,   <span class="php-num">430.866</span>), <span class="php-comment">// = (  102 x 152  ) mm  = (  4.02 x 5.98  ) in</span>
+    <span class="php-quote">'4R'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">289.134</span>,   <span class="php-num">430.866</span>), <span class="php-comment">// = (  102 x 152  ) mm  = (  4.02 x 5.98  ) in</span>
+    <span class="php-quote">'4D'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">340.157</span>,   <span class="php-num">430.866</span>), <span class="php-comment">// = (  120 x 152  ) mm  = (  4.72 x 5.98  ) in</span>
+    <span class="php-quote">'2L'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">360.000</span>,   <span class="php-num">504.567</span>), <span class="php-comment">// = (  127 x 178  ) mm  = (  5.00 x 7.01  ) in</span>
+    <span class="php-quote">'5R'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">360.000</span>,   <span class="php-num">504.567</span>), <span class="php-comment">// = (  127 x 178  ) mm  = (  5.00 x 7.01  ) in</span>
+    <span class="php-quote">'8P'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">430.866</span>,   <span class="php-num">575.433</span>), <span class="php-comment">// = (  152 x 203  ) mm  = (  5.98 x 7.99  ) in</span>
+    <span class="php-quote">'6R'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">430.866</span>,   <span class="php-num">575.433</span>), <span class="php-comment">// = (  152 x 203  ) mm  = (  5.98 x 7.99  ) in</span>
+    <span class="php-quote">'6P'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">575.433</span>,   <span class="php-num">720.000</span>), <span class="php-comment">// = (  203 x 254  ) mm  = (  7.99 x 10.00 ) in</span>
+    <span class="php-quote">'8R'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">575.433</span>,   <span class="php-num">720.000</span>), <span class="php-comment">// = (  203 x 254  ) mm  = (  7.99 x 10.00 ) in</span>
+    <span class="php-quote">'6PW'</span>                    =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">575.433</span>,   <span class="php-num">864.567</span>), <span class="php-comment">// = (  203 x 305  ) mm  = (  7.99 x 12.01 ) in</span>
+    <span class="php-quote">'S8R'</span>                    =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">575.433</span>,   <span class="php-num">864.567</span>), <span class="php-comment">// = (  203 x 305  ) mm  = (  7.99 x 12.01 ) in</span>
+    <span class="php-quote">'4P'</span>                     =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">720.000</span>,   <span class="php-num">864.567</span>), <span class="php-comment">// = (  254 x 305  ) mm  = ( 10.00 x 12.01 ) in</span>
+    <span class="php-quote">'10R'</span>                    =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">720.000</span>,   <span class="php-num">864.567</span>), <span class="php-comment">// = (  254 x 305  ) mm  = ( 10.00 x 12.01 ) in</span>
+    <span class="php-quote">'4PW'</span>                    =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">720.000</span>,  <span class="php-num">1080.000</span>), <span class="php-comment">// = (  254 x 381  ) mm  = ( 10.00 x 15.00 ) in</span>
+    <span class="php-quote">'S10R'</span>                   =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">720.000</span>,  <span class="php-num">1080.000</span>), <span class="php-comment">// = (  254 x 381  ) mm  = ( 10.00 x 15.00 ) in</span>
+    <span class="php-quote">'11R'</span>                    =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">790.866</span>,  <span class="php-num">1009.134</span>), <span class="php-comment">// = (  279 x 356  ) mm  = ( 10.98 x 14.02 ) in</span>
+    <span class="php-quote">'S11R'</span>                   =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">790.866</span>,  <span class="php-num">1224.567</span>), <span class="php-comment">// = (  279 x 432  ) mm  = ( 10.98 x 17.01 ) in</span>
+    <span class="php-quote">'12R'</span>                    =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">864.567</span>,  <span class="php-num">1080.000</span>), <span class="php-comment">// = (  305 x 381  ) mm  = ( 12.01 x 15.00 ) in</span>
+    <span class="php-quote">'S12R'</span>                   =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">864.567</span>,  <span class="php-num">1292.598</span>), <span class="php-comment">// = (  305 x 456  ) mm  = ( 12.01 x 17.95 ) in</span>
+    <span class="php-comment">// Common Newspaper Sizes</span>
+    <span class="php-quote">'NEWSPAPER_BROADSHEET'</span>   =&gt; <span class="php-keyword1">array</span>( <span class="php-num">2125.984</span>,  <span class="php-num">1700.787</span>), <span class="php-comment">// = (  750 x 600  ) mm  = ( 29.53 x 23.62 ) in</span>
+    <span class="php-quote">'NEWSPAPER_BERLINER'</span>     =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1332.283</span>,   <span class="php-num">892.913</span>), <span class="php-comment">// = (  470 x 315  ) mm  = ( 18.50 x 12.40 ) in</span>
+    <span class="php-quote">'NEWSPAPER_TABLOID'</span>      =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1218.898</span>,   <span class="php-num">793.701</span>), <span class="php-comment">// = (  430 x 280  ) mm  = ( 16.93 x 11.02 ) in</span>
+    <span class="php-quote">'NEWSPAPER_COMPACT'</span>      =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1218.898</span>,   <span class="php-num">793.701</span>), <span class="php-comment">// = (  430 x 280  ) mm  = ( 16.93 x 11.02 ) in</span>
+    <span class="php-comment">// Business Cards</span>
+    <span class="php-quote">'CREDIT_CARD'</span>            =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">153.014</span>,   <span class="php-num">242.646</span>), <span class="php-comment">// = (   54 x 86   ) mm  = (  2.13 x 3.37  ) in</span>
+    <span class="php-quote">'BUSINESS_CARD'</span>          =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">153.014</span>,   <span class="php-num">242.646</span>), <span class="php-comment">// = (   54 x 86   ) mm  = (  2.13 x 3.37  ) in</span>
+    <span class="php-quote">'BUSINESS_CARD_ISO7810'</span>  =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">153.014</span>,   <span class="php-num">242.646</span>), <span class="php-comment">// = (   54 x 86   ) mm  = (  2.13 x 3.37  ) in</span>
+    <span class="php-quote">'BUSINESS_CARD_ISO216'</span>   =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">147.402</span>,   <span class="php-num">209.764</span>), <span class="php-comment">// = (   52 x 74   ) mm  = (  2.05 x 2.91  ) in</span>
+    <span class="php-quote">'BUSINESS_CARD_IT'</span>       =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">155.906</span>,   <span class="php-num">240.945</span>), <span class="php-comment">// = (   55 x 85   ) mm  = (  2.17 x 3.35  ) in</span>
+    <span class="php-quote">'BUSINESS_CARD_UK'</span>       =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">155.906</span>,   <span class="php-num">240.945</span>), <span class="php-comment">// = (   55 x 85   ) mm  = (  2.17 x 3.35  ) in</span>
+    <span class="php-quote">'BUSINESS_CARD_FR'</span>       =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">155.906</span>,   <span class="php-num">240.945</span>), <span class="php-comment">// = (   55 x 85   ) mm  = (  2.17 x 3.35  ) in</span>
+    <span class="php-quote">'BUSINESS_CARD_DE'</span>       =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">155.906</span>,   <span class="php-num">240.945</span>), <span class="php-comment">// = (   55 x 85   ) mm  = (  2.17 x 3.35  ) in</span>
+    <span class="php-quote">'BUSINESS_CARD_ES'</span>       =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">155.906</span>,   <span class="php-num">240.945</span>), <span class="php-comment">// = (   55 x 85   ) mm  = (  2.17 x 3.35  ) in</span>
+    <span class="php-quote">'BUSINESS_CARD_CA'</span>       =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">144.567</span>,   <span class="php-num">252.283</span>), <span class="php-comment">// = (   51 x 89   ) mm  = (  2.01 x 3.50  ) in</span>
+    <span class="php-quote">'BUSINESS_CARD_US'</span>       =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">144.567</span>,   <span class="php-num">252.283</span>), <span class="php-comment">// = (   51 x 89   ) mm  = (  2.01 x 3.50  ) in</span>
+    <span class="php-quote">'BUSINESS_CARD_JP'</span>       =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">155.906</span>,   <span class="php-num">257.953</span>), <span class="php-comment">// = (   55 x 91   ) mm  = (  2.17 x 3.58  ) in</span>
+    <span class="php-quote">'BUSINESS_CARD_HK'</span>       =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">153.071</span>,   <span class="php-num">255.118</span>), <span class="php-comment">// = (   54 x 90   ) mm  = (  2.13 x 3.54  ) in</span>
+    <span class="php-quote">'BUSINESS_CARD_AU'</span>       =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">155.906</span>,   <span class="php-num">255.118</span>), <span class="php-comment">// = (   55 x 90   ) mm  = (  2.17 x 3.54  ) in</span>
+    <span class="php-quote">'BUSINESS_CARD_DK'</span>       =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">155.906</span>,   <span class="php-num">255.118</span>), <span class="php-comment">// = (   55 x 90   ) mm  = (  2.17 x 3.54  ) in</span>
+    <span class="php-quote">'BUSINESS_CARD_SE'</span>       =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">155.906</span>,   <span class="php-num">255.118</span>), <span class="php-comment">// = (   55 x 90   ) mm  = (  2.17 x 3.54  ) in</span>
+    <span class="php-quote">'BUSINESS_CARD_RU'</span>       =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">141.732</span>,   <span class="php-num">255.118</span>), <span class="php-comment">// = (   50 x 90   ) mm  = (  1.97 x 3.54  ) in</span>
+    <span class="php-quote">'BUSINESS_CARD_CZ'</span>       =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">141.732</span>,   <span class="php-num">255.118</span>), <span class="php-comment">// = (   50 x 90   ) mm  = (  1.97 x 3.54  ) in</span>
+    <span class="php-quote">'BUSINESS_CARD_FI'</span>       =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">141.732</span>,   <span class="php-num">255.118</span>), <span class="php-comment">// = (   50 x 90   ) mm  = (  1.97 x 3.54  ) in</span>
+    <span class="php-quote">'BUSINESS_CARD_HU'</span>       =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">141.732</span>,   <span class="php-num">255.118</span>), <span class="php-comment">// = (   50 x 90   ) mm  = (  1.97 x 3.54  ) in</span>
+    <span class="php-quote">'BUSINESS_CARD_IL'</span>       =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">141.732</span>,   <span class="php-num">255.118</span>), <span class="php-comment">// = (   50 x 90   ) mm  = (  1.97 x 3.54  ) in</span>
+    <span class="php-comment">// Billboards</span>
+    <span class="php-quote">'4SHEET'</span>                 =&gt; <span class="php-keyword1">array</span>( <span class="php-num">2880.000</span>,  <span class="php-num">4320.000</span>), <span class="php-comment">// = ( 1016 x 1524 ) mm  = ( 40.00 x 60.00 ) in</span>
+    <span class="php-quote">'6SHEET'</span>                 =&gt; <span class="php-keyword1">array</span>( <span class="php-num">3401.575</span>,  <span class="php-num">5102.362</span>), <span class="php-comment">// = ( 1200 x 1800 ) mm  = ( 47.24 x 70.87 ) in</span>
+    <span class="php-quote">'12SHEET'</span>                =&gt; <span class="php-keyword1">array</span>( <span class="php-num">8640.000</span>,  <span class="php-num">4320.000</span>), <span class="php-comment">// = ( 3048 x 1524 ) mm  = (120.00 x 60.00 ) in</span>
+    <span class="php-quote">'16SHEET'</span>                =&gt; <span class="php-keyword1">array</span>( <span class="php-num">5760.000</span>,  <span class="php-num">8640.000</span>), <span class="php-comment">// = ( 2032 x 3048 ) mm  = ( 80.00 x 120.00) in</span>
+    <span class="php-quote">'32SHEET'</span>                =&gt; <span class="php-keyword1">array</span>(<span class="php-num">11520.000</span>,  <span class="php-num">8640.000</span>), <span class="php-comment">// = ( 4064 x 3048 ) mm  = (160.00 x 120.00) in</span>
+    <span class="php-quote">'48SHEET'</span>                =&gt; <span class="php-keyword1">array</span>(<span class="php-num">17280.000</span>,  <span class="php-num">8640.000</span>), <span class="php-comment">// = ( 6096 x 3048 ) mm  = (240.00 x 120.00) in</span>
+    <span class="php-quote">'64SHEET'</span>                =&gt; <span class="php-keyword1">array</span>(<span class="php-num">23040.000</span>,  <span class="php-num">8640.000</span>), <span class="php-comment">// = ( 8128 x 3048 ) mm  = (320.00 x 120.00) in</span>
+    <span class="php-quote">'96SHEET'</span>                =&gt; <span class="php-keyword1">array</span>(<span class="php-num">34560.000</span>,  <span class="php-num">8640.000</span>), <span class="php-comment">// = (12192 x 3048 ) mm  = (480.00 x 120.00) in</span>
+    <span class="php-comment">// -- Old European Sizes</span>
+    <span class="php-comment">// - Old Imperial English Sizes</span>
+    <span class="php-quote">'EN_EMPEROR'</span>             =&gt; <span class="php-keyword1">array</span>( <span class="php-num">3456.000</span>,  <span class="php-num">5184.000</span>), <span class="php-comment">// = ( 1219 x 1829 ) mm  = ( 48.00 x 72.00 ) in</span>
+    <span class="php-quote">'EN_ANTIQUARIAN'</span>         =&gt; <span class="php-keyword1">array</span>( <span class="php-num">2232.000</span>,  <span class="php-num">3816.000</span>), <span class="php-comment">// = (  787 x 1346 ) mm  = ( 31.00 x 53.00 ) in</span>
+    <span class="php-quote">'EN_GRAND_EAGLE'</span>         =&gt; <span class="php-keyword1">array</span>( <span class="php-num">2070.000</span>,  <span class="php-num">3024.000</span>), <span class="php-comment">// = (  730 x 1067 ) mm  = ( 28.75 x 42.00 ) in</span>
+    <span class="php-quote">'EN_DOUBLE_ELEPHANT'</span>     =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1926.000</span>,  <span class="php-num">2880.000</span>), <span class="php-comment">// = (  679 x 1016 ) mm  = ( 26.75 x 40.00 ) in</span>
+    <span class="php-quote">'EN_ATLAS'</span>               =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1872.000</span>,  <span class="php-num">2448.000</span>), <span class="php-comment">// = (  660 x 864  ) mm  = ( 26.00 x 34.00 ) in</span>
+    <span class="php-quote">'EN_COLOMBIER'</span>           =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1692.000</span>,  <span class="php-num">2484.000</span>), <span class="php-comment">// = (  597 x 876  ) mm  = ( 23.50 x 34.50 ) in</span>
+    <span class="php-quote">'EN_ELEPHANT'</span>            =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1656.000</span>,  <span class="php-num">2016.000</span>), <span class="php-comment">// = (  584 x 711  ) mm  = ( 23.00 x 28.00 ) in</span>
+    <span class="php-quote">'EN_DOUBLE_DEMY'</span>         =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1620.000</span>,  <span class="php-num">2556.000</span>), <span class="php-comment">// = (  572 x 902  ) mm  = ( 22.50 x 35.50 ) in</span>
+    <span class="php-quote">'EN_IMPERIAL'</span>            =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1584.000</span>,  <span class="php-num">2160.000</span>), <span class="php-comment">// = (  559 x 762  ) mm  = ( 22.00 x 30.00 ) in</span>
+    <span class="php-quote">'EN_PRINCESS'</span>            =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1548.000</span>,  <span class="php-num">2016.000</span>), <span class="php-comment">// = (  546 x 711  ) mm  = ( 21.50 x 28.00 ) in</span>
+    <span class="php-quote">'EN_CARTRIDGE'</span>           =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1512.000</span>,  <span class="php-num">1872.000</span>), <span class="php-comment">// = (  533 x 660  ) mm  = ( 21.00 x 26.00 ) in</span>
+    <span class="php-quote">'EN_DOUBLE_LARGE_POST'</span>   =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1512.000</span>,  <span class="php-num">2376.000</span>), <span class="php-comment">// = (  533 x 838  ) mm  = ( 21.00 x 33.00 ) in</span>
+    <span class="php-quote">'EN_ROYAL'</span>               =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1440.000</span>,  <span class="php-num">1800.000</span>), <span class="php-comment">// = (  508 x 635  ) mm  = ( 20.00 x 25.00 ) in</span>
+    <span class="php-quote">'EN_SHEET'</span>               =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1404.000</span>,  <span class="php-num">1692.000</span>), <span class="php-comment">// = (  495 x 597  ) mm  = ( 19.50 x 23.50 ) in</span>
+    <span class="php-quote">'EN_HALF_POST'</span>           =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1404.000</span>,  <span class="php-num">1692.000</span>), <span class="php-comment">// = (  495 x 597  ) mm  = ( 19.50 x 23.50 ) in</span>
+    <span class="php-quote">'EN_SUPER_ROYAL'</span>         =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1368.000</span>,  <span class="php-num">1944.000</span>), <span class="php-comment">// = (  483 x 686  ) mm  = ( 19.00 x 27.00 ) in</span>
+    <span class="php-quote">'EN_DOUBLE_POST'</span>         =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1368.000</span>,  <span class="php-num">2196.000</span>), <span class="php-comment">// = (  483 x 775  ) mm  = ( 19.00 x 30.50 ) in</span>
+    <span class="php-quote">'EN_MEDIUM'</span>              =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1260.000</span>,  <span class="php-num">1656.000</span>), <span class="php-comment">// = (  445 x 584  ) mm  = ( 17.50 x 23.00 ) in</span>
+    <span class="php-quote">'EN_DEMY'</span>                =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1260.000</span>,  <span class="php-num">1620.000</span>), <span class="php-comment">// = (  445 x 572  ) mm  = ( 17.50 x 22.50 ) in</span>
+    <span class="php-quote">'EN_LARGE_POST'</span>          =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1188.000</span>,  <span class="php-num">1512.000</span>), <span class="php-comment">// = (  419 x 533  ) mm  = ( 16.50 x 21.00 ) in</span>
+    <span class="php-quote">'EN_COPY_DRAUGHT'</span>        =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1152.000</span>,  <span class="php-num">1440.000</span>), <span class="php-comment">// = (  406 x 508  ) mm  = ( 16.00 x 20.00 ) in</span>
+    <span class="php-quote">'EN_POST'</span>                =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1116.000</span>,  <span class="php-num">1386.000</span>), <span class="php-comment">// = (  394 x 489  ) mm  = ( 15.50 x 19.25 ) in</span>
+    <span class="php-quote">'EN_CROWN'</span>               =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1080.000</span>,  <span class="php-num">1440.000</span>), <span class="php-comment">// = (  381 x 508  ) mm  = ( 15.00 x 20.00 ) in</span>
+    <span class="php-quote">'EN_PINCHED_POST'</span>        =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1062.000</span>,  <span class="php-num">1332.000</span>), <span class="php-comment">// = (  375 x 470  ) mm  = ( 14.75 x 18.50 ) in</span>
+    <span class="php-quote">'EN_BRIEF'</span>               =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">972.000</span>,  <span class="php-num">1152.000</span>), <span class="php-comment">// = (  343 x 406  ) mm  = ( 13.50 x 16.00 ) in</span>
+    <span class="php-quote">'EN_FOOLSCAP'</span>            =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">972.000</span>,  <span class="php-num">1224.000</span>), <span class="php-comment">// = (  343 x 432  ) mm  = ( 13.50 x 17.00 ) in</span>
+    <span class="php-quote">'EN_SMALL_FOOLSCAP'</span>      =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">954.000</span>,  <span class="php-num">1188.000</span>), <span class="php-comment">// = (  337 x 419  ) mm  = ( 13.25 x 16.50 ) in</span>
+    <span class="php-quote">'EN_POTT'</span>                =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">900.000</span>,  <span class="php-num">1080.000</span>), <span class="php-comment">// = (  318 x 381  ) mm  = ( 12.50 x 15.00 ) in</span>
+    <span class="php-comment">// - Old Imperial Belgian Sizes</span>
+    <span class="php-quote">'BE_GRAND_AIGLE'</span>         =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1984.252</span>,  <span class="php-num">2948.031</span>), <span class="php-comment">// = (  700 x 1040 ) mm  = ( 27.56 x 40.94 ) in</span>
+    <span class="php-quote">'BE_COLOMBIER'</span>           =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1757.480</span>,  <span class="php-num">2409.449</span>), <span class="php-comment">// = (  620 x 850  ) mm  = ( 24.41 x 33.46 ) in</span>
+    <span class="php-quote">'BE_DOUBLE_CARRE'</span>        =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1757.480</span>,  <span class="php-num">2607.874</span>), <span class="php-comment">// = (  620 x 920  ) mm  = ( 24.41 x 36.22 ) in</span>
+    <span class="php-quote">'BE_ELEPHANT'</span>            =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1746.142</span>,  <span class="php-num">2182.677</span>), <span class="php-comment">// = (  616 x 770  ) mm  = ( 24.25 x 30.31 ) in</span>
+    <span class="php-quote">'BE_PETIT_AIGLE'</span>         =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1700.787</span>,  <span class="php-num">2381.102</span>), <span class="php-comment">// = (  600 x 840  ) mm  = ( 23.62 x 33.07 ) in</span>
+    <span class="php-quote">'BE_GRAND_JESUS'</span>         =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1559.055</span>,  <span class="php-num">2069.291</span>), <span class="php-comment">// = (  550 x 730  ) mm  = ( 21.65 x 28.74 ) in</span>
+    <span class="php-quote">'BE_JESUS'</span>               =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1530.709</span>,  <span class="php-num">2069.291</span>), <span class="php-comment">// = (  540 x 730  ) mm  = ( 21.26 x 28.74 ) in</span>
+    <span class="php-quote">'BE_RAISIN'</span>              =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1417.323</span>,  <span class="php-num">1842.520</span>), <span class="php-comment">// = (  500 x 650  ) mm  = ( 19.69 x 25.59 ) in</span>
+    <span class="php-quote">'BE_GRAND_MEDIAN'</span>        =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1303.937</span>,  <span class="php-num">1714.961</span>), <span class="php-comment">// = (  460 x 605  ) mm  = ( 18.11 x 23.82 ) in</span>
+    <span class="php-quote">'BE_DOUBLE_POSTE'</span>        =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1233.071</span>,  <span class="php-num">1601.575</span>), <span class="php-comment">// = (  435 x 565  ) mm  = ( 17.13 x 22.24 ) in</span>
+    <span class="php-quote">'BE_COQUILLE'</span>            =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1218.898</span>,  <span class="php-num">1587.402</span>), <span class="php-comment">// = (  430 x 560  ) mm  = ( 16.93 x 22.05 ) in</span>
+    <span class="php-quote">'BE_PETIT_MEDIAN'</span>        =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1176.378</span>,  <span class="php-num">1502.362</span>), <span class="php-comment">// = (  415 x 530  ) mm  = ( 16.34 x 20.87 ) in</span>
+    <span class="php-quote">'BE_RUCHE'</span>               =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1020.472</span>,  <span class="php-num">1303.937</span>), <span class="php-comment">// = (  360 x 460  ) mm  = ( 14.17 x 18.11 ) in</span>
+    <span class="php-quote">'BE_PROPATRIA'</span>           =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">977.953</span>,  <span class="php-num">1218.898</span>), <span class="php-comment">// = (  345 x 430  ) mm  = ( 13.58 x 16.93 ) in</span>
+    <span class="php-quote">'BE_LYS'</span>                 =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">898.583</span>,  <span class="php-num">1125.354</span>), <span class="php-comment">// = (  317 x 397  ) mm  = ( 12.48 x 15.63 ) in</span>
+    <span class="php-quote">'BE_POT'</span>                 =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">870.236</span>,  <span class="php-num">1088.504</span>), <span class="php-comment">// = (  307 x 384  ) mm  = ( 12.09 x 15.12 ) in</span>
+    <span class="php-quote">'BE_ROSETTE'</span>             =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">765.354</span>,   <span class="php-num">983.622</span>), <span class="php-comment">// = (  270 x 347  ) mm  = ( 10.63 x 13.66 ) in</span>
+    <span class="php-comment">// - Old Imperial French Sizes</span>
+    <span class="php-quote">'FR_UNIVERS'</span>             =&gt; <span class="php-keyword1">array</span>( <span class="php-num">2834.646</span>,  <span class="php-num">3685.039</span>), <span class="php-comment">// = ( 1000 x 1300 ) mm  = ( 39.37 x 51.18 ) in</span>
+    <span class="php-quote">'FR_DOUBLE_COLOMBIER'</span>    =&gt; <span class="php-keyword1">array</span>( <span class="php-num">2551.181</span>,  <span class="php-num">3571.654</span>), <span class="php-comment">// = (  900 x 1260 ) mm  = ( 35.43 x 49.61 ) in</span>
+    <span class="php-quote">'FR_GRANDE_MONDE'</span>        =&gt; <span class="php-keyword1">array</span>( <span class="php-num">2551.181</span>,  <span class="php-num">3571.654</span>), <span class="php-comment">// = (  900 x 1260 ) mm  = ( 35.43 x 49.61 ) in</span>
+    <span class="php-quote">'FR_DOUBLE_SOLEIL'</span>       =&gt; <span class="php-keyword1">array</span>( <span class="php-num">2267.717</span>,  <span class="php-num">3401.575</span>), <span class="php-comment">// = (  800 x 1200 ) mm  = ( 31.50 x 47.24 ) in</span>
+    <span class="php-quote">'FR_DOUBLE_JESUS'</span>        =&gt; <span class="php-keyword1">array</span>( <span class="php-num">2154.331</span>,  <span class="php-num">3174.803</span>), <span class="php-comment">// = (  760 x 1120 ) mm  = ( 29.92 x 44.09 ) in</span>
+    <span class="php-quote">'FR_GRAND_AIGLE'</span>         =&gt; <span class="php-keyword1">array</span>( <span class="php-num">2125.984</span>,  <span class="php-num">3004.724</span>), <span class="php-comment">// = (  750 x 1060 ) mm  = ( 29.53 x 41.73 ) in</span>
+    <span class="php-quote">'FR_PETIT_AIGLE'</span>         =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1984.252</span>,  <span class="php-num">2664.567</span>), <span class="php-comment">// = (  700 x 940  ) mm  = ( 27.56 x 37.01 ) in</span>
+    <span class="php-quote">'FR_DOUBLE_RAISIN'</span>       =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1842.520</span>,  <span class="php-num">2834.646</span>), <span class="php-comment">// = (  650 x 1000 ) mm  = ( 25.59 x 39.37 ) in</span>
+    <span class="php-quote">'FR_JOURNAL'</span>             =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1842.520</span>,  <span class="php-num">2664.567</span>), <span class="php-comment">// = (  650 x 940  ) mm  = ( 25.59 x 37.01 ) in</span>
+    <span class="php-quote">'FR_COLOMBIER_AFFICHE'</span>   =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1785.827</span>,  <span class="php-num">2551.181</span>), <span class="php-comment">// = (  630 x 900  ) mm  = ( 24.80 x 35.43 ) in</span>
+    <span class="php-quote">'FR_DOUBLE_CAVALIER'</span>     =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1757.480</span>,  <span class="php-num">2607.874</span>), <span class="php-comment">// = (  620 x 920  ) mm  = ( 24.41 x 36.22 ) in</span>
+    <span class="php-quote">'FR_CLOCHE'</span>              =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1700.787</span>,  <span class="php-num">2267.717</span>), <span class="php-comment">// = (  600 x 800  ) mm  = ( 23.62 x 31.50 ) in</span>
+    <span class="php-quote">'FR_SOLEIL'</span>              =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1700.787</span>,  <span class="php-num">2267.717</span>), <span class="php-comment">// = (  600 x 800  ) mm  = ( 23.62 x 31.50 ) in</span>
+    <span class="php-quote">'FR_DOUBLE_CARRE'</span>        =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1587.402</span>,  <span class="php-num">2551.181</span>), <span class="php-comment">// = (  560 x 900  ) mm  = ( 22.05 x 35.43 ) in</span>
+    <span class="php-quote">'FR_DOUBLE_COQUILLE'</span>     =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1587.402</span>,  <span class="php-num">2494.488</span>), <span class="php-comment">// = (  560 x 880  ) mm  = ( 22.05 x 34.65 ) in</span>
+    <span class="php-quote">'FR_JESUS'</span>               =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1587.402</span>,  <span class="php-num">2154.331</span>), <span class="php-comment">// = (  560 x 760  ) mm  = ( 22.05 x 29.92 ) in</span>
+    <span class="php-quote">'FR_RAISIN'</span>              =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1417.323</span>,  <span class="php-num">1842.520</span>), <span class="php-comment">// = (  500 x 650  ) mm  = ( 19.69 x 25.59 ) in</span>
+    <span class="php-quote">'FR_CAVALIER'</span>            =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1303.937</span>,  <span class="php-num">1757.480</span>), <span class="php-comment">// = (  460 x 620  ) mm  = ( 18.11 x 24.41 ) in</span>
+    <span class="php-quote">'FR_DOUBLE_COURONNE'</span>     =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1303.937</span>,  <span class="php-num">2040.945</span>), <span class="php-comment">// = (  460 x 720  ) mm  = ( 18.11 x 28.35 ) in</span>
+    <span class="php-quote">'FR_CARRE'</span>               =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1275.591</span>,  <span class="php-num">1587.402</span>), <span class="php-comment">// = (  450 x 560  ) mm  = ( 17.72 x 22.05 ) in</span>
+    <span class="php-quote">'FR_COQUILLE'</span>            =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1247.244</span>,  <span class="php-num">1587.402</span>), <span class="php-comment">// = (  440 x 560  ) mm  = ( 17.32 x 22.05 ) in</span>
+    <span class="php-quote">'FR_DOUBLE_TELLIERE'</span>     =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1247.244</span>,  <span class="php-num">1927.559</span>), <span class="php-comment">// = (  440 x 680  ) mm  = ( 17.32 x 26.77 ) in</span>
+    <span class="php-quote">'FR_DOUBLE_CLOCHE'</span>       =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1133.858</span>,  <span class="php-num">1700.787</span>), <span class="php-comment">// = (  400 x 600  ) mm  = ( 15.75 x 23.62 ) in</span>
+    <span class="php-quote">'FR_DOUBLE_POT'</span>          =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1133.858</span>,  <span class="php-num">1757.480</span>), <span class="php-comment">// = (  400 x 620  ) mm  = ( 15.75 x 24.41 ) in</span>
+    <span class="php-quote">'FR_ECU'</span>                 =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1133.858</span>,  <span class="php-num">1474.016</span>), <span class="php-comment">// = (  400 x 520  ) mm  = ( 15.75 x 20.47 ) in</span>
+    <span class="php-quote">'FR_COURONNE'</span>            =&gt; <span class="php-keyword1">array</span>( <span class="php-num">1020.472</span>,  <span class="php-num">1303.937</span>), <span class="php-comment">// = (  360 x 460  ) mm  = ( 14.17 x 18.11 ) in</span>
+    <span class="php-quote">'FR_TELLIERE'</span>            =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">963.780</span>,  <span class="php-num">1247.244</span>), <span class="php-comment">// = (  340 x 440  ) mm  = ( 13.39 x 17.32 ) in</span>
+    <span class="php-quote">'FR_POT'</span>                 =&gt; <span class="php-keyword1">array</span>(  <span class="php-num">878.740</span>,  <span class="php-num">1133.858</span>), <span class="php-comment">// = (  310 x 400  ) mm  = ( 12.20 x 15.75 ) in</span>
+)</code>
+				</div>
+			</td>
+		</tr>
+			</table>
+		</div>
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		Admidio API API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

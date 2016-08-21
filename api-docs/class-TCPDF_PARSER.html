@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class TCPDF_PARSER | Admidio API</title>
+
+	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
+	<link rel="stylesheet" href="resources/style.css?70c1d062672daa3f906b72e4f5d03d4bc5c4174d">
+
+</head>
+
+<body>
+	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">Admidio API</a>
+			</div>
+			<div class="collapse navbar-collapse">
+
+                <form id="search" class="navbar-form navbar-left" role="search">
+                    <input type="hidden" name="cx" value="">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <div class="form-group">
+                        <input type="text" name="q" class="search-query form-control" placeholder="Search">
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav">
+					<li>
+<span>Package</span>					</li>
+					<li class="active">
+<span>Class</span>					</li>
+
+					<li class="divider-vertical"></li>
+
+					<li>
+						<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+					</li>
+
+						<li>
+							<a href="annotation-group-deprecated.html" title="List of elements with deprecated annotation">
+								<span>Deprecated</span>
+							</a>
+						</li>
+						<li>
+							<a href="annotation-group-todo.html" title="List of elements with todo annotation">
+								<span>Todo</span>
+							</a>
+						</li>
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="left">
+	<div id="menu">
+
+		<div id="groups">
+				<h3>Packages</h3>
+			<ul>
+					<li>
+						<a href="package-com.html">
+							com<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="package-com.tecnick.html">
+							tecnick<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="package-com.tecnick.tcpdf.html">
+							tcpdf						</a>
+							</li>
+								</ul></li></ul></li>
+					<li>
+						<a href="package-None.html">
+							None						</a>
+							</li>
+					<li>
+						<a href="package-PHPMailer.html">
+							PHPMailer<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="package-phpmailer.easypeasyics.html">
+							easypeasyics						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="package-PHPWavUtils.html">
+							PHPWavUtils						</a>
+							</li>
+					<li>
+						<a href="package-Securimage.html">
+							Securimage<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="package-Securimage.classes.html">
+							classes						</a>
+							</li>
+								</ul></li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Datamatrix.html">Datamatrix</a></li>
+				<li><a href="class-PDF417.html">PDF417</a></li>
+				<li><a href="class-QRcode.html">QRcode</a></li>
+				<li><a href="class-TCPDF.html">TCPDF</a></li>
+				<li><a href="class-TCPDF2DBarcode.html">TCPDF2DBarcode</a></li>
+				<li><a href="class-TCPDF_COLORS.html">TCPDF_COLORS</a></li>
+				<li><a href="class-TCPDF_FILTERS.html">TCPDF_FILTERS</a></li>
+				<li><a href="class-TCPDF_FONT_DATA.html">TCPDF_FONT_DATA</a></li>
+				<li><a href="class-TCPDF_FONTS.html">TCPDF_FONTS</a></li>
+				<li><a href="class-TCPDF_IMAGES.html">TCPDF_IMAGES</a></li>
+				<li><a href="class-TCPDF_IMPORT.html">TCPDF_IMPORT</a></li>
+				<li class="active"><a href="class-TCPDF_PARSER.html">TCPDF_PARSER</a></li>
+				<li><a href="class-TCPDF_STATIC.html">TCPDF_STATIC</a></li>
+				<li><a href="class-TCPDFBarcode.html">TCPDFBarcode</a></li>
+			</ul>
+
+
+
+
+
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-str_split.html">str_split</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class TCPDF_PARSER</h1>
+
+
+
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		
+		<b>Package:</b> <a href="package-com.html">com</a>\<a href="package-com.tecnick.html">tecnick</a>\<a href="package-com.tecnick.tcpdf.html">tcpdf</a><br>
+
+				<b>Author:</b>
+				Nicola Asuni - info@tecnick.com<br>
+				<b>Version:</b>
+				1.0.15<br>
+				<b>Brief:</b>
+				This is a PHP class for parsing PDF documents..<br>
+				<b>Class:</b>
+				<p>TCPDF_PARSER
+This is a PHP class for parsing PDF documents.<br></p><br>
+			<b>Located at</b> <a href="source-class-TCPDF_PARSER.html#46-811" title="Go to source code">tcpdf_parser.php</a>
+		<br>
+	</div>
+
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading"><h2>Methods summary</h2></div>
+			<table class="summary table table-bordered table-striped methods" id="methods">
+		<tr data-order="__construct" id="___construct">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-TCPDF_PARSER.html#92-129" title="Go to source code">__construct</a>( <span> <var>$data</var></span>, <span> <var>$cfg</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+			<div class="description short">
+				<p>Parse a PDF document an return an array of objects.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parse a PDF document an return an array of objects.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$data</var></dt>
+						<dd>PDF data to parse.</dd>
+						<dt><var>$cfg</var></dt>
+						<dd><p>Array of configuration parameters:
+            'die_for_errors' : if true termitate the program execution in case of error, otherwise thows an exception;
+            'ignore_filter_decoding_errors' : if true ignore filter decoding errors;
+            'ignore_missing_filter_decoders' : if true ignore missing filter decoding errors.</p></dd>
+					</dl></div>
+
+
+
+					<h4>Since</h4>
+					<div class="list">
+							1.0.000 (2011-05-24)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setConfig" id="_setConfig">
+
+			<td class="attributes"><code>
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setConfig">#</a>
+			<code><a href="source-class-TCPDF_PARSER.html#131-149" title="Go to source code">setConfig</a>( <span> <var>$cfg</var></span> )</code>
+
+			<div class="description short">
+				<p>Set the configuration parameters.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Set the configuration parameters.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$cfg</var></dt>
+						<dd><p>Array of configuration parameters:
+            'die_for_errors' : if true termitate the program execution in case of error, otherwise thows an exception;
+            'ignore_filter_decoding_errors' : if true ignore filter decoding errors;
+            'ignore_missing_filter_decoders' : if true ignore missing filter decoding errors.</p></dd>
+					</dl></div>
+
+
+
+					<h4>Public</h4>
+					<div class="list">
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getParsedData" id="_getParsedData">
+
+			<td class="attributes"><code>
+				 public 
+				(array)
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getParsedData">#</a>
+			<code><a href="source-class-TCPDF_PARSER.html#151-159" title="Go to source code">getParsedData</a>( )</code>
+
+			<div class="description short">
+				<p>Return an array of parsed PDF document objects.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Return an array of parsed PDF document objects.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						(array)<br>Array of parsed PDF document objects.
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							1.0.000 (2011-06-26)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getXrefData" id="_getXrefData">
+
+			<td class="attributes"><code>
+				 protected 
+				Array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getXrefData">#</a>
+			<code><a href="source-class-TCPDF_PARSER.html#161-201" title="Go to source code">getXrefData</a>( <span> <var>$offset</var> = <span class="php-num">0</span></span>, <span> <var>$xref</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+			<div class="description short">
+				<p>Get Cross-Reference (xref) table and trailer data from PDF document data.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Get Cross-Reference (xref) table and trailer data from PDF document data.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$offset</var></dt>
+						<dd>xref offset (if know).</dd>
+						<dt><var>$xref</var></dt>
+						<dd>previous xref array (if any).</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						Array<br>containing xref and trailer data.
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							1.0.000 (2011-05-24)<br>
+					</div>
+					<h4>Protected</h4>
+					<div class="list">
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="decodeXref" id="_decodeXref">
+
+			<td class="attributes"><code>
+				 protected 
+				Array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_decodeXref">#</a>
+			<code><a href="source-class-TCPDF_PARSER.html#203-273" title="Go to source code">decodeXref</a>( <span> <var>$startxref</var></span>, <span> <var>$xref</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+			<div class="description short">
+				<p>Decode the Cross-Reference section</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Decode the Cross-Reference section</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$startxref</var></dt>
+						<dd>Offset at which the xref section starts (position of the 'xref' keyword).</dd>
+						<dt><var>$xref</var></dt>
+						<dd>Previous xref array (if any).</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						Array<br>containing xref and trailer data.
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							1.0.000 (2011-06-20)<br>
+					</div>
+					<h4>Protected</h4>
+					<div class="list">
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="decodeXrefStream" id="_decodeXrefStream">
+
+			<td class="attributes"><code>
+				 protected 
+				Array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_decodeXrefStream">#</a>
+			<code><a href="source-class-TCPDF_PARSER.html#275-488" title="Go to source code">decodeXrefStream</a>( <span> <var>$startxref</var></span>, <span> <var>$xref</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+			<div class="description short">
+				<p>Decode the Cross-Reference Stream section</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Decode the Cross-Reference Stream section</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$startxref</var></dt>
+						<dd>Offset at which the xref section starts.</dd>
+						<dt><var>$xref</var></dt>
+						<dd>Previous xref array (if any).</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						Array<br>containing xref and trailer data.
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							1.0.003 (2013-03-16)<br>
+					</div>
+					<h4>Protected</h4>
+					<div class="list">
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getRawObject" id="_getRawObject">
+
+			<td class="attributes"><code>
+				 protected 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getRawObject">#</a>
+			<code><a href="source-class-TCPDF_PARSER.html#490-666" title="Go to source code">getRawObject</a>( <span> <var>$offset</var> = <span class="php-num">0</span></span> )</code>
+
+			<div class="description short">
+				<p>Get object type, raw value and offset to next object</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Get object type, raw value and offset to next object</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$offset</var></dt>
+						<dd>Object offset.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						array<br>containing object type, raw value and offset to next object
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							1.0.000 (2011-06-20)<br>
+					</div>
+					<h4>Protected</h4>
+					<div class="list">
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getIndirectObject" id="_getIndirectObject">
+
+			<td class="attributes"><code>
+				 protected 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getIndirectObject">#</a>
+			<code><a href="source-class-TCPDF_PARSER.html#668-711" title="Go to source code">getIndirectObject</a>( <span> <var>$obj_ref</var></span>, <span> <var>$offset</var> = <span class="php-num">0</span></span>, <span> <var>$decoding</var> = <span class="php-keyword1">true</span></span> )</code>
+
+			<div class="description short">
+				<p>Get content of indirect object.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Get content of indirect object.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$obj_ref</var></dt>
+						<dd>Object number and generation number separated by underscore character.</dd>
+						<dt><var>$offset</var></dt>
+						<dd>Object offset.</dd>
+						<dt><var>$decoding</var></dt>
+						<dd>If true decode streams.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						array<br>containing object data.
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							1.0.000 (2011-05-24)<br>
+					</div>
+					<h4>Protected</h4>
+					<div class="list">
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getObjectVal" id="_getObjectVal">
+
+			<td class="attributes"><code>
+				 protected 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getObjectVal">#</a>
+			<code><a href="source-class-TCPDF_PARSER.html#713-733" title="Go to source code">getObjectVal</a>( <span> <var>$obj</var></span> )</code>
+
+			<div class="description short">
+				<p>Get the content of object, resolving indect object reference if necessary.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Get the content of object, resolving indect object reference if necessary.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$obj</var></dt>
+						<dd>Object value.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						array<br>containing object data.
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							1.0.000 (2011-06-26)<br>
+					</div>
+					<h4>Protected</h4>
+					<div class="list">
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="decodeStream" id="_decodeStream">
+
+			<td class="attributes"><code>
+				 protected 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_decodeStream">#</a>
+			<code><a href="source-class-TCPDF_PARSER.html#735-795" title="Go to source code">decodeStream</a>( <span> <var>$sdic</var></span>, <span> <var>$stream</var></span> )</code>
+
+			<div class="description short">
+				<p>Decode the specified stream.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Decode the specified stream.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$sdic</var></dt>
+						<dd>Stream's dictionary array.</dd>
+						<dt><var>$stream</var></dt>
+						<dd>Stream to decode.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						array<br>containing decoded stream data and remaining filters.
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							1.0.000 (2011-06-22)<br>
+					</div>
+					<h4>Protected</h4>
+					<div class="list">
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="Error" id="_Error">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_Error">#</a>
+			<code><a href="source-class-TCPDF_PARSER.html#797-809" title="Go to source code">Error</a>( <span> <var>$msg</var></span> )</code>
+
+			<div class="description short">
+				<p>Throw an exception or print an error message and die if the K_TCPDF_PARSER_THROW_EXCEPTION_ERROR constant is set to true.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Throw an exception or print an error message and die if the K_TCPDF_PARSER_THROW_EXCEPTION_ERROR constant is set to true.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$msg</var></dt>
+						<dd>The error message</dd>
+					</dl></div>
+
+
+
+					<h4>Since</h4>
+					<div class="list">
+							1.0.000 (2011-05-23)<br>
+					</div>
+					<h4>Public</h4>
+					<div class="list">
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+			</table>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h2>Properties summary</h2></div>
+			<table class="summary table table-bordered table-striped properties" id="properties">
+		<tr data-order="pdfdata" id="$pdfdata">
+			<td class="attributes"><code>
+				private  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TCPDF_PARSER.html#56-60" title="Go to source code"><var>$pdfdata</var></a>
+
+				<div class="description short">
+					<p>Raw content of the PDF document.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Raw content of the PDF document.</p>
+
+						<h4>Private</h4>
+						<div class="list">
+						</div>
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$pdfdata" class="anchor">#</a>
+					<code><span class="php-quote">''</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="xref" id="$xref">
+			<td class="attributes"><code>
+				protected  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TCPDF_PARSER.html#62-66" title="Go to source code"><var>$xref</var></a>
+
+				<div class="description short">
+					<p>XREF data.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>XREF data.</p>
+
+						<h4>Protected</h4>
+						<div class="list">
+						</div>
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$xref" class="anchor">#</a>
+					<code><span class="php-keyword1">array</span>()</code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="objects" id="$objects">
+			<td class="attributes"><code>
+				protected  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TCPDF_PARSER.html#68-72" title="Go to source code"><var>$objects</var></a>
+
+				<div class="description short">
+					<p>Array of PDF objects.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Array of PDF objects.</p>
+
+						<h4>Protected</h4>
+						<div class="list">
+						</div>
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$objects" class="anchor">#</a>
+					<code><span class="php-keyword1">array</span>()</code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="FilterDecoders" id="$FilterDecoders">
+			<td class="attributes"><code>
+				private  
+				
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TCPDF_PARSER.html#74-78" title="Go to source code"><var>$FilterDecoders</var></a>
+
+				<div class="description short">
+					<p>Class object for decoding filters.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Class object for decoding filters.</p>
+
+						<h4>Private</h4>
+						<div class="list">
+						</div>
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$FilterDecoders" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="cfg" id="$cfg">
+			<td class="attributes"><code>
+				private  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TCPDF_PARSER.html#80-88" title="Go to source code"><var>$cfg</var></a>
+
+				<div class="description short">
+					<p>Array of configuration parameters.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Array of configuration parameters.</p>
+
+						<h4>Private</h4>
+						<div class="list">
+						</div>
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$cfg" class="anchor">#</a>
+					<code><span class="php-keyword1">array</span>(
+    <span class="php-quote">'die_for_errors'</span> =&gt; <span class="php-keyword1">false</span>,
+    <span class="php-quote">'ignore_filter_decoding_errors'</span> =&gt; <span class="php-keyword1">true</span>,
+    <span class="php-quote">'ignore_missing_filter_decoders'</span> =&gt; <span class="php-keyword1">true</span>,
+)</code>
+				</div>
+			</td>
+		</tr>
+			</table>
+		</div>
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		Admidio API API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
