@@ -48,7 +48,7 @@ PROJECT_NAME           = Admidio
 # could be handy for archiving the generated documentation or if some version
 # control system is used.
 
-PROJECT_NUMBER         = 4.3
+PROJECT_NUMBER         = 5.0
 
 # Using the PROJECT_BRIEF tag one can provide an optional one line description
 # for a project that appears at the top of each page and should give viewer a
@@ -289,7 +289,7 @@ TAB_SIZE               = 2
 # with the commands \{ and \} for these it is advised to use the version @{ and
 # @} or use a double escape (\\{ and \\})
 
-ALIASES                =
+ALIASES                = "license=@par License:"
 
 # Set the OPTIMIZE_OUTPUT_FOR_C tag to YES if your project consists of C sources
 # only. Doxygen will then generate output that is more tailored for C. For
@@ -1038,7 +1038,8 @@ RECURSIVE              = YES
 EXCLUDE                = ../../admidio/adm_program/libs \
                          ../../admidio/adm_my_files \
                          ../../admidio/adm_plugins \
-                         ../../admidio/demo_data
+                         ../../admidio/demo_data \
+                         ../../admidio/vendor
 
 # The EXCLUDE_SYMLINKS tag can be used to select whether or not files or
 # directories that are symbolic links (a Unix file system feature) are excluded
